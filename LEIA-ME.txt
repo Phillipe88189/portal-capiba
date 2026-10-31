@@ -17,3 +17,9 @@ Atualização: feita pela gestão via Claude, a partir da exportação do grupo
 
 Publicação: o app precisa estar num endereço https (ex.: GitHub Pages). Abrir o
 index.html direto do computador não ativa a instalação.
+
+Comunicados educativos (série "Conhecendo o Regimento Interno")
+- gestao/pauta-educativa.json: fila semanal de temas do RI, com os trechos de
+  cada artigo. Status: pendente, publicado ou bloqueado (bloqueado não sai).
+- Toda semana uma tarefa agendada publica o próximo tema pendente em
+  dados/comunicados.json (app) e no artefato Portal do Morador Capiba.
