@@ -757,19 +757,37 @@ document.getElementById('cp').addEventListener('click',async e=>{
 
   ['h-q', 'h-ass', 'h-sit'].forEach((id) => $(id).addEventListener('input', render));
 
-  fetch('dados/chamados.json', {cache: 'no-cache'})
-    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then((j) => {
-      carregou = true;
-      lista = Array.isArray(j.chamados) ? j.chamados : [];
-      $('h-atual').textContent = j.ultima_mensagem ? dataBR(j.ultima_mensagem) : '—';
-      render();
-    })
-    .catch(() => msg('Não foi possível carregar os chamados agora. Verifique a conexão e abra o app novamente.'));
+  // Sempre busca a versão mais recente (sem cache do navegador nem da hospedagem).
+  let ultimaBusca = 0;
+  const carregar = () => {
+    ultimaBusca = Date.now();
+    return fetch('dados/chamados.json?t=' + ultimaBusca, {cache: 'no-store'})
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((j) => {
+        carregou = true;
+        lista = Array.isArray(j.chamados) ? j.chamados : [];
+        $('h-atual').textContent = j.ultima_mensagem ? dataBR(j.ultima_mensagem) : '—';
+        render();
+      })
+      .catch(() => { if (!carregou) msg('Não foi possível carregar os chamados agora. Verifique a conexão e abra o app novamente.'); });
+  };
+  carregar();
+  // O app instalado volta do segundo plano sem recarregar: atualiza os dados ao reabrir.
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - ultimaBusca > 30000) carregar(); });
+  window.addEventListener('pageshow', (e) => { if (e.persisted) carregar(); });
+  window.addEventListener('online', carregar);
 })();
 </script>
 <script>
-if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+if ('serviceWorker' in navigator) window.addEventListener('load', () => {
+  navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then((reg) => {
+    reg.update().catch(() => {});
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update().catch(() => {}); });
+  }).catch(() => {});
+  // Quando chega uma versão nova do app, recarrega uma vez para mostrá-la.
+  let recarregou = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (!recarregou && navigator.serviceWorker.controller) { recarregou = true; location.reload(); } });
+});
 </script>
 </body>
 </html>

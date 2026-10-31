@@ -1,5 +1,5 @@
 /* Service worker do app Capiba: funciona sem internet e busca sempre a versão mais recente quando há conexão. */
-const VERSAO = 'capiba-2026-10-31-3';
+const VERSAO = 'capiba-2026-10-31-4';
 const BASE = ['./', 'index.html', 'manifest.webmanifest', 'vendor/d3.min.js', 'dados/chamados.json',
   'icones/icone-192.png', 'icones/icone-512.png', 'icones/apple-touch-icon.png', 'icones/favicon.png'];
 
@@ -14,10 +14,17 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   const conteudo = req.mode === 'navigate' || url.pathname.endsWith('.json') || url.pathname.endsWith('.html');
+  if (url.pathname.endsWith('.json')) {
+    // dados: sempre da rede, sem cache; a cópia guardada só serve sem internet
+    const chave = url.origin + url.pathname;
+    e.respondWith(fetch(url.href, {cache: 'no-store'}).then((r) => { if (r.ok) { const cp = r.clone(); caches.open(VERSAO).then((c) => c.put(chave, cp)); } return r; })
+      .catch(() => caches.match(chave, {ignoreSearch: true})));
+    return;
+  }
   if (conteudo) {
     // rede primeiro: moradores veem a atualização assim que ela é publicada
     e.respondWith(fetch(req).then((r) => { const cp = r.clone(); caches.open(VERSAO).then((c) => c.put(req, cp)); return r; })
-      .catch(() => caches.match(req).then((r) => r || caches.match('index.html'))));
+      .catch(() => caches.match(req, {ignoreSearch: true}).then((r) => r || caches.match('index.html'))));
     return;
   }
   // demais arquivos (ícones, fontes, biblioteca de gráficos): cache primeiro
