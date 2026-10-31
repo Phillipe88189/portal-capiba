@@ -1,4 +1,26 @@
 {
-  "atualizado_em": "2026-10-31T20:30",
-  "comunicados": []
+  "atualizado_em": "2026-10-31T20:40",
+  "comunicados": [
+    {
+      "numero": "2026-001",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Convivência",
+      "titulo": "Horário de silêncio: das 22h às 8h",
+      "publicado_em": "2026-10-31T20:40",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "O cuidado com o barulho vale o dia todo. Das 22h às 8h, todos os dias da semana, a atenção precisa ser redobrada.",
+      "texto": [
+        "Caros moradores, este é o primeiro comunicado educativo do Comunica Capiba. Toda semana, vamos relembrar uma regra do nosso Regimento Interno de forma simples.",
+        "O que diz o Regimento: todos devem evitar barulho sem necessidade que atrapalhe o sossego dos vizinhos, em qualquer horário. Entre 22h e 8h, o cuidado é redobrado. A regra vale todos os dias, inclusive fins de semana e feriados (art. 7º, h).",
+        "Na prática, nesse período: som e TV em volume baixo, conversas na varanda e nos corredores em tom baixo e cuidado ao arrastar móveis ou fechar portas.",
+        "As áreas de lazer também respeitam esse limite. Piscina, quadra e playground funcionam até as 22h (arts. 15, 16 e 17), assim como a Brinquedoteca (art. 22). No Gazebo grill, o som do condomínio pode ser usado até as 22h, no limite de 55 decibéis (art. 19, c). Nos eventos do Salão de Festas, o som deve ser moderado para não incomodar os vizinhos (art. 20, h).",
+        "Furadeira, martelo e outras ferramentas têm horário próprio, ligado às regras de reforma. Esse será o tema de um próximo comunicado.",
+        "Se o barulho continuar, avise a portaria ou registre no grupo Reclame aqui – Solicitações, sem citar nome nem unidade do vizinho. A gestão conversa diretamente com quem for preciso. O descumprimento do Regimento pode levar a advertência ou multa (art. 39).",
+        "Faz gosto conviver."
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 7º, h; arts. 15, d; 16; 17, b; 19, c; 20, h; 22, a; art. 39. Código Civil, arts. 1.277 e 1.336, IV."
+    }
+  ]
 }

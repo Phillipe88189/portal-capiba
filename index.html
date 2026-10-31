@@ -138,6 +138,8 @@ html{scroll-behavior:smooth}
 .k-num{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);font-variant-numeric:tabular-nums;margin-right:auto}
 .k-cat{font-size:.74rem;font-style:italic;font-weight:400;background:var(--tag);color:var(--tag-txt);padding:3px 10px;border-radius:12px 0 0 0}
 .k-novo{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:#9A7264;color:#FFE8B8;padding:3px 10px;border-radius:999px}
+.k-edu{font-size:.72rem;font-weight:600;letter-spacing:.04em;padding:3px 12px;border-radius:12px 0 12px 0;background:#CAAE89;color:#0F4434}
+.k-card.educativo{border-color:#CAAE89;background:color-mix(in srgb,var(--surface) 86%,#CAAE89)}
 .k-flag{font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--linha);color:var(--titulo)}
 .k-card h3{margin:0;font-weight:300;text-transform:uppercase;letter-spacing:.14em;line-height:1.35;color:var(--titulo);font-size:1.05rem;text-wrap:balance}
 .k-meta{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0;font-size:.8rem;color:var(--suave);font-variant-numeric:tabular-nums}
@@ -386,7 +388,7 @@ html{scroll-behavior:smooth}
 <div class="wrap view" id="comunica" hidden>
   <section class="c-head">
     <h2 class="c-titulo">Comunica Capiba</h2>
-    <p class="c-lead">Os avisos e comunicados oficiais da gestão sobre o que é importante no Capiba: manutenções, obras, assembleias, segurança, finanças e mudanças nas regras. Tudo fica guardado aqui para consulta.</p>
+    <p class="c-lead">Os avisos e comunicados oficiais da gestão sobre o que é importante no Capiba: manutenções, obras, assembleias, segurança, finanças e mudanças nas regras. Toda semana sai também um <b>comunicado educativo</b>, que explica uma regra do nosso Regimento Interno. Tudo fica guardado aqui para consulta.</p>
   </section>
 
   <div class="h-filtros" role="search">
@@ -850,6 +852,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
     return `${m[3]}/${m[2]}/${m[1]}` + (m[4] ? ` às ${m[4]}h${m[5]}` : '');
   };
   const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+  const edu = (c) => c.tipo === 'educativo';
   const msg = (t) => { const m = $('k-msg'); m.textContent = t; m.hidden = !t; };
   const chave = (c) => String(c.publicado_em || '');
   const novo = (c) => !!visto ? chave(c) > visto : true;
@@ -873,10 +876,10 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
   function render() {
     const q = $('k-q').value.trim().toLowerCase(), fc = $('k-cat').value;
     const sel = $('k-cat'), atual = sel.value, cats = [...new Set(lista.map((c) => c.categoria).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
-    sel.replaceChildren(new Option('Todos os temas', ''), ...cats.map((c) => new Option(c, c)));
-    sel.value = cats.includes(atual) ? atual : '';
-    const vis = lista.filter((c) => (!fc || c.categoria === fc)
-      && (!q || [c.numero, c.titulo, c.categoria, c.resumo, paragrafos(c.texto).join(' ')].join(' ').toLowerCase().includes(q)))
+    sel.replaceChildren(new Option('Todos os temas', ''), new Option('Só comunicados educativos', '__edu'), ...cats.map((c) => new Option(c, c)));
+    sel.value = (atual === '__edu' || cats.includes(atual)) ? atual : '';
+    const vis = lista.filter((c) => (!fc || (fc === '__edu' ? edu(c) : c.categoria === fc))
+      && (!q || [c.numero, c.titulo, c.categoria, edu(c) ? 'educativo' : '', c.resumo, paragrafos(c.texto).join(' ')].join(' ').toLowerCase().includes(q)))
       .sort((a, b) => (Number(!!b.fixado && !encerrado(b)) - Number(!!a.fixado && !encerrado(a))) || chave(b).localeCompare(chave(a)));
     $('k-lista').replaceChildren(...vis.map(card));
     marcador();
@@ -887,11 +890,12 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
   }
 
   function card(c) {
-    const a = el('article', 'k-card' + (c.fixado && !encerrado(c) ? ' fixado' : '') + (encerrado(c) ? ' encerrado' : ''));
+    const a = el('article', 'k-card' + (edu(c) ? ' educativo' : '') + (c.fixado && !encerrado(c) ? ' fixado' : '') + (encerrado(c) ? ' encerrado' : ''));
     if (c.numero) a.id = 'comunicado-' + c.numero;
     const top = el('div', 'k-top');
     top.append(el('span', 'k-num', `Comunicado nº ${c.numero || c.id || ''}`));
     if (novo(c)) top.append(el('span', 'k-novo', 'Novo'));
+    if (edu(c)) top.append(el('span', 'k-edu', 'Comunicado educativo'));
     if (c.fixado && !encerrado(c)) top.append(el('span', 'k-flag', 'Em destaque'));
     if (encerrado(c)) top.append(el('span', 'k-flag', 'Encerrado'));
     top.append(el('span', 'k-cat', c.categoria || 'Aviso'));
