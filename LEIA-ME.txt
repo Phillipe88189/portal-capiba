@@ -1,0 +1,18 @@
+APP DO MORADOR – EDIFÍCIO CAPIBA (somente consulta)
+
+O que é: o Portal do Morador como app instalável (PWA). Funciona no navegador,
+pode ser instalado na tela inicial do celular e abre sem internet com a última
+versão baixada.
+
+Arquivos
+- index.html ............ o app (regras, prestação de contas, solicitações)
+- dados/chamados.json ... chamados (sem nome nem unidade de quem pediu – LGPD)
+- manifest.webmanifest .. nome, cores e ícones do app
+- sw.js ................. funcionamento sem internet
+- icones/, vendor/ ...... ícones e biblioteca de gráficos
+
+Atualização: feita pela gestão via Claude, a partir da exportação do grupo
+"Reclame aqui – Solicitações". Os moradores não editam nada.
+
+Publicação: o app precisa estar num endereço https (ex.: GitHub Pages). Abrir o
+index.html direto do computador não ativa a instalação.
