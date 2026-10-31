@@ -1,47 +1,51 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-10-31T15:16",
-  "atualizado_em": "2026-10-31T15:25",
+  "atualizado_em": "2026-10-31T17:30",
   "chamados": [
     {
-      "numero": "2026-001",
-      "assunto": "Limpeza",
-      "local": "Gazebo grill (espaço reservado)",
-      "solicitacao": "O espaço reservado não estava limpo no horário da reserva. Pedido para melhorar a comunicação entre a administração e a equipe de limpeza: toda reserva deve gerar limpeza com antecedência, na entrega e na devolução do espaço.",
-      "status": "Em andamento",
       "aberto_em": "2026-10-31T14:09",
+      "assunto": "Limpeza",
+      "atualizado_em": "2026-10-31T15:25",
+      "concluido_em": "2026-10-31",
       "data_ocorrencia": "2026-10-31",
-      "responsavel": "Síndico e gerência predial",
-      "previsao": "",
-      "concluido_em": "",
-      "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
           "data": "2026-10-31T14:17",
           "texto": "A gestão confirmou a reserva, providenciou a limpeza do espaço (prevista para a manhã) e colocou a placa de reservado. O fluxo reserva → limpeza será revisto para não se repetir."
+        },
+        {
+          "data": "2026-10-31T15:25",
+          "texto": "Já estava no radar do Wilson essa reserva, vamo entender porque o fluxo não funcionou direito e corrigiremos. O zelador esta lá limpando tudo (era pra e já coloquei a plaquinha de reservado"
         }
       ],
-      "atualizado_em": "2026-10-31T14:17"
+      "local": "Gazebo grill (espaço reservado)",
+      "numero": "2026-001",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "2026-10-31",
+      "responsavel": "Síndico e gerência predial",
+      "solicitacao": "O espaço reservado não estava limpo no horário da reserva. Pedido para melhorar a comunicação entre a administração e a equipe de limpeza: toda reserva deve gerar limpeza com antecedência, na entrega e na devolução do espaço.",
+      "status": "Concluído"
     },
     {
-      "numero": "2026-002",
-      "assunto": "Controle de pragas",
-      "local": "Hall dos andares",
-      "solicitacao": "Presença de percevejos nos halls. Verificar com a empresa de dedetização uma solução.",
-      "status": "Aberto",
       "aberto_em": "2026-10-31T15:16",
-      "data_ocorrencia": "2026-10-31",
-      "responsavel": "Gerência predial",
-      "previsao": "",
+      "assunto": "Controle de pragas",
+      "atualizado_em": "2026-10-31T15:16",
       "concluido_em": "",
-      "origem": "WhatsApp – Reclame aqui",
+      "data_ocorrencia": "2026-10-31",
       "historico": [
         {
           "data": "2026-10-31T15:16",
           "texto": "Chamado aberto, com foto do inseto enviada ao grupo."
         }
       ],
-      "atualizado_em": "2026-10-31T15:16"
+      "local": "Hall dos andares",
+      "numero": "2026-002",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "responsavel": "Gerência predial",
+      "solicitacao": "Presença de percevejos nos halls. Verificar com a empresa de dedetização uma solução.",
+      "status": "Aberto"
     }
   ]
 }
