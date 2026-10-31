@@ -127,6 +127,30 @@ html{scroll-behavior:smooth}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--neg:#D2A898;--terra:#B98E7F;--verde-g:#4FA383}}
 :root[data-theme="dark"]{--neg:#D2A898;--terra:#B98E7F;--verde-g:#4FA383}
 [hidden]{display:none!important}
+
+/* Aba Comunica Capiba (comunicados oficiais da gestão) */
+#comunica{gap:28px}
+.k-lista{display:flex;flex-direction:column;gap:14px}
+.k-card{background:var(--surface);border:1px solid var(--linha);border-radius:0 22px 22px 22px;padding:20px 22px;display:flex;flex-direction:column;gap:10px;min-width:0;scroll-margin-top:24px}
+.k-card.fixado{border-left:4px solid var(--verde-vivo)}
+.k-card.encerrado{opacity:.72}
+.k-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.k-num{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);font-variant-numeric:tabular-nums;margin-right:auto}
+.k-cat{font-size:.74rem;font-style:italic;font-weight:400;background:var(--tag);color:var(--tag-txt);padding:3px 10px;border-radius:12px 0 0 0}
+.k-novo{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:#9A7264;color:#FFE8B8;padding:3px 10px;border-radius:999px}
+.k-flag{font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--linha);color:var(--titulo)}
+.k-card h3{margin:0;font-weight:300;text-transform:uppercase;letter-spacing:.14em;line-height:1.35;color:var(--titulo);font-size:1.05rem;text-wrap:balance}
+.k-meta{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0;font-size:.8rem;color:var(--suave);font-variant-numeric:tabular-nums}
+.k-resumo{margin:0}
+.k-card details{border-top:1px solid var(--linha);padding-top:8px}
+.k-card summary{cursor:pointer;color:var(--titulo);font-weight:400;font-size:.9rem}
+.k-card summary:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
+.k-texto{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.k-texto p{margin:0}
+.k-base{margin:0;font-size:.8rem;color:var(--suave);font-style:italic}
+.k-anexo{align-self:flex-start;text-decoration:none;font-size:.82rem;font-weight:400;border-radius:999px;padding:8px 16px;background:var(--verde);color:#FFE8B8}
+.k-anexo:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
+.aba-l .k-badge{display:inline-block;min-width:1.4em;margin-left:6px;padding:1px 6px;border-radius:999px;background:#9A7264;color:#FFE8B8;font-size:.72rem;font-weight:600;text-align:center;font-variant-numeric:tabular-nums;letter-spacing:0}
 /* Aba Solicitações (chamados do grupo Reclame Aqui) */
 #chamados{gap:28px}
 .h-filtros{display:flex;flex-wrap:wrap;gap:8px}
@@ -190,6 +214,8 @@ html{scroll-behavior:smooth}
 }
 
 
+/* Abas em uma linha no celular (4 abas) */
+@media (max-width:640px){.hero .abas{flex-wrap:nowrap;gap:3px}.hero .aba-l{padding:11px 4px;font-size:.78rem;letter-spacing:.02em;line-height:1.25;display:flex;align-items:center;justify-content:center;flex-wrap:wrap}.aba-l .k-badge{margin-left:4px}}
 /* Slogan "Faz gosto viver." (capiba-design): canto superior direito, alinhado ao logo */
 .hero .hero-topo{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
 .hero .hero-marca{flex:0 0 auto;width:clamp(170px,22vw,230px)}
@@ -221,12 +247,13 @@ html{scroll-behavior:smooth}
     <div class="hero-txt">
       <p class="hero-eyebrow">Condomínio do Edifício Capiba</p>
       <h1>Portal do morador.</h1>
-      <p class="lead">As regras do nosso prédio, as contas do condomínio mês a mês e o andamento das solicitações dos moradores, num só lugar.</p>
+      <p class="lead">As regras do nosso prédio, as contas do condomínio mês a mês, o andamento das solicitações e os comunicados da gestão, num só lugar.</p>
     </div>
     <nav class="abas" aria-label="Seções do portal">
       <a href="#regras" class="aba-l" data-view="regras">Regras do prédio</a>
       <a href="#contas" class="aba-l" data-view="contas">Prestação de contas</a>
       <a href="#chamados" class="aba-l" data-view="chamados">Solicitações</a>
+      <a href="#comunica" class="aba-l" data-view="comunica">Comunica Capiba<span class="k-badge" id="k-badge" hidden></span></a>
     </nav>
   </div>
 </header>
@@ -354,6 +381,23 @@ html{scroll-behavior:smooth}
   </section>
 
   <p class="c-fonte"><strong>Fonte:</strong> grupo de WhatsApp “Reclame aqui – Solicitações”, criado pela gestão em 30/10/2026. Mensagens lidas até <span id="h-atual">—</span>. Para proteger os dados pessoais (LGPD), o nome e a unidade de quem abriu o chamado não são publicados.</p>
+</div>
+
+<div class="wrap view" id="comunica" hidden>
+  <section class="c-head">
+    <h2 class="c-titulo">Comunica Capiba</h2>
+    <p class="c-lead">Os avisos e comunicados oficiais da gestão sobre o que é importante no Capiba: manutenções, obras, assembleias, segurança, finanças e mudanças nas regras. Tudo fica guardado aqui para consulta.</p>
+  </section>
+
+  <div class="h-filtros" role="search">
+    <input id="k-q" type="search" aria-label="Buscar comunicado" placeholder="Buscar por assunto (ex.: elevador, assembleia)">
+    <select id="k-cat" aria-label="Filtrar por tema"><option value="">Todos os temas</option></select>
+  </div>
+
+  <div class="k-lista" id="k-lista" aria-live="polite"></div>
+  <p class="c-vazio" id="k-msg">Carregando os comunicados…</p>
+
+  <p class="c-fonte"><strong>Fonte:</strong> comunicados emitidos pela administração do condomínio (síndico e subsíndico, com os conselhos quando for o caso). Os comunicados não trazem dados pessoais de moradores (LGPD). Em caso de dúvida, valem a Convenção, o Regimento Interno e as atas de assembleia.</p>
 </div>
 
 </main>
@@ -679,8 +723,9 @@ document.getElementById('cp').addEventListener('click',async e=>{
   // Abas
   const abas = document.querySelectorAll('.aba-l');
   const mostrar = () => {
-    const v = location.hash === '#contas' ? 'contas' : (location.hash === '#chamados' ? 'chamados' : 'regras');
-    $('regras').hidden = v !== 'regras'; $('contas').hidden = v !== 'contas'; $('chamados').hidden = v !== 'chamados';
+    const v = ({'#contas': 'contas', '#chamados': 'chamados', '#comunica': 'comunica'})[location.hash.split('/')[0]] || 'regras';
+    ['regras', 'contas', 'chamados', 'comunica'].forEach((id) => { $(id).hidden = v !== id; });
+    document.dispatchEvent(new CustomEvent('capiba:aba', {detail: v}));
     abas.forEach((a) => a.toggleAttribute('aria-current', false));
     abas.forEach((a) => { if (a.dataset.view === v) a.setAttribute('aria-current', 'page'); });
     if (v === 'contas') render();
@@ -788,6 +833,124 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
   let recarregou = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => { if (!recarregou && navigator.serviceWorker.controller) { recarregou = true; location.reload(); } });
 });
+</script>
+<script>
+/* Aba Comunica Capiba — comunicados oficiais da gestão (somente leitura). Dados em dados/comunicados.json. */
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const CHAVE = 'capiba-comunica-visto';
+  let lista = [], carregou = false, aba = location.hash.split('/')[0] === '#comunica' ? 'comunica' : 'outra';
+  let visto = ''; try { visto = localStorage.getItem(CHAVE) || ''; } catch (e) {}
+  const hoje = (() => { const d = new Date(), p = (n) => String(n).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`; })();
+
+  const dataBR = (v) => {
+    if (!v) return '—';
+    const m = String(v).match(/^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2}))?/);
+    if (!m) return String(v);
+    return `${m[3]}/${m[2]}/${m[1]}` + (m[4] ? ` às ${m[4]}h${m[5]}` : '');
+  };
+  const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+  const msg = (t) => { const m = $('k-msg'); m.textContent = t; m.hidden = !t; };
+  const chave = (c) => String(c.publicado_em || '');
+  const novo = (c) => !!visto ? chave(c) > visto : true;
+  const encerrado = (c) => !!c.valido_ate && String(c.valido_ate) < hoje;
+  const paragrafos = (t) => (Array.isArray(t) ? t : String(t || '').split(/\n\s*\n/)).map((x) => String(x).trim()).filter(Boolean);
+
+  function marcador() {
+    const n = carregou ? lista.filter(novo).length : 0;
+    const b = $('k-badge');
+    b.textContent = n; b.hidden = !n || aba === 'comunica';
+    b.setAttribute('aria-label', `${n} ${n === 1 ? 'comunicado novo' : 'comunicados novos'}`);
+    try { if ('setAppBadge' in navigator) { n ? navigator.setAppBadge(n) : navigator.clearAppBadge(); } } catch (e) {}
+  }
+
+  function marcarLidos() {
+    if (!carregou || !lista.length) return;
+    const max = lista.map(chave).sort().pop();
+    if (max && max > visto) { try { localStorage.setItem(CHAVE, max); } catch (e) {} }
+  }
+
+  function render() {
+    const q = $('k-q').value.trim().toLowerCase(), fc = $('k-cat').value;
+    const sel = $('k-cat'), atual = sel.value, cats = [...new Set(lista.map((c) => c.categoria).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    sel.replaceChildren(new Option('Todos os temas', ''), ...cats.map((c) => new Option(c, c)));
+    sel.value = cats.includes(atual) ? atual : '';
+    const vis = lista.filter((c) => (!fc || c.categoria === fc)
+      && (!q || [c.numero, c.titulo, c.categoria, c.resumo, paragrafos(c.texto).join(' ')].join(' ').toLowerCase().includes(q)))
+      .sort((a, b) => (Number(!!b.fixado && !encerrado(b)) - Number(!!a.fixado && !encerrado(a))) || chave(b).localeCompare(chave(a)));
+    $('k-lista').replaceChildren(...vis.map(card));
+    marcador();
+    if (!carregou) return;
+    if (!lista.length) msg('Ainda não há comunicados publicados. Quando a gestão publicar um aviso, ele aparece aqui.');
+    else if (!vis.length) msg('Nenhum comunicado com esses filtros.');
+    else msg('');
+  }
+
+  function card(c) {
+    const a = el('article', 'k-card' + (c.fixado && !encerrado(c) ? ' fixado' : '') + (encerrado(c) ? ' encerrado' : ''));
+    if (c.numero) a.id = 'comunicado-' + c.numero;
+    const top = el('div', 'k-top');
+    top.append(el('span', 'k-num', `Comunicado nº ${c.numero || c.id || ''}`));
+    if (novo(c)) top.append(el('span', 'k-novo', 'Novo'));
+    if (c.fixado && !encerrado(c)) top.append(el('span', 'k-flag', 'Em destaque'));
+    if (encerrado(c)) top.append(el('span', 'k-flag', 'Encerrado'));
+    top.append(el('span', 'k-cat', c.categoria || 'Aviso'));
+    a.append(top, el('h3', null, c.titulo || 'Comunicado'));
+    const meta = el('p', 'k-meta');
+    meta.append(el('span', null, `Publicado em ${dataBR(c.publicado_em)}`));
+    meta.append(el('span', null, c.assinatura || 'Administração do condomínio'));
+    if (c.valido_ate) meta.append(el('span', null, `${encerrado(c) ? 'Valeu' : 'Vale'} até ${dataBR(c.valido_ate)}`));
+    a.append(meta);
+    if (c.resumo) a.append(el('p', 'k-resumo', c.resumo));
+    const ps = paragrafos(c.texto);
+    if (ps.length || c.base) {
+      const d = el('details'); d.append(el('summary', null, 'Ler o comunicado completo'));
+      const box = el('div', 'k-texto');
+      ps.forEach((p) => box.append(el('p', null, p)));
+      if (c.base) box.append(el('p', 'k-base', `Base: ${c.base}`));
+      d.append(box); a.append(d);
+    }
+    if (c.anexo && c.anexo.url && /^https:\/\//.test(c.anexo.url)) {
+      const l = el('a', 'k-anexo', c.anexo.rotulo || 'Abrir anexo'); l.href = c.anexo.url; l.target = '_blank'; l.rel = 'noopener';
+      a.append(l);
+    }
+    return a;
+  }
+
+  function receber(itens) {
+    carregou = true; lista = itens; render();
+    if (aba === 'comunica') { marcarLidos(); abrirAncora(); }
+  }
+
+  function abrirAncora() {
+    const n = location.hash.split('/')[1];
+    if (!n) return;
+    const alvo = document.getElementById('comunicado-' + decodeURIComponent(n));
+    if (alvo) { const d = alvo.querySelector('details'); if (d) d.open = true; alvo.scrollIntoView({block: 'start'}); }
+  }
+
+  document.addEventListener('capiba:aba', (e) => {
+    const antes = aba; aba = e.detail;
+    if (aba === 'comunica') { render(); marcarLidos(); abrirAncora(); }
+    else if (antes === 'comunica') { try { visto = localStorage.getItem(CHAVE) || visto; } catch (e) {} render(); }
+    else marcador();
+  });
+  ['k-q', 'k-cat'].forEach((id) => $(id).addEventListener('input', render));
+
+  // Dados em dados/comunicados.json, publicados pela gestão. Sempre a versão mais recente.
+  let ultimaBusca = 0;
+  const carregar = () => {
+    ultimaBusca = Date.now();
+    return fetch('dados/comunicados.json?t=' + ultimaBusca, {cache: 'no-store'})
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((j) => receber(Array.isArray(j.comunicados) ? j.comunicados : []))
+      .catch(() => { if (!carregou) msg('Não foi possível carregar os comunicados agora. Verifique a conexão e abra o app novamente.'); });
+  };
+  carregar();
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - ultimaBusca > 30000) carregar(); });
+  window.addEventListener('pageshow', (e) => { if (e.persisted) carregar(); });
+  window.addEventListener('online', carregar);
+})();
 </script>
 </body>
 </html>

@@ -5,8 +5,9 @@ pode ser instalado na tela inicial do celular e abre sem internet com a última
 versão baixada.
 
 Arquivos
-- index.html ............ o app (regras, prestação de contas, solicitações)
+- index.html ............ o app (regras, prestação de contas, solicitações, Comunica Capiba)
 - dados/chamados.json ... chamados (sem nome nem unidade de quem pediu – LGPD)
+- dados/comunicados.json  comunicados oficiais da gestão (aba Comunica Capiba)
 - manifest.webmanifest .. nome, cores e ícones do app
 - sw.js ................. funcionamento sem internet
 - icones/, vendor/ ...... ícones e biblioteca de gráficos
