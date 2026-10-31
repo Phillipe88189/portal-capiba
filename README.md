@@ -1,5 +1,7 @@
 # Portal do Morador – Edifício Capiba
 
+*Faz gosto viver.*
+
 App de consulta (PWA) do Condomínio do Edifício Capiba, Boa Viagem – Recife/PE:
 regras do prédio, prestação de contas mês a mês e acompanhamento das solicitações
 enviadas no grupo "Reclame aqui – Solicitações".
