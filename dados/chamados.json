@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-10-31T15:16",
-  "atualizado_em": "2026-10-31T17:30",
+  "ultima_mensagem": "2026-10-31T17:55",
+  "atualizado_em": "2026-10-31T18:40",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -30,13 +30,17 @@
     {
       "aberto_em": "2026-10-31T15:16",
       "assunto": "Controle de pragas",
-      "atualizado_em": "2026-10-31T15:16",
+      "atualizado_em": "2026-10-31T15:22",
       "concluido_em": "",
       "data_ocorrencia": "2026-10-31",
       "historico": [
         {
           "data": "2026-10-31T15:16",
           "texto": "Chamado aberto, com foto do inseto enviada ao grupo."
+        },
+        {
+          "data": "2026-10-31T15:22",
+          "texto": "Novo relato no grupo: o inseto também foi visto dentro de uma unidade."
         }
       ],
       "local": "Hall dos andares",
@@ -46,6 +50,34 @@
       "responsavel": "Gerência predial",
       "solicitacao": "Presença de percevejos nos halls. Verificar com a empresa de dedetização uma solução.",
       "status": "Aberto"
+    },
+    {
+      "numero": "2026-003",
+      "assunto": "Descumprimento do RI",
+      "local": "Varandas (unidades sobrepostas)",
+      "solicitacao": "A água da lavagem de vidros e da varanda de uma unidade superior escorre e suja os vidros da varanda da unidade de baixo. Acontece aos sábados há cerca de três meses e já tinha sido relatado antes à gerência. Pedido de orientação ao morador e à equipe de serviço da unidade de origem (RI, art. 7º, alíneas d e i).",
+      "status": "Concluído",
+      "aberto_em": "2026-10-31T16:34",
+      "data_ocorrencia": "2026-10-31",
+      "responsavel": "Gestão do condomínio",
+      "previsao": "",
+      "concluido_em": "2026-10-31",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-10-31T16:34",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-10-31T17:46",
+          "texto": "A unidade de origem identificou a causa (lavagem feita por uma funcionária recém-contratada), pediu desculpas e garantiu que não vai se repetir."
+        },
+        {
+          "data": "2026-10-31T17:52",
+          "texto": "O solicitante agradeceu o retorno. Situação resolvida entre as unidades."
+        }
+      ],
+      "atualizado_em": "2026-10-31T17:55"
     }
   ]
 }
