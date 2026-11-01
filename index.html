@@ -52,11 +52,11 @@ h2{font-weight:300;text-transform:uppercase;letter-spacing:.2em;color:var(--titu
 .sub{font-style:italic;color:var(--suave);margin:0 0 18px;font-size:.95rem}
 main .wrap{padding-block:36px 64px;display:flex;flex-direction:column;gap:40px}
 .horarios{overflow-x:auto;border-radius:18px;border:1px solid var(--linha);background:var(--surface)}
-table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
 th{background:var(--verde);color:#FFE8B8;text-transform:uppercase;letter-spacing:.12em;font-weight:400;font-size:.72rem;text-align:left;padding:10px 14px;border-bottom:2px solid var(--terracota)}
 td{padding:10px 14px;border-bottom:1px solid var(--linha);vertical-align:top}
 tr:nth-child(even) td{background:color-mix(in srgb,var(--bg) 60%,var(--surface))}
-td.art{white-space:nowrap;font-size:.8rem;color:var(--suave);font-variant-numeric:tabular-nums}
+.obs{display:flex;flex-direction:column;gap:8px}.obs .tag{align-self:flex-end;white-space:normal;text-align:right;max-width:100%}
 .busca{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--linha)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .busca input{width:100%;font:inherit;font-weight:400;padding:12px 18px;border-radius:999px;border:1px solid var(--linha);background:var(--surface);color:var(--texto)}
@@ -299,17 +299,17 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   <p class="sub">O que mais perguntam na portaria.</p>
   <div class="horarios">
   <table>
-    <thead><tr><th>Assunto</th><th>Horário</th><th>Observação</th><th>Base</th></tr></thead>
+    <thead><tr><th>Assunto</th><th>Horário</th><th>Observação</th></tr></thead>
     <tbody>
-      <tr><td>Silêncio</td><td>22h às 8h</td><td>Atenção redobrada nesse período; barulho injustificado é vedado em qualquer horário</td><td class="art">RI art. 7º, h</td></tr>
-      <tr><td>Obras e reformas</td><td>Seg. a sex.: 8h–12h e 14h–18h<br>Sáb.: 8h–13h</td><td>Intervalo de 12h às 14h mantido pela AGO de 24/02/2026. Domingos e feriados, só com autorização prévia</td><td class="art">RI art. 7º, cc; art. 33, b e c; ata da AGO de 24/02/2026</td></tr>
-      <tr><td>Mudanças</td><td>Seg. a sáb.: 8h–12h e 13h–18h</td><td>Agendar com 48h de antecedência</td><td class="art">RI art. 34, a e c</td></tr>
-      <tr><td>Prestadores de serviço</td><td>Até 18h</td><td>Depois disso, só com o morador presente e sem barulho</td><td class="art">RI art. 32, b</td></tr>
-      <tr><td>Piscina com borda infinita</td><td>6h às 22h</td><td>Fechada às segundas, 14h–16h, para limpeza</td><td class="art">RI art. 17, b</td></tr>
-      <tr><td>Academia panorâmica</td><td>24 horas</td><td>Fechada às terças, 14h–15h30, para limpeza</td><td class="art">RI art. 14, f</td></tr>
-      <tr><td>Campinho e playground</td><td>6h às 22h</td><td>Campinho com reserva pelo aplicativo</td><td class="art">RI arts. 15, d, e 16</td></tr>
-      <tr><td>Brinquedoteca</td><td>7h às 22h</td><td>Acesso por reconhecimento facial</td><td class="art">RI art. 22, a</td></tr>
-      <tr><td>Salão de festas</td><td>Dom. a qui. e feriados: 9h–24h<br>Sex., sáb. e vésperas: 9h–2h</td><td>Entrega às 10h, devolução até 7h do dia seguinte</td><td class="art">RI art. 20, b e g</td></tr>
+      <tr><td>Silêncio</td><td>22h às 8h</td><td><div class="obs"><span>Atenção redobrada nesse período; barulho injustificado é vedado em qualquer horário</span><span class="tag">RI art. 7º, h</span></div></td></tr>
+      <tr><td>Obras e reformas</td><td>Seg. a sex.: 8h–12h e 14h–18h<br>Sáb.: 8h–13h</td><td><div class="obs"><span>Intervalo de 12h às 14h mantido pela AGO de 24/02/2026. Domingos e feriados, só com autorização prévia</span><span class="tag">RI art. 7º, cc; art. 33, b e c; ata da AGO de 24/02/2026</span></div></td></tr>
+      <tr><td>Mudanças</td><td>Seg. a sáb.: 8h–12h e 13h–18h</td><td><div class="obs"><span>Agendar com 48h de antecedência</span><span class="tag">RI art. 34, a e c</span></div></td></tr>
+      <tr><td>Prestadores de serviço</td><td>Até 18h</td><td><div class="obs"><span>Depois disso, só com o morador presente e sem barulho</span><span class="tag">RI art. 32, b</span></div></td></tr>
+      <tr><td>Piscina com borda infinita</td><td>6h às 22h</td><td><div class="obs"><span>Fechada às segundas, 14h–16h, para limpeza</span><span class="tag">RI art. 17, b</span></div></td></tr>
+      <tr><td>Academia panorâmica</td><td>24 horas</td><td><div class="obs"><span>Fechada às terças, 14h–15h30, para limpeza</span><span class="tag">RI art. 14, f</span></div></td></tr>
+      <tr><td>Campinho e playground</td><td>6h às 22h</td><td><div class="obs"><span>Campinho com reserva pelo aplicativo</span><span class="tag">RI arts. 15, d, e 16</span></div></td></tr>
+      <tr><td>Brinquedoteca</td><td>7h às 22h</td><td><div class="obs"><span>Acesso por reconhecimento facial</span><span class="tag">RI art. 22, a</span></div></td></tr>
+      <tr><td>Salão de festas</td><td>Dom. a qui. e feriados: 9h–24h<br>Sex., sáb. e vésperas: 9h–2h</td><td><div class="obs"><span>Entrega às 10h, devolução até 7h do dia seguinte</span><span class="tag">RI art. 20, b e g</span></div></td></tr>
     </tbody>
   </table>
   </div>
