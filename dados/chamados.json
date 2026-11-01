@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-10-31T17:55",
-  "atualizado_em": "2026-10-31T18:40",
+  "ultima_mensagem": "2026-11-01T10:47",
+  "atualizado_em": "2026-11-01T10:55",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -78,6 +78,46 @@
         }
       ],
       "atualizado_em": "2026-10-31T17:55"
+    },
+    {
+      "numero": "2026-004",
+      "assunto": "Manutenção",
+      "local": "Vazamento entre pavimentos (hall e unidade)",
+      "solicitacao": "Vazamento de água com infiltração pelo teto e pela luminária de uma unidade e água acumulada no piso do hall do andar de cima. Relato enviado com vídeos e foto; o registro de água de uma unidade do andar de cima foi fechado durante a ocorrência.",
+      "status": "Aberto",
+      "aberto_em": "2026-10-31T19:13",
+      "data_ocorrencia": "2026-10-31",
+      "responsavel": "Gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-10-31T19:13",
+          "texto": "Chamado aberto a partir de vídeos e foto enviados ao grupo. Prioridade alta: verificar a origem do vazamento, a instalação elétrica da luminária atingida e os danos."
+        }
+      ],
+      "atualizado_em": "2026-10-31T19:13"
+    },
+    {
+      "numero": "2026-005",
+      "assunto": "Segurança",
+      "local": "Garagem – espelho de segurança da rampa do G1 para o G2",
+      "solicitacao": "O espelho de segurança da rampa está virado para o chão e não fica na posição quando ajustado. Pedido para regular e fixar, por segurança de veículos e pedestres.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-01T10:47",
+      "data_ocorrencia": "2026-11-01",
+      "responsavel": "Gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-01T10:47",
+          "texto": "Chamado aberto a partir do grupo."
+        }
+      ],
+      "atualizado_em": "2026-11-01T10:47"
     }
   ]
 }
