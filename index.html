@@ -127,6 +127,11 @@ html{scroll-behavior:smooth}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--neg:#D2A898;--terra:#B98E7F;--verde-g:#4FA383}}
 :root[data-theme="dark"]{--neg:#D2A898;--terra:#B98E7F;--verde-g:#4FA383}
 [hidden]{display:none!important}
+/* Seletor de tema (claro / escuro / automático) */
+.tema-sel{display:inline-flex;gap:2px;padding:3px;border-radius:999px;border:1px solid color-mix(in srgb,var(--hero-txt) 45%,transparent);margin-top:18px;justify-self:start;align-self:flex-start;width:fit-content}
+.tema-sel button{font:inherit;font-size:.78rem;font-weight:400;letter-spacing:.04em;border:0;border-radius:999px;padding:6px 14px;background:transparent;color:var(--hero-txt);cursor:pointer}
+.tema-sel button[aria-pressed="true"]{background:var(--hero-txt);color:var(--hero)}
+.tema-sel button:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
 
 /* Aba Comunica Capiba (comunicados oficiais da gestão) */
 #comunica{gap:28px}
@@ -264,6 +269,23 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
     <p class="hero-slogan" aria-label="Faz gosto viver."><span aria-hidden="true">Faz</span><span aria-hidden="true">gosto</span><span aria-hidden="true">viver.</span></p>
   </div>
 </div>
+<script>
+(function(){
+  var KEY='capiba-tema', root=document.documentElement;
+  var host=root.getAttribute('data-theme');
+  var pref=null; try{pref=localStorage.getItem(KEY)}catch(e){}
+  function alvo(){ if(pref==='light'||pref==='dark') return pref; if(pref==='auto') return host||null; return host||'light'; }
+  function aplicar(){ var t=alvo(); if(t){ if(root.getAttribute('data-theme')!==t) root.setAttribute('data-theme',t);} else if(root.hasAttribute('data-theme')) root.removeAttribute('data-theme'); marcar(); barra(); }
+  function barra(){ var m=document.querySelector('meta[name=theme-color]'); if(!m) return; var esc=root.getAttribute('data-theme')==='dark'||(!root.hasAttribute('data-theme')&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches); m.setAttribute('content', esc?'#0B241D':'#1B6951'); }
+  if(window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener&&matchMedia('(prefers-color-scheme: dark)').addEventListener('change',barra);
+  function marcar(){ var atual=(pref==='light'||pref==='dark'||pref==='auto')?pref:(host?'auto':'light');
+    document.querySelectorAll('.tema-sel button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.tema===atual)); }); }
+  new MutationObserver(function(){ var v=root.getAttribute('data-theme'); if(v!==alvo()){ host=v; aplicar(); } }).observe(root,{attributes:true,attributeFilter:['data-theme']});
+  window.capibaTema=function(v){ pref=v; try{localStorage.setItem(KEY,v)}catch(e){} aplicar(); };
+  aplicar();
+  document.addEventListener('DOMContentLoaded',marcar);
+})();
+</script>
 <header class="hero">
   <svg class="geo" viewBox="0 0 360 300" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">
     <circle cx="360" cy="300" r="262" fill="none" stroke="#9A7264" stroke-width="1.2"/>
@@ -279,6 +301,11 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
       <p class="hero-eyebrow">Condomínio do Edifício Capiba</p>
       <h1>Portal do morador.</h1>
       <p class="lead">As regras do nosso prédio, as contas do condomínio mês a mês, o andamento das solicitações e os comunicados da gestão, num só lugar.</p>
+      <div class="tema-sel" role="group" aria-label="Aparência">
+      <button type="button" data-tema="light" onclick="capibaTema('light')">Claro</button>
+      <button type="button" data-tema="dark" onclick="capibaTema('dark')">Escuro</button>
+      <button type="button" data-tema="auto" onclick="capibaTema('auto')">Automático</button>
+    </div>
     </div>
     <nav class="abas" aria-label="Seções do portal">
       <a href="#regras" class="aba-l" data-view="regras">Regras do prédio</a>
