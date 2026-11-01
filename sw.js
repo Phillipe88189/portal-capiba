@@ -1,5 +1,5 @@
 /* Service worker do app Capiba: funciona sem internet e busca sempre a versão mais recente quando há conexão. */
-const VERSAO = 'capiba-2026-10-31-9';
+const VERSAO = 'capiba-2026-10-31-10';
 const BASE = ['./', 'index.html', 'manifest.webmanifest', 'vendor/d3.min.js', 'dados/chamados.json', 'dados/comunicados.json',
   'icones/icone-192.png', 'icones/icone-512.png', 'icones/apple-touch-icon.png', 'icones/favicon.png'];
 
@@ -22,8 +22,8 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   if (conteudo) {
-    // rede primeiro: moradores veem a atualização assim que ela é publicada
-    e.respondWith(fetch(req).then((r) => { const cp = r.clone(); caches.open(VERSAO).then((c) => c.put(req, cp)); return r; })
+    // rede primeiro, sempre conferindo com o servidor (ignora a cópia de 10 min do navegador)
+    e.respondWith(fetch(req.mode === 'navigate' ? req.url : req, {cache: 'no-cache'}).then((r) => { if (r.ok) { const cp = r.clone(); caches.open(VERSAO).then((c) => c.put(req, cp)); } return r; })
       .catch(() => caches.match(req, {ignoreSearch: true}).then((r) => r || caches.match('index.html'))));
     return;
   }
