@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-01T10:47",
-  "atualizado_em": "2026-11-01T10:55",
+  "ultima_mensagem": "2026-11-01T10:52",
+  "atualizado_em": "2026-11-01T11:08",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -100,12 +100,36 @@
       "atualizado_em": "2026-10-31T19:13"
     },
     {
-      "numero": "2026-005",
-      "assunto": "Segurança",
-      "local": "Garagem – espelho de segurança da rampa do G1 para o G2",
-      "solicitacao": "O espelho de segurança da rampa está virado para o chão e não fica na posição quando ajustado. Pedido para regular e fixar, por segurança de veículos e pedestres.",
-      "status": "Aberto",
       "aberto_em": "2026-11-01T10:47",
+      "assunto": "Segurança",
+      "atualizado_em": "2026-11-01T10:50",
+      "concluido_em": "",
+      "data_ocorrencia": "2026-11-01",
+      "historico": [
+        {
+          "data": "2026-11-01T10:47",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-01T10:50",
+          "texto": "Foto do espelho enviada ao grupo."
+        }
+      ],
+      "local": "Garagem – espelho de segurança da rampa do G1 para o G2",
+      "numero": "2026-005",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "responsavel": "Gerência predial",
+      "solicitacao": "O espelho de segurança da rampa está virado para o chão e não fica na posição quando ajustado. Pedido para regular e fixar, por segurança de veículos e pedestres.",
+      "status": "Aberto"
+    },
+    {
+      "numero": "2026-006",
+      "assunto": "Manutenção",
+      "local": "Elevador direito – porta no 22º andar",
+      "solicitacao": "A porta do elevador direito está muito lenta para fechar no 22º andar. Pedido de regulagem.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-01T10:52",
       "data_ocorrencia": "2026-11-01",
       "responsavel": "Gerência predial",
       "previsao": "",
@@ -113,11 +137,11 @@
       "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
-          "data": "2026-11-01T10:47",
-          "texto": "Chamado aberto a partir do grupo."
+          "data": "2026-11-01T10:52",
+          "texto": "Chamado aberto a partir do grupo. Encaminhar à empresa de manutenção dos elevadores."
         }
       ],
-      "atualizado_em": "2026-11-01T10:47"
+      "atualizado_em": "2026-11-01T10:52"
     }
   ]
 }
