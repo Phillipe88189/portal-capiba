@@ -127,6 +127,9 @@ html{scroll-behavior:smooth}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--neg:#D2A898;--terra:#B98E7F;--verde-g:#4FA383}}
 :root[data-theme="dark"]{--neg:#D2A898;--terra:#B98E7F;--verde-g:#4FA383}
 [hidden]{display:none!important}
+.busca-topo{display:flex;flex-direction:column;gap:8px;margin-bottom:-16px}
+.busca-topo input{width:100%;font:inherit;font-weight:400;padding:12px 18px;border-radius:999px;border:1px solid var(--linha);background:var(--surface);color:var(--texto)}
+.busca-topo input:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
 /* Seletor de tema (claro / escuro / automático) */
 .tema-sel{display:inline-flex;gap:2px;padding:3px;border-radius:999px;border:1px solid color-mix(in srgb,var(--hero-txt) 45%,transparent);margin-top:18px;justify-self:start;align-self:flex-start;width:fit-content}
 .tema-sel button{font:inherit;font-size:.78rem;font-weight:400;letter-spacing:.04em;border:0;border-radius:999px;padding:6px 14px;background:transparent;color:var(--hero-txt);cursor:pointer}
@@ -321,6 +324,11 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 <main>
 <div class="wrap view" id="regras">
 
+<div class="busca-topo">
+  <label for="q" class="sub" style="margin:0">Procure uma regra</label>
+  <input id="q" type="search" placeholder="Ex.: mudança, churrasqueira, cachorro, multa" autocomplete="off">
+</div>
+
 <section aria-labelledby="h-hor">
   <h2 id="h-hor">Horários de consulta rápida</h2>
   <p class="sub">O que mais perguntam na portaria.</p>
@@ -343,8 +351,6 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 </section>
 
 <div class="busca">
-  <label for="q" class="sub" style="margin:0">Procure uma regra</label>
-  <input id="q" type="search" placeholder="Ex.: mudança, churrasqueira, cachorro, multa" autocomplete="off">
   <nav class="chips" aria-label="Temas" id="chips"></nav>
 </div>
 
@@ -625,6 +631,7 @@ T.forEach(t=>{
 const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 document.getElementById('q').addEventListener('input',e=>{
   const q=norm(e.target.value.trim()); let any=false;
+  const hor=document.querySelector('section[aria-labelledby="h-hor"]'); if(hor) hor.hidden=!!q;
   box.querySelectorAll('section').forEach(sec=>{
     let n=0; const title=norm(sec.querySelector('h2').textContent);
     sec.querySelectorAll('li').forEach(li=>{const ok=!q||title.includes(q)||norm(li.textContent).includes(q); li.hidden=!ok; if(ok)n++;});
