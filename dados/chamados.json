@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-01T10:52",
-  "atualizado_em": "2026-11-01T11:08",
+  "ultima_mensagem": "2026-11-02T09:03",
+  "atualizado_em": "2026-11-02T09:30",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -142,6 +142,30 @@
         }
       ],
       "atualizado_em": "2026-11-01T10:52"
+    },
+    {
+      "numero": "2026-007",
+      "assunto": "Limpeza",
+      "local": "Academia panorâmica",
+      "solicitacao": "Faltava o spray de álcool para higienizar os aparelhos e os colchonetes da academia.",
+      "status": "Concluído",
+      "aberto_em": "2026-11-02T07:48",
+      "data_ocorrencia": "2026-11-02",
+      "responsavel": "Síndico",
+      "previsao": "",
+      "concluido_em": "2026-11-02",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-02T07:48",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-02T09:03",
+          "texto": "Resolvido: spray de álcool reposto na academia. Também foram reabastecidos os pontos de álcool próximos às lixeiras."
+        }
+      ],
+      "atualizado_em": "2026-11-02T09:03"
     }
   ]
 }
