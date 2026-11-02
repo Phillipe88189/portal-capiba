@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-02T07:43",
+  "atualizado_em": "2026-11-02T10:52",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -41,6 +41,21 @@
         "Faz gosto chegar em casa."
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 8º, a, b, d, h, i, k, l e m."
+    },
+    {
+      "numero": "2026-003",
+      "tipo": "aviso",
+      "categoria": "Segurança",
+      "titulo": "Eclusa com defeito: acesso só pela entrada de serviço",
+      "publicado_em": "2026-11-02T10:52",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "resumo": "Por segurança, o acesso ao prédio passa a ser feito apenas pela entrada de serviço, até o reparo da eclusa.",
+      "texto": [
+        "Bom dia, moradores. A outra porta da eclusa começou a apresentar defeito nesta manhã.",
+        "Por segurança, o acesso ao prédio será feito apenas pela entrada de serviço até que um profissional resolva o problema.",
+        "Avisaremos aqui assim que o acesso pela eclusa for normalizado. Obrigado pela compreensão."
+      ]
     }
   ]
 }
