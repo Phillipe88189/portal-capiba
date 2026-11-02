@@ -274,6 +274,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 .n-form :focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
 .n-lin{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:12px}
 .n-acoes{display:flex;flex-wrap:wrap;gap:8px}
+.n-acoes a.n-cop{text-decoration:none;display:inline-flex;align-items:center;font-size:.92rem;border-radius:999px;padding:11px 20px}
 .n-acoes button{font:inherit;font-size:.92rem;border-radius:999px;padding:11px 20px;cursor:pointer}
 .n-env{border:0;background:var(--verde);color:#FFE8B8}
 .n-cop{border:1px solid var(--linha);background:transparent;color:var(--titulo)}
@@ -447,7 +448,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 
   <section class="n-form" aria-labelledby="n-tit">
     <h2 id="n-tit">Abrir uma solicitação</h2>
-    <p class="n-aviso">Preencha e toque em <b>Enviar pelo WhatsApp</b>. A mensagem abre pronta; é só escolher o grupo <b>Reclame aqui – Solicitações</b> e enviar. Se quiser, mande uma foto logo em seguida.</p>
+    <p class="n-aviso">Preencha e toque em <b>Enviar</b>. Escolha o <b>WhatsApp</b> e o grupo <b>Reclame aqui – Solicitações</b>; a mensagem já vai pronta. Se quiser, mande uma foto logo em seguida.</p>
     <div class="n-lin">
       <label>Assunto
         <select id="n-ass"><option>Limpeza</option><option>Manutenção</option><option>Segurança</option><option>Descumprimento do RI</option><option>Controle de pragas</option><option>Outros</option></select>
@@ -459,9 +460,11 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
     <p class="n-erro" id="n-erro" hidden></p>
     <pre class="n-prev" id="n-prev" aria-label="Prévia da mensagem"></pre>
     <div class="n-acoes">
-      <button type="button" class="n-env" id="n-env">Enviar pelo WhatsApp</button>
+      <button type="button" class="n-env" id="n-env">Enviar</button>
+      <a class="n-cop" id="n-wa" href="whatsapp://send" rel="noopener">Abrir direto no WhatsApp</a>
       <button type="button" class="n-cop" id="n-cop">Copiar texto</button>
     </div>
+    <p class="n-aviso" id="n-dica" hidden>Se nada abriu: toque em <b>Copiar texto</b>, abra o grupo no WhatsApp e cole a mensagem.</p>
     <p class="n-aviso">Não cite nome nem unidade de outros moradores. Urgências (vazamento, falta de energia, segurança) vão direto à portaria, além do grupo.</p>
   </section>
 
@@ -1091,7 +1094,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
   $('n-data').value = `${hoje.getFullYear()}-${p2(hoje.getMonth() + 1)}-${p2(hoje.getDate())}`;
   const dataCurta = (v) => { const m = String(v).match(/^(\d{4})-(\d{2})-(\d{2})$/); return m ? `${m[3]}/${m[2]}/${m[1].slice(2)}` : ''; };
   const texto = () => `*Assunto*- ${$('n-ass').value}\n*Data*- ${dataCurta($('n-data').value)}\n*Local*- ${$('n-local').value.trim()}\n*Solicitação*- ${$('n-sol').value.trim()}`;
-  const prev = () => { $('n-prev').textContent = texto(); if (!$('n-erro').hidden) valida(); };
+  const prev = () => { $('n-prev').textContent = texto(); $('n-wa').href = 'whatsapp://send?text=' + encodeURIComponent(texto()); if (!$('n-erro').hidden) valida(); };
   ['n-ass', 'n-data', 'n-local', 'n-sol'].forEach((id) => $(id).addEventListener('input', prev)); prev();
   const valida = () => {
     const falta = [];
@@ -1100,7 +1103,17 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
     $('n-erro').hidden = !falta.length; $('n-erro').textContent = falta.length ? `Preencha ${falta.join(' e ')}.` : '';
     return !falta.length;
   };
-  $('n-env').addEventListener('click', () => { if (!valida()) return; location.href = 'https://wa.me/?text=' + encodeURIComponent(texto()); });
+  // 1º: compartilhamento nativo do celular (escolher WhatsApp); 2º: link direto do app WhatsApp; 3º: copiar e colar
+  $('n-env').addEventListener('click', async () => {
+    if (!valida()) return;
+    if (navigator.share) {
+      try { await navigator.share({text: texto()}); return; }
+      catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    location.href = 'whatsapp://send?text=' + encodeURIComponent(texto());
+    setTimeout(() => { if (document.visibilityState === 'visible') $('n-dica').hidden = false; }, 1800);
+  });
+  $('n-wa').addEventListener('click', (e) => { if (!valida()) { e.preventDefault(); return; } setTimeout(() => { if (document.visibilityState === 'visible') $('n-dica').hidden = false; }, 1800); });
   $('n-cop').addEventListener('click', async () => {
     if (!valida()) return;
     try { await navigator.clipboard.writeText(texto()); $('n-cop').textContent = 'Copiado'; }
