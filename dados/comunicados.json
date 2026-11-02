@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-31T20:40",
+  "atualizado_em": "2026-11-02T07:43",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -21,6 +21,26 @@
         "Faz gosto conviver."
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 7º, h; arts. 15, d; 16; 17, b; 19, c; 20, h; 22, a; art. 39. Código Civil, arts. 1.277 e 1.336, IV."
+    },
+    {
+      "numero": "2026-002",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Garagem",
+      "titulo": "Garagem: cada um na sua vaga, a 10 km/h",
+      "publicado_em": "2026-11-02T07:43",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Vaga própria, circulação livre e velocidade máxima de 10 km/h. Veja as principais regras do Regimento Interno para a nossa garagem.",
+      "texto": [
+        "Caros moradores, toda semana o Comunica Capiba traz um comunicado educativo sobre o nosso Regimento Interno. Hoje o tema é a garagem.",
+        "Cada um na sua vaga. Use apenas o número de vagas que é seu e respeite as faixas demarcadas no piso. Estacionar na vaga de outro morador, só com a concordância dele (art. 8º, a).",
+        "Espaço para todos manobrarem. Estacione de modo que os vizinhos consigam entrar, parar e sair das vagas deles. As áreas de circulação devem ficar sempre livres (art. 8º, b e d).",
+        "Devagar lá dentro. A velocidade máxima nas áreas de estacionamento e circulação é de 10 km/h (art. 8º, k). Não é permitido praticar esportes nem brincadeiras nas vagas e na circulação (art. 8º, l). Crianças devem circular pela garagem acompanhadas dos pais ou responsáveis (art. 8º, m).",
+        "Visitante na sua vaga. Você pode autorizar um visitante a usar a sua vaga, desde que avise a portaria com antecedência e informe modelo do veículo, placa, nome do motorista e telefone (art. 8º, h). Para o Regimento, visitantes são familiares e amigos. Veículos de empresas terceirizadas e de entregas não entram nessa regra (art. 8º, i).",
+        "Faz gosto chegar em casa."
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 8º, a, b, d, h, i, k, l e m."
     }
   ]
 }
