@@ -4,6 +4,7 @@ Uso:
   python3 scripts/enviar_push.py <commit_anterior> <commit_atual> [mensagem_do_commit]
   python3 scripts/enviar_push.py --comunicado 2026-003        (reenvio manual)
   python3 scripts/enviar_push.py --simular <anterior> <atual> (só mostra, não envia)
+  python3 scripts/enviar_push.py --teste                      (aviso de teste a todos os inscritos)
 
 Novidades avisadas:
   - comunicado novo ou alterado (dados/comunicados.json), exceto "notificar": false.
@@ -149,7 +150,11 @@ def main():
         for t in novidades(a[1], a[2]):
             print(' | '.join(t))
         return
-    if a and a[0] == '--comunicado':
+    if a and a[0] == '--teste':
+        av = [('Teste · Avisos do app Capiba',
+               'Este é um aviso de teste da administração. Se você recebeu, os avisos do app estão funcionando. Pode ignorar.',
+               'index.html#comunica')]
+    elif a and a[0] == '--comunicado':
         lista = (js(open('dados/comunicados.json', encoding='utf-8').read(), {}) or {}).get('comunicados', [])
         c = next((x for x in lista if x['numero'] == a[1]), None)
         if not c:

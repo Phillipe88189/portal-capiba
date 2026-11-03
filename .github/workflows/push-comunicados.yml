@@ -7,8 +7,12 @@ on:
   workflow_dispatch:
     inputs:
       numero:
-        description: 'Número do comunicado a reenviar (ex.: 2026-003)'
-        required: true
+        description: 'Número do comunicado a reenviar (ex.: 2026-003). Deixe vazio para aviso de teste.'
+        required: false
+      teste:
+        description: 'Enviar aviso de teste (ignora o número)'
+        type: boolean
+        default: false
 
 concurrency:
   group: push-app
@@ -30,8 +34,11 @@ jobs:
           ANTES: ${{ github.event.before }}
           MSG: ${{ github.event.head_commit.message }}
           NUMERO: ${{ github.event.inputs.numero }}
+          TESTE: ${{ github.event.inputs.teste }}
         run: |
-          if [ -n "$NUMERO" ]; then
+          if [ "$TESTE" = "true" ]; then
+            python3 scripts/enviar_push.py --teste
+          elif [ -n "$NUMERO" ]; then
             python3 scripts/enviar_push.py --comunicado "$NUMERO"
           else
             if [ -z "$ANTES" ] || ! git cat-file -e "$ANTES" 2>/dev/null; then ANTES=$(git rev-parse HEAD~1); fi
