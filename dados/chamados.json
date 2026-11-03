@@ -86,13 +86,17 @@
     {
       "aberto_em": "2026-10-31T19:13",
       "assunto": "Manutenção",
-      "atualizado_em": "2026-10-31T19:13",
-      "concluido_em": "",
+      "atualizado_em": "2026-11-03T12:13",
+      "concluido_em": "2026-11-03",
       "data_ocorrencia": "2026-10-31",
       "historico": [
         {
           "data": "2026-10-31T19:13",
           "texto": "Chamado aberto a partir de vídeos e foto enviados ao grupo. Prioridade alta: verificar a origem do vazamento, a instalação elétrica da luminária atingida e os danos."
+        },
+        {
+          "data": "2026-11-03T12:13",
+          "texto": "Vazamento sanado, conforme informado pela gestão."
         }
       ],
       "local": "Vazamento entre pavimentos (hall e unidade)",
@@ -101,7 +105,7 @@
       "previsao": "",
       "responsavel": "Gerência predial",
       "solicitacao": "Vazamento de água com infiltração pelo teto e pela luminária de uma unidade e água acumulada no piso do hall do andar de cima. Relato enviado com vídeos e foto; o registro de água de uma unidade do andar de cima foi fechado durante a ocorrência.",
-      "status": "Aberto"
+      "status": "Concluído"
     },
     {
       "aberto_em": "2026-11-01T10:47",
