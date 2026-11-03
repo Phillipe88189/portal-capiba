@@ -23,3 +23,9 @@ Comunicados educativos (série "Conhecendo o Regimento Interno")
   cada artigo. Status: pendente, publicado ou bloqueado (bloqueado não sai).
 - Toda semana uma tarefa agendada publica o próximo tema pendente em
   dados/comunicados.json (app) e no artefato Portal do Morador Capiba.
+
+Avisos no celular (push)
+- O morador ativa na aba Comunica Capiba ("Receber avisos no celular").
+- O GitHub envia o aviso sozinho a cada novidade publicada: comunicado novo,
+  solicitação nova ou respondida, nova prestação de contas e mudança nas regras.
+- Detalhes técnicos e convenções: CLAUDE.md.

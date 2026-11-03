@@ -481,7 +481,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 
   <section class="p-box" id="p-box" aria-labelledby="p-tit">
     <h3 id="p-tit">Avisos no celular</h3>
-    <p id="p-txt">Receba uma notificação sempre que sair um comunicado novo. O número de avisos também aparece no ícone do app.</p>
+    <p id="p-txt">Receba uma notificação a cada novidade no app: comunicados, mudanças nas regras, nova prestação de contas e solicitações novas ou respondidas. O número de avisos também aparece no ícone do app.</p>
     <div class="p-acoes">
       <button class="p-btn" id="p-ativar" type="button" hidden>Receber avisos no celular</button>
       <button class="p-btn sec" id="p-desativar" type="button" hidden>Parar de receber</button>
@@ -511,10 +511,10 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   <p><strong>Fontes.</strong> Regimento Interno do Condomínio do Edifício Capiba, aprovado na Assembleia Geral Ordinária de 24/02/2026 (art. 44). Convenção de Condomínio do Edifício Capiba, escritura pública lavrada em 13/08/2020 no 1º Tabelionato de Notas e Protesto de Jaboatão dos Guararapes (Livro 085-E, fls. 151/164) e registrada no 1º Registro de Imóveis do Recife em 25/09/2020. Código Civil, arts. 1.331 a 1.358-A.</p>
   <p>Este guia resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a administração (Convenção, art. 40; RI, art. 6º, g). Mudanças no Regimento só valem depois de aprovadas em assembleia (RI, art. 41).</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
-  <p style="margin-top:18px"><strong>Instale o app.</strong> No iPhone, abra no Safari e toque em Compartilhar › Adicionar à Tela de Início. No Android, abra no Chrome e toque no menu › Instalar app. O app é só para consulta; solicitações continuam pelo grupo de WhatsApp. Para receber avisos de novos comunicados, abra a aba Comunica Capiba e toque em “Receber avisos no celular” (no iPhone, só funciona com o app já adicionado à Tela de Início).</p>
+  <p style="margin-top:18px"><strong>Instale o app.</strong> No iPhone, abra no Safari e toque em Compartilhar › Adicionar à Tela de Início. No Android, abra no Chrome e toque no menu › Instalar app. O app é só para consulta; solicitações continuam pelo grupo de WhatsApp. Para receber avisos das novidades do app, abra a aba Comunica Capiba e toque em “Receber avisos no celular” (no iPhone, só funciona com o app já adicionado à Tela de Início).</p>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
   <p class="slogan-rodape">Faz gosto viver.</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 03/11/2026 · 1</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 03/11/2026 · 2</p>
 </div>
 </footer>
 
@@ -959,7 +959,7 @@ document.getElementById('cp').addEventListener('click',async e=>{
     const perm = OS.Notifications.permissionNative;
     const inscrito = !!(OS.User.PushSubscription.optedIn && OS.Notifications.permission);
     if (perm === 'denied') { mostra(false, false); st('As notificações estão bloqueadas neste aparelho. Libere nas configurações do celular (Notificações › Capiba) e volte aqui.'); return; }
-    if (inscrito) { mostra(false, true); st('Ativado. Você vai receber um aviso a cada comunicado novo.'); }
+    if (inscrito) { mostra(false, true); st('Ativado. Você vai receber um aviso a cada novidade no app.'); }
     else { mostra(true, false); st('Desativado.'); }
   }
 

@@ -1,9 +1,9 @@
-name: Avisos push dos comunicados
+name: Avisos push do app
 
 on:
   push:
     branches: [main]
-    paths: ['dados/comunicados.json']
+    paths: ['dados/**', 'index.html']
   workflow_dispatch:
     inputs:
       numero:
@@ -11,7 +11,7 @@ on:
         required: true
 
 concurrency:
-  group: push-comunicados
+  group: push-app
   cancel-in-progress: false
 
 jobs:
@@ -23,16 +23,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Versão anterior dos comunicados
-        run: |
-          ANTES="${{ github.event.before }}"
-          if [ -n "$ANTES" ] && [ "$ANTES" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$ANTES" 2>/dev/null; then
-            git show "$ANTES:dados/comunicados.json" > /tmp/anterior.json 2>/dev/null || : > /tmp/anterior.json
-          else
-            git show HEAD~1:dados/comunicados.json > /tmp/anterior.json 2>/dev/null || : > /tmp/anterior.json
-          fi
-      - name: Enviar avisos
+      - name: Enviar avisos das novidades
         env:
           ONESIGNAL_APP_ID: 409b77e2-8002-4409-80d6-816e93f5c787
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
-        run: python3 scripts/enviar_push.py /tmp/anterior.json dados/comunicados.json "${{ github.event.inputs.numero }}"
+          ANTES: ${{ github.event.before }}
+          MSG: ${{ github.event.head_commit.message }}
+          NUMERO: ${{ github.event.inputs.numero }}
+        run: |
+          if [ -n "$NUMERO" ]; then
+            python3 scripts/enviar_push.py --comunicado "$NUMERO"
+          else
+            if [ -z "$ANTES" ] || ! git cat-file -e "$ANTES" 2>/dev/null; then ANTES=$(git rev-parse HEAD~1); fi
+            python3 scripts/enviar_push.py "$ANTES" "$GITHUB_SHA" "$(git log --format=%B "$ANTES..$GITHUB_SHA")"
+          fi
