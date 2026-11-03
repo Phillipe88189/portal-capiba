@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-02T09:03",
-  "atualizado_em": "2026-11-02T09:30",
+  "atualizado_em": "2026-11-03T12:15",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -30,7 +30,7 @@
     {
       "aberto_em": "2026-10-31T15:16",
       "assunto": "Controle de pragas",
-      "atualizado_em": "2026-10-31T15:22",
+      "atualizado_em": "2026-11-03T12:11",
       "concluido_em": "",
       "data_ocorrencia": "2026-10-31",
       "historico": [
@@ -41,28 +41,26 @@
         {
           "data": "2026-10-31T15:22",
           "texto": "Novo relato no grupo: o inseto também foi visto dentro de uma unidade."
+        },
+        {
+          "data": "2026-11-03T12:11",
+          "texto": "Reforço da dedetização agendado com a Igarassu Dedetização para quinta-feira, 05/11/2026, às 9h, nos halls."
         }
       ],
       "local": "Hall dos andares",
       "numero": "2026-002",
       "origem": "WhatsApp – Reclame aqui",
-      "previsao": "",
-      "responsavel": "Gerência predial",
+      "previsao": "2026-11-05",
+      "responsavel": "Gerência predial e Igarassu Dedetização",
       "solicitacao": "Presença de percevejos nos halls. Verificar com a empresa de dedetização uma solução.",
-      "status": "Aberto"
+      "status": "Aguardando terceiros"
     },
     {
-      "numero": "2026-003",
-      "assunto": "Descumprimento do RI",
-      "local": "Varandas (unidades sobrepostas)",
-      "solicitacao": "A água da lavagem de vidros e da varanda de uma unidade superior escorre e suja os vidros da varanda da unidade de baixo. Acontece aos sábados há cerca de três meses e já tinha sido relatado antes à gerência. Pedido de orientação ao morador e à equipe de serviço da unidade de origem (RI, art. 7º, alíneas d e i).",
-      "status": "Concluído",
       "aberto_em": "2026-10-31T16:34",
-      "data_ocorrencia": "2026-10-31",
-      "responsavel": "Gestão do condomínio",
-      "previsao": "",
+      "assunto": "Descumprimento do RI",
+      "atualizado_em": "2026-10-31T17:55",
       "concluido_em": "2026-10-31",
-      "origem": "WhatsApp – Reclame aqui",
+      "data_ocorrencia": "2026-10-31",
       "historico": [
         {
           "data": "2026-10-31T16:34",
@@ -77,27 +75,33 @@
           "texto": "O solicitante agradeceu o retorno. Situação resolvida entre as unidades."
         }
       ],
-      "atualizado_em": "2026-10-31T17:55"
+      "local": "Varandas (unidades sobrepostas)",
+      "numero": "2026-003",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "responsavel": "Gestão do condomínio",
+      "solicitacao": "A água da lavagem de vidros e da varanda de uma unidade superior escorre e suja os vidros da varanda da unidade de baixo. Acontece aos sábados há cerca de três meses e já tinha sido relatado antes à gerência. Pedido de orientação ao morador e à equipe de serviço da unidade de origem (RI, art. 7º, alíneas d e i).",
+      "status": "Concluído"
     },
     {
-      "numero": "2026-004",
-      "assunto": "Manutenção",
-      "local": "Vazamento entre pavimentos (hall e unidade)",
-      "solicitacao": "Vazamento de água com infiltração pelo teto e pela luminária de uma unidade e água acumulada no piso do hall do andar de cima. Relato enviado com vídeos e foto; o registro de água de uma unidade do andar de cima foi fechado durante a ocorrência.",
-      "status": "Aberto",
       "aberto_em": "2026-10-31T19:13",
-      "data_ocorrencia": "2026-10-31",
-      "responsavel": "Gerência predial",
-      "previsao": "",
+      "assunto": "Manutenção",
+      "atualizado_em": "2026-10-31T19:13",
       "concluido_em": "",
-      "origem": "WhatsApp – Reclame aqui",
+      "data_ocorrencia": "2026-10-31",
       "historico": [
         {
           "data": "2026-10-31T19:13",
           "texto": "Chamado aberto a partir de vídeos e foto enviados ao grupo. Prioridade alta: verificar a origem do vazamento, a instalação elétrica da luminária atingida e os danos."
         }
       ],
-      "atualizado_em": "2026-10-31T19:13"
+      "local": "Vazamento entre pavimentos (hall e unidade)",
+      "numero": "2026-004",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "responsavel": "Gerência predial",
+      "solicitacao": "Vazamento de água com infiltração pelo teto e pela luminária de uma unidade e água acumulada no piso do hall do andar de cima. Relato enviado com vídeos e foto; o registro de água de uma unidade do andar de cima foi fechado durante a ocorrência.",
+      "status": "Aberto"
     },
     {
       "aberto_em": "2026-11-01T10:47",
@@ -124,37 +128,35 @@
       "status": "Aberto"
     },
     {
-      "numero": "2026-006",
-      "assunto": "Manutenção",
-      "local": "Elevador direito – porta no 22º andar",
-      "solicitacao": "A porta do elevador direito está muito lenta para fechar no 22º andar. Pedido de regulagem.",
-      "status": "Aberto",
       "aberto_em": "2026-11-01T10:52",
-      "data_ocorrencia": "2026-11-01",
-      "responsavel": "Gerência predial",
-      "previsao": "",
+      "assunto": "Manutenção",
+      "atualizado_em": "2026-11-03T12:11",
       "concluido_em": "",
-      "origem": "WhatsApp – Reclame aqui",
+      "data_ocorrencia": "2026-11-01",
       "historico": [
         {
           "data": "2026-11-01T10:52",
           "texto": "Chamado aberto a partir do grupo. Encaminhar à empresa de manutenção dos elevadores."
+        },
+        {
+          "data": "2026-11-03T12:11",
+          "texto": "Visita técnica solicitada à TKE (chamado TKE nº 9368170). Aguardando o técnico."
         }
       ],
-      "atualizado_em": "2026-11-01T10:52"
+      "local": "Elevador direito – porta no 22º andar",
+      "numero": "2026-006",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "responsavel": "Gerência predial e TKE (manutenção dos elevadores)",
+      "solicitacao": "A porta do elevador direito está muito lenta para fechar no 22º andar. Pedido de regulagem.",
+      "status": "Aguardando terceiros"
     },
     {
-      "numero": "2026-007",
-      "assunto": "Limpeza",
-      "local": "Academia panorâmica",
-      "solicitacao": "Faltava o spray de álcool para higienizar os aparelhos e os colchonetes da academia.",
-      "status": "Concluído",
       "aberto_em": "2026-11-02T07:48",
-      "data_ocorrencia": "2026-11-02",
-      "responsavel": "Síndico",
-      "previsao": "",
+      "assunto": "Limpeza",
+      "atualizado_em": "2026-11-02T09:03",
       "concluido_em": "2026-11-02",
-      "origem": "WhatsApp – Reclame aqui",
+      "data_ocorrencia": "2026-11-02",
       "historico": [
         {
           "data": "2026-11-02T07:48",
@@ -165,7 +167,13 @@
           "texto": "Resolvido: spray de álcool reposto na academia. Também foram reabastecidos os pontos de álcool próximos às lixeiras."
         }
       ],
-      "atualizado_em": "2026-11-02T09:03"
+      "local": "Academia panorâmica",
+      "numero": "2026-007",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "responsavel": "Síndico",
+      "solicitacao": "Faltava o spray de álcool para higienizar os aparelhos e os colchonetes da academia.",
+      "status": "Concluído"
     }
   ]
 }
