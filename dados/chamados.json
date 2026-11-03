@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-02T09:03",
-  "atualizado_em": "2026-11-03T12:15",
+  "ultima_mensagem": "2026-11-03T14:05",
+  "atualizado_em": "2026-11-03T14:40",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -110,8 +110,8 @@
     {
       "aberto_em": "2026-11-01T10:47",
       "assunto": "Segurança",
-      "atualizado_em": "2026-11-01T10:50",
-      "concluido_em": "",
+      "atualizado_em": "2026-11-03T14:04",
+      "concluido_em": "2026-11-03",
       "data_ocorrencia": "2026-11-01",
       "historico": [
         {
@@ -121,6 +121,10 @@
         {
           "data": "2026-11-01T10:50",
           "texto": "Foto do espelho enviada ao grupo."
+        },
+        {
+          "data": "2026-11-03T14:04",
+          "texto": "Espelhos ajustados e fixados de outra forma, para não soltarem mais. Se voltar a soltar, avise no grupo."
         }
       ],
       "local": "Garagem – espelho de segurança da rampa do G1 para o G2",
@@ -129,13 +133,13 @@
       "previsao": "",
       "responsavel": "Gerência predial",
       "solicitacao": "O espelho de segurança da rampa está virado para o chão e não fica na posição quando ajustado. Pedido para regular e fixar, por segurança de veículos e pedestres.",
-      "status": "Aberto"
+      "status": "Concluído"
     },
     {
       "aberto_em": "2026-11-01T10:52",
       "assunto": "Manutenção",
-      "atualizado_em": "2026-11-03T12:11",
-      "concluido_em": "",
+      "atualizado_em": "2026-11-03T14:03",
+      "concluido_em": "2026-11-03",
       "data_ocorrencia": "2026-11-01",
       "historico": [
         {
@@ -145,6 +149,10 @@
         {
           "data": "2026-11-03T12:11",
           "texto": "Visita técnica solicitada à TKE (chamado TKE nº 9368170). Aguardando o técnico."
+        },
+        {
+          "data": "2026-11-03T14:03",
+          "texto": "A TKE informou que ajustou a porta. Se o problema voltar, avise no grupo."
         }
       ],
       "local": "Elevador direito – porta no 22º andar",
@@ -153,7 +161,7 @@
       "previsao": "",
       "responsavel": "Gerência predial e TKE (manutenção dos elevadores)",
       "solicitacao": "A porta do elevador direito está muito lenta para fechar no 22º andar. Pedido de regulagem.",
-      "status": "Aguardando terceiros"
+      "status": "Concluído"
     },
     {
       "aberto_em": "2026-11-02T07:48",
@@ -178,6 +186,34 @@
       "responsavel": "Síndico",
       "solicitacao": "Faltava o spray de álcool para higienizar os aparelhos e os colchonetes da academia.",
       "status": "Concluído"
+    },
+    {
+      "numero": "2026-008",
+      "assunto": "Descumprimento do RI",
+      "local": "Pet place",
+      "solicitacao": "Fezes de animal não recolhidas no Pet place, com fotos enviadas ao grupo. Outro morador relatou o mesmo mais cedo, no mesmo dia. O RI determina que o tutor recolha as fezes imediatamente e as descarte nos locais indicados (RI, art. 21, alínea e).",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-02T17:08",
+      "data_ocorrencia": "2026-11-02",
+      "responsavel": "Síndico e gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-02T17:08",
+          "texto": "Chamado aberto a partir do grupo, com fotos."
+        },
+        {
+          "data": "2026-11-02T17:51",
+          "texto": "A gestão pediu o horário aproximado para verificar as câmeras."
+        },
+        {
+          "data": "2026-11-03T12:11",
+          "texto": "A gestão informou que a limpeza do Pet place já foi iniciada."
+        }
+      ],
+      "atualizado_em": "2026-11-03T12:11"
     }
   ]
 }
