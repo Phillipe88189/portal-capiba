@@ -6,8 +6,11 @@ Uso:
   python3 scripts/enviar_push.py --simular <anterior> <atual> (só mostra, não envia)
 
 Novidades avisadas:
-  - comunicado novo (dados/comunicados.json), exceto "notificar": false
-  - solicitação nova, mudança de situação ou nova resposta (dados/chamados.json)
+  - comunicado novo ou alterado (dados/comunicados.json), exceto "notificar": false.
+    Na alteração, o aviso usa o campo "atualizacao" do comunicado, se houver; senão, o
+    primeiro parágrafo novo do texto; senão, o resumo.
+  - solicitação nova ou com qualquer alteração (dados/chamados.json): situação, resposta
+    no histórico ou outro dado
   - nova prestação de contas mensal (mês novo em DADOS.resumo do index.html)
   - mudança no texto das Regras do prédio (seção #regras do index.html)
 Se a mensagem do commit tiver "[sem aviso]", nada é enviado (correções e ajustes visuais).
@@ -58,15 +61,29 @@ def texto_regras(html_txt):
 
 def novidades(antes, depois):
     av = []
-    # 1) Comunicados
-    ca = {c['numero'] for c in (js(ler(antes, 'dados/comunicados.json'), {}) or {}).get('comunicados', [])}
+    # 1) Comunicados: novos e alterados
+    campos = ('titulo', 'resumo', 'texto', 'atualizacao', 'categoria', 'base', 'anexo', 'encerrado')
+    ca = {c['numero']: c for c in (js(ler(antes, 'dados/comunicados.json'), {}) or {}).get('comunicados', [])}
     for c in sorted((js(ler(depois, 'dados/comunicados.json'), {}) or {}).get('comunicados', []),
                     key=lambda c: c.get('publicado_em', '')):
-        if c['numero'] in ca or c.get('notificar', True) is False:
+        if c.get('notificar', True) is False:
             continue
         rot = 'Regimento em dia' if c.get('tipo') == 'educativo' else 'Comunica Capiba'
-        av.append((f"{rot} · {c['titulo']}", corta(c.get('resumo') or 'Novo comunicado da administração.'),
-                   'index.html#comunica/' + c['numero']))
+        link = 'index.html#comunica/' + c['numero']
+        velho = ca.get(c['numero'])
+        if velho is None:
+            av.append((f"{rot} · {c['titulo']}", corta(c.get('resumo') or 'Novo comunicado da administração.'), link))
+            continue
+        if all(c.get(k) == velho.get(k) for k in campos):
+            continue
+        novos = [t for t in (c.get('texto') or []) if t not in (velho.get('texto') or [])]
+        if c.get('atualizacao') and c.get('atualizacao') != velho.get('atualizacao'):
+            corpo = c['atualizacao']
+        elif novos:
+            corpo = novos[0]
+        else:
+            corpo = c.get('resumo') or 'O comunicado foi atualizado. Confira no app.'
+        av.append((f"Atualização · {c['titulo']}", corta(corpo), link))
     # 2) Solicitações (sem nome nem unidade — LGPD)
     ant = {c['numero']: c for c in (js(ler(antes, 'dados/chamados.json'), {}) or {}).get('chamados', [])}
     for c in (js(ler(depois, 'dados/chamados.json'), {}) or {}).get('chamados', []):
@@ -75,12 +92,16 @@ def novidades(antes, depois):
         if velho is None:
             av.append((f'Nova solicitação nº {n}', corta(f"{onde}. Situação: {c.get('status', 'Aberto')}."), 'index.html#chamados'))
             continue
+        if c == velho:
+            continue
         mudou_status = c.get('status') != velho.get('status')
         nova_resp = len(c.get('historico') or []) > len(velho.get('historico') or [])
         if mudou_status or nova_resp:
             ult = (c.get('historico') or [{}])[-1].get('texto', '')
-            av.append((f"Solicitação nº {n} · {c.get('status', '')}".rstrip(' ·'),
-                       corta(ult or onde), 'index.html#chamados'))
+            corpo = ult or onde
+        else:
+            corpo = f'{onde}. Os dados da solicitação foram atualizados.' if onde else 'Os dados da solicitação foram atualizados.'
+        av.append((f"Solicitação nº {n} · {c.get('status', '')}".rstrip(' ·'), corta(corpo), 'index.html#chamados'))
     # 3) Prestação de contas
     ia, idep = ler(antes, 'index.html'), ler(depois, 'index.html')
     for mes in sorted(meses_contas(idep) - meses_contas(ia)):
@@ -133,7 +154,10 @@ def main():
         c = next((x for x in lista if x['numero'] == a[1]), None)
         if not c:
             sys.exit(f'Comunicado {a[1]} não encontrado.')
-        av = [(f"Comunica Capiba · {c['titulo']}", corta(c.get('resumo')), 'index.html#comunica/' + c['numero'])]
+        if c.get('atualizacao'):
+            av = [(f"Atualização · {c['titulo']}", corta(c['atualizacao']), 'index.html#comunica/' + c['numero'])]
+        else:
+            av = [(f"Comunica Capiba · {c['titulo']}", corta(c.get('resumo')), 'index.html#comunica/' + c['numero'])]
     else:
         if len(a) > 2 and '[sem aviso]' in a[2].lower():
             print('Commit marcado com [sem aviso]: nada enviado.')
