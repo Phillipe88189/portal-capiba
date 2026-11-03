@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-03T11:30",
+  "atualizado_em": "2026-11-03T11:45",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -46,18 +46,20 @@
       "numero": "2026-003",
       "tipo": "aviso",
       "categoria": "Segurança",
-      "titulo": "Eclusa com defeito: acesso só pela entrada de serviço",
+      "titulo": "Eclusa: acesso liberado",
       "publicado_em": "2026-11-02T10:52",
       "assinatura": "Administração do Condomínio do Edifício Capiba",
       "fixado": true,
-      "resumo": "Por segurança, o acesso ao prédio passa a ser feito apenas pela entrada de serviço, até o reparo da eclusa.",
+      "resumo": "A porta de acesso ao condomínio foi colocada e testada. O acesso pela eclusa está liberado.",
       "texto": [
         "Bom dia, moradores. A outra porta da eclusa começou a apresentar defeito nesta manhã.",
         "Por segurança, o acesso ao prédio será feito apenas pela entrada de serviço até que um profissional resolva o problema.",
         "Atualização: a equipe técnica já está no prédio fazendo a regulagem da porta.",
-        "Avisaremos aqui assim que o acesso pela eclusa for normalizado. Obrigado pela compreensão."
+        "Atualização: o serviço de colocação da porta de acesso ao condomínio foi concluído e testado. O acesso pela eclusa está liberado.",
+        "Obrigado pela compreensão de todos."
       ],
-      "atualizacao": "A equipe técnica já está no prédio fazendo a regulagem da porta da eclusa."
+      "atualizacao": "O serviço de colocação da porta de acesso ao condomínio foi concluído e testado. Acesso liberado.",
+      "valido_ate": "2026-11-03"
     }
   ]
 }
