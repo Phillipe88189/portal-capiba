@@ -15,6 +15,20 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <title>Portal do Morador Capiba</title>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+window.OneSignalDeferred = window.OneSignalDeferred || [];
+window.OneSignalDeferred.push(async function (OneSignal) {
+  await OneSignal.init({
+    appId: '409b77e2-8002-4409-80d6-816e93f5c787',
+    serviceWorkerPath: 'portal-capiba/push/onesignal/OneSignalSDKWorker.js',
+    serviceWorkerParam: { scope: '/portal-capiba/push/onesignal/' },
+    notifyButton: { enable: false },
+    autoResubscribe: true
+  });
+  window.dispatchEvent(new CustomEvent('capiba-push-pronto', { detail: OneSignal }));
+});
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400&display=swap">
 <style>
@@ -164,6 +178,17 @@ html{scroll-behavior:smooth}
 .k-anexo{align-self:flex-start;text-decoration:none;font-size:.82rem;font-weight:400;border-radius:999px;padding:8px 16px;background:var(--verde);color:#FFE8B8}
 .k-anexo:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
 .aba-l .k-badge{display:inline-block;min-width:1.4em;margin-left:6px;padding:1px 6px;border-radius:999px;background:#9A7264;color:#FFE8B8;font-size:.72rem;font-weight:600;text-align:center;font-variant-numeric:tabular-nums;letter-spacing:0}
+/* Avisos no celular (push) */
+.p-box{background:var(--surface);border:1px solid var(--linha);border-radius:0 22px 22px 22px;padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.p-box h3{margin:0;font-weight:300;font-size:.95rem;letter-spacing:.16em;text-transform:uppercase;color:var(--titulo)}
+.p-box p{margin:0}
+.p-acoes{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.p-btn{font:inherit;font-size:.86rem;border:0;border-radius:999px;padding:9px 18px;background:var(--verde);color:#FFE8B8;cursor:pointer}
+.p-btn.sec{background:transparent;color:var(--texto);border:1px solid var(--linha)}
+.p-btn:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
+.p-btn[disabled]{opacity:.55;cursor:default}
+.p-status{font-size:.86rem;font-style:italic;color:var(--suave)}
+.p-nota{font-size:.78rem;color:var(--suave)}
 /* Aba Solicitações (chamados do grupo Reclame Aqui) */
 #chamados{gap:28px}
 .h-filtros{display:flex;flex-wrap:wrap;gap:8px}
@@ -454,6 +479,17 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
     <p class="c-lead">Os avisos e comunicados oficiais da gestão sobre o que é importante no Capiba: manutenções, obras, assembleias, segurança, finanças e mudanças nas regras. Toda semana sai também um <b>comunicado educativo</b>, que explica uma regra do nosso Regimento Interno. Tudo fica guardado aqui para consulta.</p>
   </section>
 
+  <section class="p-box" id="p-box" aria-labelledby="p-tit">
+    <h3 id="p-tit">Avisos no celular</h3>
+    <p id="p-txt">Receba uma notificação sempre que sair um comunicado novo. O número de avisos também aparece no ícone do app.</p>
+    <div class="p-acoes">
+      <button class="p-btn" id="p-ativar" type="button" hidden>Receber avisos no celular</button>
+      <button class="p-btn sec" id="p-desativar" type="button" hidden>Parar de receber</button>
+      <span class="p-status" id="p-status" aria-live="polite">Verificando…</span>
+    </div>
+    <p class="p-nota">A inscrição é opcional e pode ser desfeita a qualquer momento. Não pedimos nome, unidade nem telefone. Para enviar os avisos, o condomínio usa o serviço OneSignal, que guarda apenas um código do seu aparelho.</p>
+  </section>
+
   <div class="h-filtros" role="search">
     <input id="k-q" type="search" aria-label="Buscar comunicado" placeholder="Buscar por assunto (ex.: elevador, assembleia)">
     <select id="k-cat" aria-label="Filtrar por tema"><option value="">Todos os temas</option></select>
@@ -475,10 +511,10 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   <p><strong>Fontes.</strong> Regimento Interno do Condomínio do Edifício Capiba, aprovado na Assembleia Geral Ordinária de 24/02/2026 (art. 44). Convenção de Condomínio do Edifício Capiba, escritura pública lavrada em 13/08/2020 no 1º Tabelionato de Notas e Protesto de Jaboatão dos Guararapes (Livro 085-E, fls. 151/164) e registrada no 1º Registro de Imóveis do Recife em 25/09/2020. Código Civil, arts. 1.331 a 1.358-A.</p>
   <p>Este guia resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a administração (Convenção, art. 40; RI, art. 6º, g). Mudanças no Regimento só valem depois de aprovadas em assembleia (RI, art. 41).</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
-  <p style="margin-top:18px"><strong>Instale o app.</strong> No iPhone, abra no Safari e toque em Compartilhar › Adicionar à Tela de Início. No Android, abra no Chrome e toque no menu › Instalar app. O app é só para consulta; solicitações continuam pelo grupo de WhatsApp.</p>
+  <p style="margin-top:18px"><strong>Instale o app.</strong> No iPhone, abra no Safari e toque em Compartilhar › Adicionar à Tela de Início. No Android, abra no Chrome e toque no menu › Instalar app. O app é só para consulta; solicitações continuam pelo grupo de WhatsApp. Para receber avisos de novos comunicados, abra a aba Comunica Capiba e toque em “Receber avisos no celular” (no iPhone, só funciona com o app já adicionado à Tela de Início).</p>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
   <p class="slogan-rodape">Faz gosto viver.</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 31/10/2026 · 10</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 03/11/2026 · 1</p>
 </div>
 </footer>
 
@@ -901,6 +937,52 @@ document.getElementById('cp').addEventListener('click',async e=>{
 })();
 </script>
 <script>
+/* Avisos no celular (OneSignal). */
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const instalado = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  const st = (t) => { $('p-status').textContent = t; };
+  const mostra = (ativar, desativar) => { $('p-ativar').hidden = !ativar; $('p-desativar').hidden = !desativar; };
+  let OS = null;
+
+  if (ios && !instalado) {
+    mostra(false, false);
+    st('No iPhone, primeiro adicione o app à Tela de Início (Safari › Compartilhar › Adicionar à Tela de Início). Depois abra o app pelo ícone e volte aqui.');
+    return;
+  }
+  setTimeout(() => { if (!OS) st('Não foi possível carregar o serviço de avisos agora. Tente de novo mais tarde.'); }, 15000);
+
+  function atualizar() {
+    if (!OS) return;
+    if (!OS.Notifications.isPushSupported()) { mostra(false, false); st('Este aparelho ou navegador não aceita notificações.'); return; }
+    const perm = OS.Notifications.permissionNative;
+    const inscrito = !!(OS.User.PushSubscription.optedIn && OS.Notifications.permission);
+    if (perm === 'denied') { mostra(false, false); st('As notificações estão bloqueadas neste aparelho. Libere nas configurações do celular (Notificações › Capiba) e volte aqui.'); return; }
+    if (inscrito) { mostra(false, true); st('Ativado. Você vai receber um aviso a cada comunicado novo.'); }
+    else { mostra(true, false); st('Desativado.'); }
+  }
+
+  window.addEventListener('capiba-push-pronto', (e) => {
+    OS = e.detail;
+    OS.User.PushSubscription.addEventListener('change', atualizar);
+    OS.Notifications.addEventListener('permissionChange', atualizar);
+    atualizar();
+  });
+  $('p-ativar').addEventListener('click', async () => {
+    if (!OS) return;
+    $('p-ativar').disabled = true; st('Aguardando a sua permissão…');
+    try { await OS.User.PushSubscription.optIn(); } catch (err) {}
+    $('p-ativar').disabled = false; setTimeout(atualizar, 800);
+  });
+  $('p-desativar').addEventListener('click', async () => {
+    if (!OS) return;
+    try { await OS.User.PushSubscription.optOut(); } catch (err) {}
+    setTimeout(atualizar, 500);
+  });
+})();
+</script>
+<script>
 if ('serviceWorker' in navigator) window.addEventListener('load', () => {
   navigator.serviceWorker.register('sw.js', {updateViaCache: 'none'}).then((reg) => {
     reg.update().catch(() => {});
@@ -940,6 +1022,7 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
     b.textContent = n; b.hidden = !n || aba === 'comunica';
     b.setAttribute('aria-label', `${n} ${n === 1 ? 'comunicado novo' : 'comunicados novos'}`);
     try { if ('setAppBadge' in navigator) { n ? navigator.setAppBadge(n) : navigator.clearAppBadge(); } } catch (e) {}
+    try { if (carregou && 'caches' in window) caches.open('capiba-badge').then((c) => c.put('n', new Response(String(n)))).catch(() => {}); } catch (e) {}
   }
 
   function marcarLidos() {
