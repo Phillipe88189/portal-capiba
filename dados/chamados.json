@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-03T14:05",
-  "atualizado_em": "2026-11-03T14:40",
+  "ultima_mensagem": "2026-11-04T19:37",
+  "atualizado_em": "2026-11-04T19:55",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -214,6 +214,178 @@
         }
       ],
       "atualizado_em": "2026-11-03T12:11"
+    },
+    {
+      "numero": "2026-009",
+      "assunto": "Manutenção",
+      "local": "Hall do 7º andar (próximo ao shaft)",
+      "solicitacao": "Cheiro forte de esgoto no hall, mais frequente nos últimos dias. É sentido no hall, e não dentro da unidade. O ponto mais forte fica perto do shaft.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-04T07:26",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T07:26",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-04T07:41",
+          "texto": "A gestão perguntou se outros andares têm o mesmo problema."
+        },
+        {
+          "data": "2026-11-04T08:00",
+          "texto": "A gerência predial informou que vai verificar."
+        },
+        {
+          "data": "2026-11-04T12:45",
+          "texto": "O ponto mais forte foi identificado perto do shaft. Dica de outro morador: tubulações de esgoto abertas nas unidades (por exemplo, a saída da lava-louças não instalada) podem causar o odor; vale cada unidade do andar verificar."
+        }
+      ],
+      "atualizado_em": "2026-11-04T12:45"
+    },
+    {
+      "numero": "2026-010",
+      "assunto": "Limpeza",
+      "local": "Banheiro feminino do térreo (em frente ao salão de festas)",
+      "solicitacao": "Falta de sabonete líquido. Pedido de reposição.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-04T07:47",
+      "data_ocorrencia": "2026-11-03",
+      "responsavel": "Gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T07:47",
+          "texto": "Chamado aberto a partir do grupo."
+        }
+      ],
+      "atualizado_em": "2026-11-04T07:47"
+    },
+    {
+      "numero": "2026-011",
+      "assunto": "Manutenção",
+      "local": "Unidades – tomadas de emergência (ligadas ao gerador)",
+      "solicitacao": "Tomadas de emergência de algumas unidades não funcionam. A lista das unidades afetadas foi passada à gerência predial. Pedido para cobrar da construtora o andamento do reparo, na assistência técnica.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-04T11:40",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gestão do condomínio e construtora (assistência técnica)",
+      "previsao": "2026-11-05",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T11:40",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-04T11:48",
+          "texto": "A gestão vai tratar o tema com a construtora e atualizar todos."
+        },
+        {
+          "data": "2026-11-04T12:13",
+          "texto": "A gerência predial liga o gerador para manutenção na quinta-feira, 05/11/2026, às 9h. Nesse horário, os moradores podem testar as tomadas de emergência das unidades."
+        }
+      ],
+      "atualizado_em": "2026-11-04T12:13"
+    },
+    {
+      "numero": "2026-012",
+      "assunto": "Limpeza",
+      "local": "Academia panorâmica – lixeira",
+      "solicitacao": "Lixeira da academia muito cheia, com foto enviada ao grupo.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-04T12:18",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T12:18",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-04T12:20",
+          "texto": "A gerência predial informou que vai fazer o recolhimento."
+        }
+      ],
+      "atualizado_em": "2026-11-04T12:20"
+    },
+    {
+      "numero": "2026-013",
+      "assunto": "Limpeza",
+      "local": "Portas do elevador – hall do 15º andar",
+      "solicitacao": "Portas do elevador sujas, com foto enviada ao grupo. Pedido para a equipe de limpeza passar um pano quando estiverem assim.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-04T13:04",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gerência predial",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T13:04",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-04T13:06",
+          "texto": "A gerência predial respondeu no grupo."
+        }
+      ],
+      "atualizado_em": "2026-11-04T13:06"
+    },
+    {
+      "numero": "2026-014",
+      "assunto": "Descumprimento do RI",
+      "local": "Pavimento residencial",
+      "solicitacao": "Barulho registrado em áudio por volta das 13h20, no intervalo de 12h às 14h, em que ruídos de furadeiras, martelos e similares não são permitidos (RI, art. 7º, alínea cc; intervalo mantido pela AGO de 24/02/2026). Relato de que a situação se repete.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-04T13:21",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Síndico",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T13:21",
+          "texto": "Chamado aberto a partir do grupo, com três áudios."
+        }
+      ],
+      "atualizado_em": "2026-11-04T13:21"
+    },
+    {
+      "numero": "2026-015",
+      "assunto": "Segurança",
+      "local": "Elevador social esquerdo (parou no 27º andar)",
+      "solicitacao": "O elevador parou no andar com grande desnível em relação ao piso e com o teclado bloqueado, com foto enviada ao grupo. Ao ser chamado de novo, voltou a funcionar normalmente.",
+      "status": "Aguardando terceiros",
+      "aberto_em": "2026-11-04T19:17",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gerência predial e TKE (manutenção dos elevadores)",
+      "previsao": "",
+      "concluido_em": "",
+      "origem": "WhatsApp – Reclame aqui",
+      "historico": [
+        {
+          "data": "2026-11-04T19:17",
+          "texto": "Chamado aberto a partir do grupo. Prioridade alta: desnível na parada do elevador oferece risco de queda."
+        },
+        {
+          "data": "2026-11-04T19:37",
+          "texto": "Chamado aberto na TKE (protocolo nº 9368498) para verificação."
+        }
+      ],
+      "atualizado_em": "2026-11-04T19:37"
     }
   ]
 }
