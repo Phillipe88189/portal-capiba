@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-03T11:45",
+  "atualizado_em": "2026-11-04T06:36",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -60,6 +60,22 @@
       ],
       "atualizacao": "O serviço de colocação da porta de acesso ao condomínio foi concluído e testado. Acesso liberado.",
       "valido_ate": "2026-11-03"
+    },
+    {
+      "numero": "2026-004",
+      "tipo": "aviso",
+      "categoria": "Manutenção",
+      "titulo": "Elevador social indisponível hoje pela manhã",
+      "publicado_em": "2026-11-04T06:36",
+      "assinatura": "Síndico · Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "valido_ate": "2026-11-04",
+      "resumo": "Hoje, 04/11, pela manhã, o elevador social fica parado por um tempo para a manutenção da câmera de segurança.",
+      "texto": [
+        "Bom dia, moradores. Hoje, quarta-feira, 04/11, está prevista para o período da manhã a manutenção da câmera de segurança do elevador social.",
+        "Durante o serviço, o elevador social ficará indisponível provisoriamente. Se puder, programe suas saídas e entregas levando isso em conta.",
+        "Avisaremos aqui quando o elevador voltar a funcionar. Obrigado pela compreensão."
+      ]
     }
   ]
 }
