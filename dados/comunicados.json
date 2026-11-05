@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-04T06:36",
+  "atualizado_em": "2026-11-05T07:25",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -65,16 +65,33 @@
       "numero": "2026-004",
       "tipo": "aviso",
       "categoria": "Manutenção",
-      "titulo": "Elevador social indisponível hoje pela manhã",
+      "titulo": "Elevador social: manutenção reagendada para hoje, 05/11",
       "publicado_em": "2026-11-04T06:36",
       "assinatura": "Síndico · Administração do Condomínio do Edifício Capiba",
       "fixado": true,
-      "valido_ate": "2026-11-04",
-      "resumo": "Hoje, 04/11, pela manhã, o elevador social fica parado por um tempo para a manutenção da câmera de segurança.",
+      "valido_ate": "2026-11-05",
+      "resumo": "O técnico da TKE não pôde vir ontem. A manutenção da câmera do elevador social foi reagendada para hoje, 05/11.",
       "texto": [
         "Bom dia, moradores. Hoje, quarta-feira, 04/11, está prevista para o período da manhã a manutenção da câmera de segurança do elevador social.",
         "Durante o serviço, o elevador social ficará indisponível provisoriamente. Se puder, programe suas saídas e entregas levando isso em conta.",
+        "Atualização: o técnico da TKE que faria o serviço ontem sofreu um acidente e não pôde comparecer. A manutenção foi reagendada para hoje, quinta-feira, 05/11. Durante o serviço, o elevador social pode ficar indisponível por um tempo. Desejamos pronta recuperação ao profissional.",
         "Avisaremos aqui quando o elevador voltar a funcionar. Obrigado pela compreensão."
+      ],
+      "atualizacao": "Técnico da TKE não pôde vir ontem. Manutenção do elevador social reagendada para hoje, 05/11."
+    },
+    {
+      "numero": "2026-005",
+      "tipo": "aviso",
+      "categoria": "Limpeza",
+      "titulo": "Reforço da dedetização hoje pela manhã",
+      "publicado_em": "2026-11-05T07:25",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "valido_ate": "2026-11-05",
+      "resumo": "Hoje, 05/11, no período da manhã, acontece o reforço da dedetização no prédio.",
+      "texto": [
+        "Bom dia, moradores. Hoje, quinta-feira, 05/11, no período da manhã, acontece o reforço da dedetização no prédio.",
+        "Agradecemos a colaboração de todos."
       ]
     }
   ]
