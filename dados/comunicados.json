@@ -93,6 +93,21 @@
         "Bom dia, moradores. Hoje, quinta-feira, 05/11, no período da manhã, acontece o reforço da dedetização no prédio.",
         "Agradecemos a colaboração de todos."
       ]
+    },
+    {
+      "numero": "2026-006",
+      "tipo": "aviso",
+      "categoria": "Teste",
+      "titulo": "Teste",
+      "publicado_em": "2026-11-05T12:51",
+      "atualizado_em": "2026-11-05T13:12",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "resumo": "Teste",
+      "texto": [
+        "Teste"
+      ],
+      "base": ""
     }
   ]
 }
