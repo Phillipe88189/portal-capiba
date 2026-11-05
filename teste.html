@@ -14,6 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="Capiba">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.hero .lead-dest{border-left:3px solid #A7C8C4;border-radius:0;padding:2px 0 2px 14px;max-width:44ch}.hero .lead-dest p{margin:0;font-weight:400;font-size:1rem;line-height:1.45}.hero .lead-dest .lead-sub{margin-top:3px;font-size:.86rem;font-style:italic;font-weight:300;color:#CAAE89}@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero .lead-dest{border-left-color:#349673}}:root[data-theme="dark"] .hero .lead-dest{border-left-color:#349673}@media (max-width:640px){.hero .lead-dest p{font-size:.95rem}.hero .lead-dest .lead-sub{font-size:.82rem}}
+.prefs2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:18px;max-width:420px}.sw-l{--sw-on:#A7C8C4;display:flex;align-items:center;justify-content:space-between;gap:8px;font:inherit;font-size:.82rem;font-weight:400;color:var(--hero-txt);background:color-mix(in srgb,var(--hero-txt) 10%,transparent);border:0;border-radius:0 12px 12px 12px;padding:9px 10px;cursor:pointer;text-align:left;width:100%;min-width:0}.sw-l .sw-t{display:flex;align-items:center;gap:6px;min-width:0}.sw-l .sw{width:34px;height:20px;border-radius:999px;background:color-mix(in srgb,var(--hero-txt) 28%,transparent);position:relative;flex:0 0 auto;transition:background .2s}.sw-l .sw::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--hero-txt);transition:transform .2s}.sw-l[aria-checked="true"] .sw{background:var(--sw-on)}.sw-l[aria-checked="true"] .sw::after{transform:translateX(14px)}.sw-l:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}.sw-l[disabled]{opacity:.55;cursor:default}@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sw-l{--sw-on:#349673}}:root[data-theme="dark"] .sw-l{--sw-on:#349673}@media (prefers-reduced-motion:reduce){.sw-l .sw,.sw-l .sw::after{transition:none}}
 </style>
 <title>Portal do Morador Capiba – Teste</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -304,7 +305,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   function barra(){ var m=document.querySelector('meta[name=theme-color]'); if(!m) return; var esc=root.getAttribute('data-theme')==='dark'||(!root.hasAttribute('data-theme')&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches); m.setAttribute('content', esc?'#0B241D':'#1B6951'); }
   if(window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener&&matchMedia('(prefers-color-scheme: dark)').addEventListener('change',barra);
   function marcar(){ var atual=(pref==='light'||pref==='dark'||pref==='auto')?pref:(host?'auto':'light');
-    document.querySelectorAll('.tema-sel button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.tema===atual)); }); }
+    document.querySelectorAll('.tema-sel button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.tema===atual)); }); var ts=document.getElementById('t-sw'); if(ts){ var esc=root.getAttribute('data-theme')==='dark'||(!root.hasAttribute('data-theme')&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches); ts.setAttribute('aria-checked', String(esc)); } }
   new MutationObserver(function(){ var v=root.getAttribute('data-theme'); if(v!==alvo()){ host=v; aplicar(); } }).observe(root,{attributes:true,attributeFilter:['data-theme']});
   window.capibaTema=function(v){ pref=v; try{localStorage.setItem(KEY,v)}catch(e){} aplicar(); };
   aplicar();
@@ -326,11 +327,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
       <p class="hero-eyebrow">Condomínio do Edifício Capiba</p>
       <h1>Portal do morador.</h1>
       <div class="lead-dest"><p>Regras, contas, solicitações e comunicados.</p><p class="lead-sub">Tudo do Capiba num só lugar.</p></div>
-      <div class="tema-sel" role="group" aria-label="Aparência">
-      <button type="button" data-tema="light" onclick="capibaTema('light')">Claro</button>
-      <button type="button" data-tema="dark" onclick="capibaTema('dark')">Escuro</button>
-      <button type="button" data-tema="auto" onclick="capibaTema('auto')">Automático</button>
-    </div>
+      <div class="prefs2"><button type="button" class="sw-l" id="t-sw" role="switch" aria-checked="false" onclick="capibaTema(this.getAttribute('aria-checked')==='true'?'light':'dark')"><span class="sw-t"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>Tema escuro</span><span class="sw" aria-hidden="true"></span></button></div>
     </div>
     <nav class="abas" aria-label="Seções do portal">
       <a href="#regras" class="aba-l" data-view="regras">Regras do prédio</a>
