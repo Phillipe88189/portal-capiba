@@ -290,8 +290,141 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 }
 @media (prefers-reduced-motion:reduce){.topo-fixo,.topo-fixo *{transition:none!important}}
 </style>
+<style>
+/* Identificação do morador (primeira abertura) */
+html.id-pendente body{overflow:hidden}
+.ident{position:fixed;inset:0;z-index:9999;display:none;overflow-y:auto;background:var(--verde,#1B6951);color:#FFE8B8;font-family:Mulish,-apple-system,BlinkMacSystemFont,sans-serif;padding:calc(env(safe-area-inset-top,0px) + 28px) 16px calc(env(safe-area-inset-bottom,0px) + 28px)}
+html.id-pendente .ident{display:block}
+.ident .geo{position:fixed;right:0;bottom:0;width:min(70vw,320px);height:auto;opacity:.35;pointer-events:none;z-index:0}
+.ident-in{position:relative;max-width:420px;margin:0 auto}
+.ident-marca{font-weight:200;font-size:1.9rem;letter-spacing:.02em;margin:8px 0 2px;line-height:1.1}
+.ident-marca strong{font-weight:600}
+.ident-slogan{margin:0 0 26px;font-style:italic;font-weight:300;color:#CAAE89}
+.ident h1{font:300 1.35rem/1.25 Mulish,-apple-system,BlinkMacSystemFont,sans-serif;text-transform:none;letter-spacing:normal;max-width:none;width:auto;margin:0 0 8px;padding:0;border:0;color:#FFE8B8}.ident h1::before,.ident h1::after{content:none}
+.ident p{line-height:1.5;margin:0 0 16px;font-weight:300}
+.ident form{background:color-mix(in srgb,#0F4434 55%,transparent);border-radius:0 18px 18px 18px;padding:18px 16px 20px;margin-top:6px}
+.ident label{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;margin:0 0 6px;color:#A7C8C4}
+.ident input{box-sizing:border-box;width:100%;font:inherit;font-size:1.05rem;padding:12px 14px;border:1px solid color-mix(in srgb,#FFE8B8 35%,transparent);border-radius:10px;background:#FFF6E3;color:#0F4434;margin-bottom:14px}
+.ident input:focus-visible{outline:2px solid #A7C8C4;outline-offset:2px}
+.ident input[aria-invalid="true"]{border-color:#E6A08C;outline:2px solid #E6A08C}
+.ident .id-erro{min-height:1.2em;font-size:.86rem;color:#FFD2C4;margin:-4px 0 12px;font-weight:400}
+.ident button{width:100%;font:inherit;font-size:1rem;font-weight:600;border:0;border-radius:999px;padding:13px 18px;background:#FFE8B8;color:#1B6951;cursor:pointer}
+.ident button:focus-visible{outline:2px solid #A7C8C4;outline-offset:3px}
+.ident button[disabled]{opacity:.6;cursor:default}
+.ident .id-lgpd{font-size:.8rem;opacity:.85;margin-top:16px;line-height:1.45}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ident{background:#0F2E25}}
+:root[data-theme="dark"] .ident{background:#0F2E25}
+</style>
+<script>
+/* Identificação do morador: sem cadastro neste aparelho, mostra a tela de identificação antes do conteúdo */
+(function(){ var r=null; try{ r=JSON.parse(localStorage.getItem('capiba-id')||'null'); }catch(e){}
+  if(!(r && r.apto && r.nome)) document.documentElement.classList.add('id-pendente'); })();
+</script>
 </head>
 <body>
+<div class="ident" id="ident" role="dialog" aria-modal="true" aria-labelledby="id-titulo">
+  <svg class="geo" viewBox="0 0 360 300" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">
+    <circle cx="360" cy="300" r="262" fill="none" stroke="#9A7264" stroke-width="1.2"/>
+    <circle cx="360" cy="300" r="214" fill="none" stroke="#FFE8B8" stroke-opacity=".45" stroke-width="1"/>
+    <rect x="270" y="60" width="90" height="90" fill="#A7C8C4"/>
+    <path d="M270 150 A90 90 0 0 1 360 60 V150Z" fill="#FFE8B8"/>
+    <path d="M360 150 A150 150 0 0 0 210 300 H360Z" fill="#349673"/>
+    <path d="M90 300 A60 60 0 0 1 210 300Z" fill="#CAAE89"/>
+    <path d="M210 300 V240 A60 60 0 0 1 270 300Z" fill="#9A7264"/>
+  </svg>
+  <div class="ident-in">
+    <p class="ident-marca">Edifício <strong>Capiba</strong></p>
+    <p class="ident-slogan">Faz gosto viver.</p>
+    <h1 id="id-titulo">Boas-vindas ao Portal do Morador</h1>
+    <p>Antes de começar, conte para a gestão quem está usando o app. É só uma vez neste aparelho.</p>
+    <form id="id-form" novalidate>
+      <label for="id-apto">Número do apartamento</label>
+      <input id="id-apto" name="apto" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="Ex.: 1203" required aria-describedby="id-erro">
+      <label for="id-nome">Primeiro nome</label>
+      <input id="id-nome" name="nome" autocomplete="given-name" autocapitalize="words" maxlength="30" placeholder="Ex.: Ana" required aria-describedby="id-erro">
+      <p class="id-erro" id="id-erro" role="alert"></p>
+      <button type="submit" id="id-entrar">Entrar no app</button>
+    </form>
+    <p class="id-lgpd">Usamos apenas o número do apartamento e o seu primeiro nome, para a gestão saber quem acompanha o app e organizar os avisos. Essas informações ficam só com o síndico e o subsíndico e não aparecem para outros moradores. Dúvidas: sindicocapiba@gmail.com.</p>
+  </div>
+</div>
+<script>
+/* Identificação do morador: grava apartamento e primeiro nome no aparelho, envia à planilha da gestão e marca no OneSignal */
+(() => {
+  // Endereço do Apps Script da planilha de cadastros (scripts/cadastro-moradores.gs). Vazio = ainda não configurado:
+  // o cadastro fica guardado no aparelho e é enviado na primeira abertura depois que o endereço for preenchido.
+  const REGISTRO_URL = '';
+  const CHAVE = 'capiba-id';
+  const html = document.documentElement;
+  const $ = (id) => document.getElementById(id);
+
+  const ler = () => { try { return JSON.parse(localStorage.getItem(CHAVE) || 'null'); } catch (e) { return null; } };
+  const gravar = (r) => { try { localStorage.setItem(CHAVE, JSON.stringify(r)); } catch (e) {} };
+  const novoId = () => (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'id-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+  const modo = () => (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true) ? 'App instalado' : 'Navegador';
+  const aparelho = () => {
+    const ua = navigator.userAgent;
+    if (/iPhone|iPod/.test(ua)) return 'iPhone';
+    if (/iPad/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) return 'iPad';
+    if (/Android/.test(ua)) return 'Android';
+    return 'Computador';
+  };
+
+  function aptoValido(v) {
+    if (!/^\d{3,4}$/.test(v)) return false;
+    const n = Number(v), andar = Math.floor(n / 100), final = n % 100;
+    return andar >= 1 && andar <= 35 && final >= 1 && final <= 8;
+  }
+  function limparNome(v) {
+    const p = (v || '').trim().split(/\s+/)[0] || '';
+    if (!/^[A-Za-zÀ-ÖØ-öø-ÿ'’-]{2,30}$/.test(p)) return '';
+    return p.charAt(0).toLocaleUpperCase('pt-BR') + p.slice(1).toLocaleLowerCase('pt-BR');
+  }
+
+  function marcarOneSignal(r) {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    window.OneSignalDeferred.push(async (OS) => { try { await OS.User.addTags({ apartamento: r.apto, nome: r.nome }); } catch (e) {} });
+  }
+
+  async function enviar(r) {
+    if (!REGISTRO_URL) return;
+    const m = modo();
+    try {
+      await fetch(REGISTRO_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ id: r.id, apto: r.apto, nome: r.nome, cadastro: r.cadastro, modo: m, aparelho: aparelho() }) });
+      r.enviado = true; r.modo = m; gravar(r);
+    } catch (e) { /* sem internet: tenta de novo na próxima abertura */ }
+  }
+
+  // Já identificado: envia o que estiver pendente (ou a mudança de navegador para app instalado) e mantém a marcação no OneSignal
+  const atual = ler();
+  if (atual && atual.apto && atual.nome) {
+    marcarOneSignal(atual);
+    if (!atual.enviado || atual.modo !== modo()) enviar(atual);
+    return;
+  }
+
+  const form = $('id-form'), erro = $('id-erro'), fApto = $('id-apto'), fNome = $('id-nome');
+  setTimeout(() => { try { fApto.focus({ preventScroll: true }); } catch (e) {} }, 300);
+  fApto.addEventListener('input', () => { fApto.value = fApto.value.replace(/\D/g, '').slice(0, 4); });
+
+  form.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const apto = fApto.value.replace(/\D/g, '');
+    const nome = limparNome(fNome.value);
+    fApto.setAttribute('aria-invalid', 'false'); fNome.setAttribute('aria-invalid', 'false');
+    if (!aptoValido(apto)) { erro.textContent = 'Confira o número do apartamento (ex.: 1203).'; fApto.setAttribute('aria-invalid', 'true'); fApto.focus(); return; }
+    if (!nome) { erro.textContent = 'Informe o seu primeiro nome, só com letras.'; fNome.setAttribute('aria-invalid', 'true'); fNome.focus(); return; }
+    erro.textContent = '';
+    const r = { id: novoId(), apto, nome, cadastro: new Date().toISOString(), modo: '', enviado: false };
+    gravar(r);
+    html.classList.remove('id-pendente');
+    marcarOneSignal(r);
+    enviar(r);
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
 <div class="topo-fixo">
   <div class="wrap topo-in">
       <div class="hero-marca">
@@ -505,7 +638,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 05/11/2026 · 13</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 05/11/2026 · 14</p>
 </div>
 </footer>
 
