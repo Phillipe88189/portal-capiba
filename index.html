@@ -13,7 +13,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Capiba">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.hero .lead-dest{border-left:3px solid #A7C8C4;border-radius:0;padding:2px 0 2px 14px;max-width:44ch}.hero .lead-dest p{margin:0;font-weight:400;font-size:1rem;line-height:1.45}.hero .lead-dest .lead-sub{margin-top:3px;font-size:.86rem;font-style:italic;font-weight:300;color:#CAAE89}@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero .lead-dest{border-left-color:#349673}}:root[data-theme="dark"] .hero .lead-dest{border-left-color:#349673}@media (max-width:640px){.hero .lead-dest p{font-size:.95rem}.hero .lead-dest .lead-sub{font-size:.82rem}}
+</style>
 <title>Portal do Morador Capiba</title>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
@@ -329,7 +330,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
     <div class="hero-txt">
       <p class="hero-eyebrow">Condomínio do Edifício Capiba</p>
       <h1>Portal do morador.</h1>
-      <p class="lead">As regras do nosso prédio, as contas do condomínio mês a mês, o andamento das solicitações e os comunicados da gestão, num só lugar.</p>
+      <div class="lead-dest"><p>Regras, contas, solicitações e comunicados.</p><p class="lead-sub">Tudo do Capiba num só lugar.</p></div>
       <div class="prefs">
       <div class="tema-sel" role="group" aria-label="Aparência">
       <button type="button" data-tema="light" onclick="capibaTema('light')">Claro</button>
@@ -508,7 +509,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 05/11/2026 · 8</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 05/11/2026 · 9</p>
 </div>
 </footer>
 
