@@ -253,6 +253,10 @@ html{scroll-behavior:smooth}
 .hero .hero-marca{flex:0 0 auto;width:clamp(170px,22vw,230px)}
 .hero .hero-marca .hero-logo{width:100%}
 .hero .hero-slogan{margin:4px -.5em 0 0;display:flex;flex-direction:column;font-weight:200;text-transform:uppercase;letter-spacing:.5em;line-height:1.55;font-size:clamp(1.15rem,2.7vw,2.1rem);color:var(--hero-txt);white-space:nowrap}
+/* Mensagem de impacto por aba (fórmula "Faz gosto ___." da capiba-design) */
+.impacto{margin:0 -.42em 0 0;padding:4px 0 20px;font-weight:200;text-transform:uppercase;letter-spacing:.42em;line-height:1.3;font-size:clamp(1.3rem,4.2vw,2.3rem);color:var(--titulo);text-wrap:balance;border-bottom:1px solid var(--terracota);position:relative}
+.impacto::after{content:"";position:absolute;left:0;bottom:-3px;width:64px;height:5px;background:var(--verde-vivo);border-radius:0 6px 0 0}
+@media (max-width:640px){.impacto{letter-spacing:.3em;margin-right:-.3em;font-size:1.25rem;padding-bottom:16px}}
 .slogan-rodape{margin:22px 0 0;font-style:italic;font-weight:300;letter-spacing:.06em;font-size:1rem;color:var(--titulo)}
 @media (min-width:641px){.hero .hero-slogan{height:0;overflow:visible}} /* não empurra o título para baixo */
 @media (max-width:640px){.hero .hero-marca{width:150px}.hero .hero-slogan{font-size:1rem;letter-spacing:.42em;margin-right:-.42em}}
@@ -352,6 +356,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 
 <main>
 <div class="wrap view" id="regras">
+<p class="impacto">FAZ GOSTO CONVIVER.</p>
 
 <div class="busca-topo">
   <label for="q" class="sub" style="margin:0">Procure uma regra</label>
@@ -386,6 +391,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 
 </div>
 <div class="wrap view" id="contas" hidden>
+  <p class="impacto">FAZ GOSTO PRESTAR CONTAS.</p>
   <section class="c-head">
     <h2 class="c-titulo">Contas de <span id="c-mesnome">—</span></h2>
     <div class="c-nav">
@@ -426,10 +432,11 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 
   <article class="c-card"><h3>Saldo no fim de cada mês</h3><p class="c-note">Saldo total, incluindo o fundo de reserva.</p><div class="c-chart" id="c-saldo"></div></article>
 
-  <p class="c-fonte"><strong>Fonte:</strong> prestações de contas mensais da administradora Marvan, de maio/2025 a julho/2026. Receitas, despesas e saldos seguem a versão mais recente da administradora (comparativos de 12 meses dos relatórios de maio, junho e julho/2026). Os valores seguem a data de pagamento ou recebimento; os nomes dos grupos foram simplificados. Este resumo não traz dados de unidades ou moradores, e as carteiras Pix do caixa pequeno aparecem somadas. Os demonstrativos completos, com comprovantes, podem ser consultados com a administração (RI, art. 6º, g; Convenção, art. 4º, d). <em>Faz gosto prestar contas.</em></p>
+  <p class="c-fonte"><strong>Fonte:</strong> prestações de contas mensais da administradora Marvan, de maio/2025 a julho/2026. Receitas, despesas e saldos seguem a versão mais recente da administradora (comparativos de 12 meses dos relatórios de maio, junho e julho/2026). Os valores seguem a data de pagamento ou recebimento; os nomes dos grupos foram simplificados. Este resumo não traz dados de unidades ou moradores, e as carteiras Pix do caixa pequeno aparecem somadas. Os demonstrativos completos, com comprovantes, podem ser consultados com a administração (RI, art. 6º, g; Convenção, art. 4º, d).</p>
 </div>
 
 <div class="wrap view" id="chamados" hidden>
+  <p class="impacto">FAZ GOSTO CUIDAR.</p>
   <section class="c-head">
     <h2 class="c-titulo">Solicitações dos moradores</h2>
     <p class="c-lead">Cada pedido enviado no grupo <b>Reclame aqui – Solicitações</b> vira um chamado numerado. Aqui você acompanha o andamento até a solução.</p>
@@ -475,6 +482,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
 </div>
 
 <div class="wrap view" id="comunica" hidden>
+  <p class="impacto">FAZ GOSTO PARTICIPAR.</p>
   <section class="c-head">
     <h2 class="c-titulo">Comunica Capiba</h2>
     <p class="c-lead">Os avisos e comunicados oficiais da gestão sobre o que é importante no Capiba: manutenções, obras, assembleias, segurança, finanças e mudanças nas regras. Toda semana sai também um <b>comunicado educativo</b>, que explica uma regra do nosso Regimento Interno. Tudo fica guardado aqui para consulta.</p>
@@ -504,7 +512,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--topo-h))}
   <p style="margin-top:18px"><strong>Instale o app.</strong> No iPhone, abra no Safari e toque em Compartilhar › Adicionar à Tela de Início. No Android, abra no Chrome e toque no menu › Instalar app. O app é só para consulta; solicitações continuam pelo grupo de WhatsApp. Para receber avisos das novidades do app, toque em “Ligados” em Avisos no celular, no topo do app (no iPhone, só funciona com o app já adicionado à Tela de Início). A inscrição é opcional e pode ser desfeita a qualquer momento; não pedimos nome, unidade nem telefone. Para enviar os avisos, o condomínio usa o serviço OneSignal, que guarda apenas um código do aparelho.</p>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
   <p class="slogan-rodape">Faz gosto viver.</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 05/11/2026 · 1</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 05/11/2026 · 2</p>
 </div>
 </footer>
 
