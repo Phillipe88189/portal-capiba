@@ -1,5 +1,5 @@
 /* Service worker do app Capiba: funciona sem internet e busca sempre a versão mais recente quando há conexão. */
-const VERSAO = 'capiba-2026-11-06-5';
+const VERSAO = 'capiba-2026-11-06-6';
 const BASE = ['./', 'index.html', 'manifest.webmanifest', 'vendor/d3.min.js', 'dados/chamados.json', 'dados/comunicados.json',
   'icones/icone-192.png', 'icones/icone-512.png', 'icones/apple-touch-icon.png', 'icones/favicon.png'];
 
