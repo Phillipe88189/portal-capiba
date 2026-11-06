@@ -1,35 +1,47 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-06T10:50",
+  "atualizado_em": "2026-11-06T10:55",
   "chamados": [
     {
       "numero": "2026-016",
       "assunto": "Manutenção",
       "local": "Escada de emergência – 30º andar",
       "solicitacao": "Placa da porta corta-fogo descolada.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-06T06:43",
       "data_ocorrencia": "2026-11-06",
       "responsavel": "Gerência do condomínio",
       "historico": [
-        {"data": "2026-11-06T06:43", "texto": "Solicitação registrada no grupo, com foto."},
-        {"data": "2026-11-06T07:35", "texto": "A gerência do condomínio informou que vai verificar."}
-      ]
+        {
+          "data": "2026-11-06T06:43",
+          "texto": "Solicitação registrada no grupo, com foto."
+        },
+        {
+          "data": "2026-11-06T07:35",
+          "texto": "A gerência do condomínio informou que vai verificar."
+        },
+        {
+          "data": "2026-11-06T09:12",
+          "texto": "A gerência do condomínio informou que o problema foi resolvido."
+        }
+      ],
+      "concluido_em": "2026-11-06T09:12"
     },
     {
       "numero": "2026-017",
       "assunto": "Manutenção",
       "local": "Mezanino – porta corta-fogo",
       "solicitacao": "Maçaneta da porta corta-fogo se soltando.",
-      "status": "Concluído",
+      "status": "Aberto",
       "aberto_em": "2026-11-06T07:52",
       "data_ocorrencia": "2026-11-06",
       "responsavel": "Gerência do condomínio",
-      "concluido_em": "2026-11-06T09:12",
       "historico": [
-        {"data": "2026-11-06T07:52", "texto": "Solicitação registrada no grupo."},
-        {"data": "2026-11-06T09:12", "texto": "A gerência do condomínio informou que o problema foi resolvido."}
+        {
+          "data": "2026-11-06T07:52",
+          "texto": "Solicitação registrada no grupo."
+        }
       ]
     },
     {
@@ -43,9 +55,18 @@
       "responsavel": "Gestão do condomínio",
       "concluido_em": "2026-11-06T10:41",
       "historico": [
-        {"data": "2026-11-06T10:25", "texto": "Falta de água informada por moradores no grupo."},
-        {"data": "2026-11-06T10:32", "texto": "A gestão informou que a água foi fechada durante um serviço da Vale nas bombas, sem aviso prévio ao condomínio. A gestão vai ajustar com a empresa o aviso antecipado nesses casos."},
-        {"data": "2026-11-06T10:41", "texto": "Abastecimento normalizado, confirmado por moradores."}
+        {
+          "data": "2026-11-06T10:25",
+          "texto": "Falta de água informada por moradores no grupo."
+        },
+        {
+          "data": "2026-11-06T10:32",
+          "texto": "A gestão informou que a água foi fechada durante um serviço da Vale nas bombas, sem aviso prévio ao condomínio. A gestão vai ajustar com a empresa o aviso antecipado nesses casos."
+        },
+        {
+          "data": "2026-11-06T10:41",
+          "texto": "Abastecimento normalizado, confirmado por moradores."
+        }
       ]
     }
   ]
