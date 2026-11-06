@@ -329,6 +329,15 @@ html.id-pendente .ident{display:block}
 .titulo-linha .sw-l[aria-checked="true"]{background:var(--hero-txt);color:var(--hero);border-color:var(--hero-txt)}
 .titulo-dica{margin:-4px 0 0;font-size:.82rem;opacity:.9}
 @media (max-width:640px){.hero .titulo-linha h1{letter-spacing:.16em;margin-right:0;font-size:calc((100vw - 32px - 96px) / 14);font-size:calc((100cqi - 92px) / 14)}.titulo-linha{gap:10px}.titulo-linha .sw-l{width:34px;height:34px}.titulo-linha .sw-l svg{width:16px;height:16px}}
+
+/* Títulos em uma única linha (ajuste automático ao espaço) e tema/avisos abaixo do título, à direita */
+.titulo-linha{flex-direction:column;align-items:stretch;gap:12px}
+.titulo-linha .prefs2{align-self:flex-end}
+.hero .titulo-linha h1{flex:none;width:100%;overflow:visible}
+.titulo-dica{text-align:right;margin-top:-4px!important}
+.hero .titulo-linha h1{font-size:clamp(1.6rem,4.4vw,2.6rem)!important}@media (max-width:640px){.hero .titulo-linha h1{font-size:1.9rem!important}}
+.tl-1{white-space:nowrap!important;text-wrap:nowrap!important;max-width:100%}
+.impacto.tl-1,.c-titulo.tl-1{text-wrap:nowrap!important}
 </style>
 <script>
 /* Identificação do morador: sem cadastro neste aparelho, mostra a tela de identificação antes do conteúdo */
@@ -659,7 +668,7 @@ html.id-pendente .ident{display:block}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 06/11/2026 · 2</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 06/11/2026 · 3</p>
 </div>
 </footer>
 
@@ -1275,6 +1284,29 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
   window.addEventListener('scroll', ver, {passive: true});
   try { new ResizeObserver(medir).observe(t); } catch (e) { window.addEventListener('resize', medir); }
   medir(); ver();
+})();
+</script>
+
+<script>
+/* Títulos em uma linha: reduz a fonte só o necessário para caber na largura; abaixo de 14px volta a quebrar */
+(function(){
+  var SEL='.hero h1,#id-titulo,.impacto,.view h2,.view h3';
+  var MIN=14, ro=('ResizeObserver' in window)?new ResizeObserver(function(es){es.forEach(function(e){var el=e.target,w=el.clientWidth;if(w&&+el.dataset.tlw!==w)fit(el);});}):null;
+  function fit(el){
+    var w=el.clientWidth; if(!w) return; el.dataset.tlw=w;
+    el.style.removeProperty('font-size'); el.classList.add('tl-1');
+    var fs=parseFloat(getComputedStyle(el).fontSize);
+    for(var i=0;i<4&&el.scrollWidth>el.clientWidth+1;i++){ fs=Math.floor(fs*el.clientWidth/el.scrollWidth*100)/100-.2; el.style.setProperty('font-size',fs+'px','important'); }
+    if(el.scrollWidth>el.clientWidth+1||fs<MIN){ el.classList.remove('tl-1'); el.style.removeProperty('font-size'); }
+  }
+  function todos(){ document.querySelectorAll(SEL).forEach(function(el){ if(!el.dataset.tl){ el.dataset.tl=1; if(ro) ro.observe(el);} el.dataset.tlw=''; fit(el); }); }
+  var pend=0; function agenda(){ if(pend) return; pend=requestAnimationFrame(function(){pend=0;todos();}); }
+  document.addEventListener('DOMContentLoaded',function(){
+    todos();
+    new MutationObserver(agenda).observe(document.body,{childList:true,subtree:true,characterData:true});
+    window.addEventListener('hashchange',agenda); window.addEventListener('resize',agenda);
+    if(document.fonts&&document.fonts.ready) document.fonts.ready.then(agenda);
+  });
 })();
 </script>
 </body>
