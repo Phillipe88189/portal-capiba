@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-04T19:37",
-  "atualizado_em": "2026-11-04T19:55",
+  "atualizado_em": "2026-11-06T08:30",
   "chamados": [
     {
       "aberto_em": "2026-10-31T14:09",
@@ -252,20 +252,24 @@
       "assunto": "Limpeza",
       "local": "Banheiro feminino do térreo (em frente ao salão de festas)",
       "solicitacao": "Falta de sabonete líquido. Pedido de reposição.",
-      "status": "Aberto",
+      "status": "Concluído",
       "aberto_em": "2026-11-04T07:47",
       "data_ocorrencia": "2026-11-03",
       "responsavel": "Gerência predial",
-      "previsao": "",
-      "concluido_em": "",
+      "previsao": "2026-11-06",
+      "concluido_em": "2026-11-06",
       "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
           "data": "2026-11-04T07:47",
           "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-06T08:29",
+          "texto": "Feita a reposição em todos os banheiros"
         }
       ],
-      "atualizado_em": "2026-11-04T07:47"
+      "atualizado_em": "2026-11-06T08:29"
     },
     {
       "numero": "2026-011",
@@ -300,12 +304,12 @@
       "assunto": "Limpeza",
       "local": "Academia panorâmica – lixeira",
       "solicitacao": "Lixeira da academia muito cheia, com foto enviada ao grupo.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-04T12:18",
       "data_ocorrencia": "2026-11-04",
       "responsavel": "Gerência predial",
-      "previsao": "",
-      "concluido_em": "",
+      "previsao": "2026-11-06",
+      "concluido_em": "2026-11-06",
       "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
@@ -315,21 +319,25 @@
         {
           "data": "2026-11-04T12:20",
           "texto": "A gerência predial informou que vai fazer o recolhimento."
+        },
+        {
+          "data": "2026-11-06T08:30",
+          "texto": "Recolhimento feito"
         }
       ],
-      "atualizado_em": "2026-11-04T12:20"
+      "atualizado_em": "2026-11-06T08:30"
     },
     {
       "numero": "2026-013",
       "assunto": "Limpeza",
       "local": "Portas do elevador – hall do 15º andar",
       "solicitacao": "Portas do elevador sujas, com foto enviada ao grupo. Pedido para a equipe de limpeza passar um pano quando estiverem assim.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-04T13:04",
       "data_ocorrencia": "2026-11-04",
       "responsavel": "Gerência predial",
-      "previsao": "",
-      "concluido_em": "",
+      "previsao": "2026-11-06",
+      "concluido_em": "2026-11-06",
       "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
@@ -339,41 +347,49 @@
         {
           "data": "2026-11-04T13:06",
           "texto": "A gerência predial respondeu no grupo."
+        },
+        {
+          "data": "2026-11-06T08:30",
+          "texto": "Equipe de limpeza já fez a manutenção."
         }
       ],
-      "atualizado_em": "2026-11-04T13:06"
+      "atualizado_em": "2026-11-06T08:30"
     },
     {
       "numero": "2026-014",
       "assunto": "Descumprimento do RI",
       "local": "Pavimento residencial",
       "solicitacao": "Barulho registrado em áudio por volta das 13h20, no intervalo de 12h às 14h, em que ruídos de furadeiras, martelos e similares não são permitidos (RI, art. 7º, alínea cc; intervalo mantido pela AGO de 24/02/2026). Relato de que a situação se repete.",
-      "status": "Aberto",
+      "status": "Concluído",
       "aberto_em": "2026-11-04T13:21",
       "data_ocorrencia": "2026-11-04",
-      "responsavel": "Síndico",
-      "previsao": "",
-      "concluido_em": "",
+      "responsavel": "Gerência",
+      "previsao": "2026-11-06",
+      "concluido_em": "2026-11-06",
       "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
           "data": "2026-11-04T13:21",
           "texto": "Chamado aberto a partir do grupo, com três áudios."
+        },
+        {
+          "data": "2026-11-06T08:28",
+          "texto": "Unidade já alertada sobre o horário permitido."
         }
       ],
-      "atualizado_em": "2026-11-04T13:21"
+      "atualizado_em": "2026-11-06T08:28"
     },
     {
       "numero": "2026-015",
       "assunto": "Segurança",
       "local": "Elevador social esquerdo (parou no 27º andar)",
       "solicitacao": "O elevador parou no andar com grande desnível em relação ao piso e com o teclado bloqueado, com foto enviada ao grupo. Ao ser chamado de novo, voltou a funcionar normalmente.",
-      "status": "Aguardando terceiros",
+      "status": "Concluído",
       "aberto_em": "2026-11-04T19:17",
       "data_ocorrencia": "2026-11-04",
       "responsavel": "Gerência predial e TKE (manutenção dos elevadores)",
-      "previsao": "",
-      "concluido_em": "",
+      "previsao": "2026-11-06",
+      "concluido_em": "2026-11-06",
       "origem": "WhatsApp – Reclame aqui",
       "historico": [
         {
@@ -383,9 +399,13 @@
         {
           "data": "2026-11-04T19:37",
           "texto": "Chamado aberto na TKE (protocolo nº 9368498) para verificação."
+        },
+        {
+          "data": "2026-11-06T08:30",
+          "texto": "Equipe da TKE já esteve no prédio e regularizou."
         }
       ],
-      "atualizado_em": "2026-11-04T19:37"
+      "atualizado_em": "2026-11-06T08:30"
     }
   ]
 }
