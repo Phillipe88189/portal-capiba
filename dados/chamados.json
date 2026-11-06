@@ -1,6 +1,52 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-04T19:37",
-  "atualizado_em": "2026-11-06T09:15",
-  "chamados": []
+  "ultima_mensagem": "2026-11-06T10:41",
+  "atualizado_em": "2026-11-06T10:50",
+  "chamados": [
+    {
+      "numero": "001",
+      "assunto": "Manutenção",
+      "local": "Escada de emergência – 30º andar",
+      "solicitacao": "Placa da porta corta-fogo descolada.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-06T06:43",
+      "data_ocorrencia": "2026-11-06",
+      "responsavel": "Gerência do condomínio",
+      "historico": [
+        {"data": "2026-11-06T06:43", "texto": "Solicitação registrada no grupo, com foto."},
+        {"data": "2026-11-06T07:35", "texto": "A gerência do condomínio informou que vai verificar."}
+      ]
+    },
+    {
+      "numero": "002",
+      "assunto": "Manutenção",
+      "local": "Mezanino – porta corta-fogo",
+      "solicitacao": "Maçaneta da porta corta-fogo se soltando.",
+      "status": "Concluído",
+      "aberto_em": "2026-11-06T07:52",
+      "data_ocorrencia": "2026-11-06",
+      "responsavel": "Gerência do condomínio",
+      "concluido_em": "2026-11-06T09:12",
+      "historico": [
+        {"data": "2026-11-06T07:52", "texto": "Solicitação registrada no grupo."},
+        {"data": "2026-11-06T09:12", "texto": "A gerência do condomínio informou que o problema foi resolvido."}
+      ]
+    },
+    {
+      "numero": "003",
+      "assunto": "Manutenção",
+      "local": "Abastecimento de água – apartamentos",
+      "solicitacao": "Falta de água em apartamentos.",
+      "status": "Concluído",
+      "aberto_em": "2026-11-06T10:25",
+      "data_ocorrencia": "2026-11-06",
+      "responsavel": "Gestão do condomínio",
+      "concluido_em": "2026-11-06T10:41",
+      "historico": [
+        {"data": "2026-11-06T10:25", "texto": "Falta de água informada por moradores no grupo."},
+        {"data": "2026-11-06T10:32", "texto": "A gestão informou que a água foi fechada durante um serviço da Vale nas bombas, sem aviso prévio ao condomínio. A gestão vai ajustar com a empresa o aviso antecipado nesses casos."},
+        {"data": "2026-11-06T10:41", "texto": "Abastecimento normalizado, confirmado por moradores."}
+      ]
+    }
+  ]
 }
