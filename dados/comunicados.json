@@ -1,4 +1,24 @@
 {
   "atualizado_em": "2026-11-06T09:15",
-  "comunicados": []
+  "comunicados": [
+    {
+      "numero": "2026-001",
+      "tipo": "aviso",
+      "categoria": "Institucional",
+      "titulo": "Boas-vindas ao app do Capiba",
+      "publicado_em": "2026-11-06T09:15",
+      "assinatura": "Síndico e Subsíndico · Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "resumo": "Este é o novo canal de consulta do Capiba: comunicados, regras, prestação de contas e o andamento das solicitações, num só lugar. Os grupos de WhatsApp continuam funcionando normalmente.",
+      "texto": [
+        "Caros moradores, sejam bem-vindos ao app do Edifício Capiba. Ele nasce de um compromisso da gestão eleita em 29/10/2026: comunicação aberta, regras claras e transparência nas contas.",
+        "O que você encontra aqui. Comunica Capiba: avisos e comunicados oficiais da administração, incluindo uma série semanal sobre o nosso Regimento Interno. Solicitações: o andamento dos pedidos feitos no grupo Reclame aqui – Solicitações, do registro até a solução. Regras do prédio: o Regimento Interno de forma simples, com busca por tema e os horários das áreas comuns. Prestação de contas: receitas e despesas do condomínio, mês a mês.",
+        "O app é de consulta. Você acompanha tudo por aqui, e as informações são atualizadas pela gestão. Por isso, não é possível enviar mensagens ou pedidos pelo app.",
+        "O app não substitui os grupos de WhatsApp. Eles continuam sendo o lugar para conversar, tirar dúvidas e fazer pedidos. Para registrar uma solicitação, mande sua mensagem no grupo Reclame aqui – Solicitações: ela vira um chamado numerado, e você acompanha cada etapa na aba Solicitações. Em situações de emergência, procure a portaria.",
+        "Ative os avisos no celular, no botão de sino no topo do app, para saber na hora quando houver comunicado novo, prestação de contas nova ou atualização nas solicitações.",
+        "O app está começando e vai melhorar com a participação de todos. Sugestões são bem-vindas nos grupos ou diretamente com a gestão.",
+        "Faz gosto morar aqui"
+      ]
+    }
+  ]
 }
