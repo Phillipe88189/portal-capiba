@@ -187,6 +187,11 @@ html{scroll-behavior:smooth}
 .k-anexo:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
 .aba-l .k-badge{display:inline-block;min-width:1.4em;margin-left:6px;padding:1px 6px;border-radius:999px;background:#9A7264;color:#FFE8B8;font-size:.72rem;font-weight:600;text-align:center;font-variant-numeric:tabular-nums;letter-spacing:0}
 /* Aba Solicitações (chamados do grupo Reclame Aqui) */
+.h-kf{font:inherit;color:inherit;text-align:left;cursor:pointer;transition:border-color .15s,background .15s}
+.h-kf:hover{border-color:var(--verde-vivo)}
+.h-kf:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
+.h-kf[aria-pressed="true"]{border-color:var(--verde-vivo);box-shadow:inset 0 0 0 1px var(--verde-vivo);background:color-mix(in srgb,var(--surface) 82%,var(--verde-vivo))}
+.h-kf[aria-pressed="true"] .c-tl{color:var(--titulo);font-weight:600}
 #chamados{gap:28px}
 .h-filtros{display:flex;flex-wrap:wrap;gap:8px}
 .h-filtros input,.h-filtros select{font:inherit;font-weight:400;font-size:.92rem;padding:9px 16px;border-radius:999px;border:1px solid var(--linha);background:var(--surface);color:var(--texto);min-width:0}
@@ -618,9 +623,9 @@ html.id-pendente .ident{display:block}
   </section>
 
   <div class="c-tiles" aria-live="polite">
-    <div class="c-tile"><p class="c-tl">Chamados</p><p class="c-tv" id="h-k-total">—</p><p class="c-tn">desde 30/10/2026</p></div>
-    <div class="c-tile"><p class="c-tl">Em aberto</p><p class="c-tv" id="h-k-abertos">—</p><p class="c-tn">aberto, em andamento ou aguardando terceiros</p></div>
-    <div class="c-tile"><p class="c-tl">Concluídos</p><p class="c-tv" id="h-k-concl">—</p><p class="c-tn" id="h-k-concl-n">&nbsp;</p></div>
+    <button type="button" class="c-tile h-kf" data-sit="" aria-pressed="true" aria-label="Mostrar todos os chamados"><p class="c-tl">Chamados</p><p class="c-tv" id="h-k-total">—</p><p class="c-tn">desde 30/10/2026</p></button>
+    <button type="button" class="c-tile h-kf" data-sit="__abertos" aria-pressed="false" aria-label="Mostrar só os chamados em aberto"><p class="c-tl">Em aberto</p><p class="c-tv" id="h-k-abertos">—</p><p class="c-tn">aberto, em andamento ou aguardando terceiros</p></button>
+    <button type="button" class="c-tile h-kf" data-sit="Concluído" aria-pressed="false" aria-label="Mostrar só os chamados concluídos"><p class="c-tl">Concluídos</p><p class="c-tv" id="h-k-concl">—</p><p class="c-tn" id="h-k-concl-n">&nbsp;</p></button>
   </div>
 
   <div class="h-filtros" role="search">
@@ -685,7 +690,7 @@ html.id-pendente .ident{display:block}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 06/11/2026 · 9</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 06/11/2026 · 10</p>
 </div>
 </footer>
 
@@ -1047,6 +1052,7 @@ document.getElementById('cp').addEventListener('click',async e=>{
     $('h-k-total').textContent = carregou ? lista.length : '—';
     $('h-k-abertos').textContent = carregou ? ab : '—';
     $('h-k-concl').textContent = carregou ? co : '—';
+    document.querySelectorAll('.h-kf').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.sit === fs)));
     $('h-k-concl-n').textContent = carregou && lista.length ? `${Math.round(co / lista.length * 100)}% do total` : ' ';
     const sel = $('h-ass'), atual = sel.value, assuntos = [...new Set(lista.map((c) => c.assunto).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
     sel.replaceChildren(new Option('Todos os assuntos', ''), ...assuntos.map((a) => new Option(a, a)));
@@ -1085,6 +1091,10 @@ document.getElementById('cp').addEventListener('click',async e=>{
   }
 
   ['h-q', 'h-ass', 'h-sit'].forEach((id) => $(id).addEventListener('input', render));
+  document.querySelectorAll('.h-kf').forEach((b) => b.addEventListener('click', () => {
+    const s = $('h-sit'); s.value = (s.value === b.dataset.sit) ? '' : b.dataset.sit; render();
+    $('h-lista').scrollIntoView({behavior: 'smooth', block: 'start'});
+  }));
 
   // Sempre busca a versão mais recente (sem cache do navegador nem da hospedagem).
   let ultimaBusca = 0;
