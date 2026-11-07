@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-07T09:05",
+  "atualizado_em": "2026-11-07T09:25",
   "chamados": [
     {
       "numero": "2026-016",
@@ -82,6 +82,22 @@
         {
           "data": "2026-11-07T09:05",
           "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação e troca das lâmpadas."
+        }
+      ]
+    },
+    {
+      "numero": "2026-020",
+      "assunto": "Manutenção",
+      "local": "Portas de vidro – eclusa e hall dos elevadores",
+      "solicitacao": "Puxadores das portas de vidro da eclusa e do hall dos elevadores com o acabamento descascando. Verificar e recuperar ou substituir os puxadores.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-07T09:25",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Gerência do condomínio",
+      "historico": [
+        {
+          "data": "2026-11-07T09:25",
+          "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação dos puxadores."
         }
       ]
     }
