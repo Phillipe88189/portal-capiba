@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-06T10:55",
+  "atualizado_em": "2026-11-07T09:05",
   "chamados": [
     {
       "numero": "2026-016",
@@ -66,6 +66,22 @@
         {
           "data": "2026-11-06T10:41",
           "texto": "Abastecimento normalizado, confirmado por moradores."
+        }
+      ]
+    },
+    {
+      "numero": "2026-019",
+      "assunto": "Manutenção",
+      "local": "Hall de entrada – iluminação",
+      "solicitacao": "Lâmpadas de LED queimadas na iluminação do hall de entrada. Verificar e substituir as lâmpadas com defeito.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-07T09:05",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Gerência do condomínio",
+      "historico": [
+        {
+          "data": "2026-11-07T09:05",
+          "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação e troca das lâmpadas."
         }
       ]
     }
