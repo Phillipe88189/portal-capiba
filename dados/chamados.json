@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-07T09:32",
+  "atualizado_em": "2026-11-07T09:35",
   "chamados": [
     {
       "numero": "2026-016",
@@ -138,6 +138,26 @@
         {
           "data": "2026-11-07T09:32",
           "texto": "A gestão vai pedir orçamento à Brinquedolândia, fornecedora das lixeiras de madeira do condomínio, para a fabricação das tampas."
+        }
+      ]
+    },
+    {
+      "numero": "2026-023",
+      "assunto": "Manutenção",
+      "local": "Sistema de irrigação – todo o prédio",
+      "solicitacao": "Sistema de irrigação desregulado em alguns pontos do prédio.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-07T09:35",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Gestão do condomínio",
+      "historico": [
+        {
+          "data": "2026-11-07T09:35",
+          "texto": "Solicitação registrada."
+        },
+        {
+          "data": "2026-11-07T09:35",
+          "texto": "A gestão vai se reunir com a equipe de jardinagem para avaliar o sistema e acionar a empresa responsável para regular a irrigação. Até a regulagem, os locais com o sistema desregulado serão irrigados manualmente."
         }
       ]
     }
