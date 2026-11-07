@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-07T09:30",
+  "atualizado_em": "2026-11-07T09:32",
   "chamados": [
     {
       "numero": "2026-016",
@@ -118,6 +118,26 @@
         {
           "data": "2026-11-07T09:30",
           "texto": "A gestão informou que a Vale está instalando a gaveta de encomendas na eclusa. Concluída a instalação, a própria construtora fará a pintura do local."
+        }
+      ]
+    },
+    {
+      "numero": "2026-022",
+      "assunto": "Melhoria",
+      "local": "Lixeiras de madeira – áreas comuns",
+      "solicitacao": "Sugestão de instalar tampas nas lixeiras de madeira das áreas comuns, para evitar acúmulo de água da chuva e a proliferação de mosquitos.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-07T09:32",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Gestão do condomínio",
+      "historico": [
+        {
+          "data": "2026-11-07T09:32",
+          "texto": "Sugestão registrada por moradora."
+        },
+        {
+          "data": "2026-11-07T09:32",
+          "texto": "A gestão vai pedir orçamento à Brinquedolândia, fornecedora das lixeiras de madeira do condomínio, para a fabricação das tampas."
         }
       ]
     }
