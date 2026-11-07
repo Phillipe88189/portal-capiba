@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-07T09:47",
+  "atualizado_em": "2026-11-07T15:35",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -39,6 +39,25 @@
         "Faz gosto chegar em casa com segurança."
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 8º, h, i, k e w; art. 32, a e h."
+    },
+    {
+      "numero": "2026-003",
+      "tipo": "aviso",
+      "categoria": "Convivência",
+      "titulo": "Barulho: um pedido de colaboração",
+      "publicado_em": "2026-11-07T15:35",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "resumo": "Um pedido a todos os moradores: evite arrastar móveis e outros barulhos que chegam aos vizinhos, sobretudo nos horários de descanso. Veja dicas simples e os horários do Regimento.",
+      "texto": [
+        "Caros moradores, recebemos pelo grupo Reclame aqui – Solicitações um pedido de colaboração sobre barulho entre andares. Em prédio, o som de um apartamento chega fácil às unidades vizinhas, principalmente às de baixo. Muitas vezes, quem faz o barulho nem percebe.",
+        "Pequenos cuidados fazem diferença. Ao mudar móveis e cadeiras de lugar, levante em vez de arrastar, e use protetores de feltro ou borracha nos pés. Também ajudam: evitar salto e calçado duro dentro de casa, objetos caindo no piso, bolas e brinquedos que quicam, e portas batendo.",
+        "Atenção aos horários de descanso. O Regimento Interno pede que ninguém faça barulho que comprometa o sossego dos vizinhos, em qualquer horário, com atenção especial das 22h às 8h (art. 7º, h). Durante o dia também há quem trabalhe em casa, descanse ou tenha crianças pequenas e idosos dormindo.",
+        "Obras e reformas têm hora certa. Furadeira, martelo e ferramentas parecidas só podem ser usados de segunda a sexta, das 8h às 12h e das 14h às 18h, e aos sábados, das 8h às 13h (art. 7º, cc). Fora desses horários, não.",
+        "Se o barulho incomodar, converse com o vizinho com cordialidade ou registre no grupo Reclame aqui – Solicitações. A gestão faz o contato com a unidade de forma reservada, sem expor ninguém.",
+        "Faz gosto morar em paz"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 1º; art. 7º, h e cc."
     }
   ]
 }

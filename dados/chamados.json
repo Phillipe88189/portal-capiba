@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-07T14:43",
-  "atualizado_em": "2026-11-07T15:05",
+  "atualizado_em": "2026-11-07T15:35",
   "chamados": [
     {
       "numero": "2026-016",
@@ -171,7 +171,7 @@
       "assunto": "Convivência",
       "local": "Unidades – barulho entre andares",
       "solicitacao": "Pedido de colaboração aos vizinhos do andar de cima para evitar arrastar móveis, principalmente no horário de descanso da tarde e cedo pela manhã, pois o barulho chega com força à unidade de baixo. O Regimento Interno pede que se evite barulho que comprometa o sossego dos vizinhos, em qualquer horário (RI, art. 7º, alínea h).",
-      "status": "Aberto",
+      "status": "Concluído",
       "aberto_em": "2026-11-06T14:06",
       "data_ocorrencia": "2026-11-06",
       "responsavel": "Gestão do condomínio",
@@ -179,8 +179,13 @@
         {
           "data": "2026-11-06T14:06",
           "texto": "Solicitação registrada no grupo, com pedido de colaboração aos vizinhos do andar de cima."
+        },
+        {
+          "data": "2026-11-07T15:35",
+          "texto": "Tema tratado no Comunica Capiba nº 2026-003 (Barulho: um pedido de colaboração). A gerência fará o contato reservado com a unidade."
         }
-      ]
+      ],
+      "concluido_em": "2026-11-07T15:35"
     },
     {
       "numero": "2026-025",
