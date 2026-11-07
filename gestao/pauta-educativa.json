@@ -9,7 +9,8 @@
       "artigos": [
         "7º, h"
       ],
-      "status": "pendente"
+      "status": "bloqueado",
+      "observacao": "Tema sem o campo \"trechos\" na pauta: não há o texto literal do art. 7º, h do RI para redigir o comunicado. Bloqueado na rodada automática de 07/11/2026. Para liberar, incluir em \"trechos\" o texto literal do art. 7º, h (e de outro dispositivo que fixe horário de silêncio, se houver) e voltar o status para \"pendente\"."
     },
     {
       "ordem": 2,
