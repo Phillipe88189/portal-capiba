@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-07T09:25",
+  "atualizado_em": "2026-11-07T09:30",
   "chamados": [
     {
       "numero": "2026-016",
@@ -98,6 +98,26 @@
         {
           "data": "2026-11-07T09:25",
           "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação dos puxadores."
+        }
+      ]
+    },
+    {
+      "numero": "2026-021",
+      "assunto": "Manutenção",
+      "local": "Eclusa – pintura",
+      "solicitacao": "Pintura da eclusa danificada.",
+      "status": "Aguardando terceiros",
+      "aberto_em": "2026-11-07T09:30",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Construtora (Vale)",
+      "historico": [
+        {
+          "data": "2026-11-07T09:30",
+          "texto": "Solicitação registrada por moradora."
+        },
+        {
+          "data": "2026-11-07T09:30",
+          "texto": "A gestão informou que a Vale está instalando a gaveta de encomendas na eclusa. Concluída a instalação, a própria construtora fará a pintura do local."
         }
       ]
     }
