@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T09:15",
+  "atualizado_em": "2026-11-07T09:47",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -19,6 +19,26 @@
         "O app está começando e vai melhorar com a participação de todos. Sugestões são bem-vindas nos grupos ou diretamente com a gestão.",
         "Faz gosto morar aqui"
       ]
+    },
+    {
+      "numero": "2026-002",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Segurança",
+      "titulo": "Garagem: só entra quem é identificado",
+      "publicado_em": "2026-11-07T09:47",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "A portaria só libera a entrada na garagem de veículos identificados e autorizados. Veja quem pode entrar e como avisar a chegada do seu visitante.",
+      "texto": [
+        "Caros moradores, toda semana o Comunica Capiba traz um comunicado educativo sobre o nosso Regimento Interno. Hoje o tema é a entrada de veículos na garagem: por que a portaria não libera carro sem identificação.",
+        "A regra protege todos nós. Saber quem entra dificulta o acesso de estranhos, mantém as vagas livres para os moradores e deixa a circulação mais segura para quem anda e para quem dirige.",
+        "Visitante, só com o seu aviso. A entrada de quem não mora no prédio depende da autorização do morador responsável (art. 32, a). Seu visitante pode usar a sua vaga, desde que você avise a portaria com antecedência e informe modelo do veículo, placa, nome do motorista e telefone (art. 8º, h).",
+        "Terceirizados e entregas não entram na garagem. Para o Regimento, visitantes são apenas familiares e amigos (art. 8º, i). Como o condomínio não tem vagas de carga e descarga, veículos de terceirizados não entram na garagem, nem mesmo para carregar ou descarregar (art. 8º, w).",
+        "Táxi e carro de aplicativo também ficam do lado de fora, salvo em situação excepcional: nesse caso, avise a portaria com antecedência e justifique a necessidade de assistência (art. 32, h). Lá dentro, a velocidade máxima é de 10 km/h (art. 8º, k).",
+        "Faz gosto chegar em casa com segurança."
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 8º, h, i, k e w; art. 32, a e h."
     }
   ]
 }
