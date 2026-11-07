@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-07T15:35",
+  "atualizado_em": "2026-11-07T19:08",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -58,6 +58,20 @@
         "Faz gosto morar em paz"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 1º; art. 7º, h e cc."
+    },
+    {
+      "numero": "2026-004",
+      "tipo": "aviso",
+      "categoria": "Natal",
+      "titulo": "Montagem dos enfeites de Natal",
+      "publicado_em": "2026-11-07T19:08",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "resumo": "Sábado, 14/11, das 9h às 11h30: montagem da árvore de Natal e das decorações do Capiba, com as nossas crianças. Todos estão convidados a colaborar.",
+      "texto": [
+        "Caros vizinhos, no próximo sábado, dia 14/11, vamos nos reunir com as nossas crianças para montar a árvore de Natal do Capiba e as decorações natalinas. Todos estão convidados a colaborar e a fazer desse momento algo especial.",
+        "Sábado, 14/11/2026, às 9h, com término previsto para as 11h30."
+      ]
     }
   ]
 }
