@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-06T10:41",
-  "atualizado_em": "2026-11-07T09:35",
+  "ultima_mensagem": "2026-11-07T14:43",
+  "atualizado_em": "2026-11-07T15:05",
   "chamados": [
     {
       "numero": "2026-016",
@@ -33,7 +33,7 @@
       "assunto": "Manutenção",
       "local": "Mezanino – porta corta-fogo",
       "solicitacao": "Maçaneta da porta corta-fogo se soltando.",
-      "status": "Aberto",
+      "status": "Em andamento",
       "aberto_em": "2026-11-06T07:52",
       "data_ocorrencia": "2026-11-06",
       "responsavel": "Gerência do condomínio",
@@ -41,8 +41,13 @@
         {
           "data": "2026-11-06T07:52",
           "texto": "Solicitação registrada no grupo."
+        },
+        {
+          "data": "2026-11-06T14:11",
+          "texto": "A gerência informou que um técnico virá ao condomínio na segunda-feira, 09/11/2026, para fazer o conserto."
         }
-      ]
+      ],
+      "previsao": "2026-11-09"
     },
     {
       "numero": "2026-018",
@@ -158,6 +163,87 @@
         {
           "data": "2026-11-07T09:35",
           "texto": "A gestão vai se reunir com a equipe de jardinagem para avaliar o sistema e acionar a empresa responsável para regular a irrigação. Até a regulagem, os locais com o sistema desregulado serão irrigados manualmente."
+        }
+      ]
+    },
+    {
+      "numero": "2026-024",
+      "assunto": "Convivência",
+      "local": "Unidades – barulho entre andares",
+      "solicitacao": "Pedido de colaboração aos vizinhos do andar de cima para evitar arrastar móveis, principalmente no horário de descanso da tarde e cedo pela manhã, pois o barulho chega com força à unidade de baixo. O Regimento Interno pede que se evite barulho que comprometa o sossego dos vizinhos, em qualquer horário (RI, art. 7º, alínea h).",
+      "status": "Aberto",
+      "aberto_em": "2026-11-06T14:06",
+      "data_ocorrencia": "2026-11-06",
+      "responsavel": "Gestão do condomínio",
+      "historico": [
+        {
+          "data": "2026-11-06T14:06",
+          "texto": "Solicitação registrada no grupo, com pedido de colaboração aos vizinhos do andar de cima."
+        }
+      ]
+    },
+    {
+      "numero": "2026-025",
+      "assunto": "Manutenção",
+      "local": "Unidades – tomadas de emergência (ligadas ao gerador)",
+      "solicitacao": "Moradores de vários andares relatam que as tomadas de emergência das unidades não funcionaram no teste com o gerador nem em falta de energia, mesmo com o disjuntor da tomada ligado. Há relatos de que funcionavam antes de alterações feitas pela construtora (Vale) nas instalações do prédio.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-07T11:20",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Gestão do condomínio e construtora (Vale)",
+      "previsao": "2026-11-09",
+      "historico": [
+        {
+          "data": "2026-11-07T11:20",
+          "texto": "Solicitação registrada no grupo: tomada de emergência não funcionou no horário do teste com o gerador."
+        },
+        {
+          "data": "2026-11-07T11:23",
+          "texto": "A gestão vai verificar o disjuntor externo da unidade. Na segunda-feira, 09/11/2026, a gerência confirma o horário do teste e, se for o caso, o tema segue para a Vale."
+        },
+        {
+          "data": "2026-11-07T11:29",
+          "texto": "Orientação da gestão: cada tomada de emergência tem um disjuntor próprio, no quadro ao lado da porta do apartamento final 01 de cada andar. Em unidades que estavam desocupadas, muitos desses disjuntores estavam desligados."
+        },
+        {
+          "data": "2026-11-07T12:29",
+          "texto": "Outros moradores informaram que, mesmo com o disjuntor ligado, a tomada não funcionou em falta de energia e que funcionava antes das alterações feitas pela Vale."
+        },
+        {
+          "data": "2026-11-07T12:38",
+          "texto": "A gestão vai cobrar a Vale na reunião de segunda-feira, 09/11/2026, e atualizará os moradores."
+        },
+        {
+          "data": "2026-11-07T13:24",
+          "texto": "A gestão explicou que ligar todas as unidades ao gerador ao mesmo tempo (bypass geral) não é viável, pois o gerador não suportaria a carga de todos os apartamentos. Moradores sugeriram que a tomada de emergência fique na energia normal e passe sozinha para o gerador quando faltar energia."
+        },
+        {
+          "data": "2026-11-07T13:50",
+          "texto": "A gestão vai confirmar a viabilidade técnica dessa solução com apoio de profissional da área e levar o tema à Vale com dados técnicos."
+        }
+      ]
+    },
+    {
+      "numero": "2026-026",
+      "assunto": "Manutenção",
+      "local": "Unidade residencial – vazamento vindo do andar de cima",
+      "solicitacao": "Vazamento vindo da unidade de cima, com dano no teto da sala.",
+      "status": "Aguardando terceiros",
+      "aberto_em": "2026-11-07T12:41",
+      "data_ocorrencia": "2026-11-07",
+      "responsavel": "Construtora (Vale) e gestão do condomínio",
+      "historico": [
+        {
+          "data": "2026-11-07T12:41",
+          "texto": "Solicitação registrada no grupo, com vídeo."
+        },
+        {
+          "data": "2026-11-07T12:47",
+          "texto": "A gestão fechou o registro de água da unidade de cima para conter o vazamento e acionou a Vale."
+        },
+        {
+          "data": "2026-11-07T13:24",
+          "texto": "Orientação da gestão: abrir também o chamado na assistência técnica da Vale (sistema Facilitat) ou, sem acesso, formalizar a ocorrência por e-mail à manutenção da Vale."
         }
       ]
     }
