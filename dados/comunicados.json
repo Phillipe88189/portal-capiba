@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-07T19:08",
+  "atualizado_em": "2026-11-08T11:20",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -71,6 +71,22 @@
       "texto": [
         "Caros vizinhos, no próximo sábado, dia 14/11, vamos nos reunir com as nossas crianças para montar a árvore de Natal do Capiba e as decorações natalinas. Todos estão convidados a colaborar e a fazer desse momento algo especial.",
         "Sábado, 14/11/2026, às 9h, com término previsto para as 11h30."
+      ]
+    },
+    {
+      "numero": "2026-005",
+      "tipo": "aviso",
+      "categoria": "Convivência",
+      "titulo": "Domingo no Capiba: modo descanso ativado",
+      "publicado_em": "2026-11-08T11:20",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Hoje a pauta do condomínio tem um item só: descansar sem culpa. Um excelente domingo a todos.",
+      "texto": [
+        "Bom dia, moradores! Hoje a pauta do condomínio tem um item só: descansar sem culpa.",
+        "A Piscina com borda infinita está de plantão, a Área gourmet espera o cheirinho do almoço e o Gazebo grill já aguarda o primeiro churrasqueiro do dia.",
+        "Os pets ficam no Pet place, as bicicletas no Bicicletário e os elevadores, coitados, seguem trabalhando no domingo.",
+        "Faz gosto morar aqui. Um excelente domingo a todos"
       ]
     }
   ]
