@@ -5,6 +5,7 @@
   `.github/workflows/push-comunicados.yml` roda `scripts/enviar_push.py` e envia aviso de:
   comunicado novo ou alterado (texto, título, resumo etc.); solicitação nova ou com qualquer alteração
   (situação, resposta no histórico ou outro dado);
+  ato da gestão novo ou alterado (`dados/atos.json`: assembleias e reuniões dos Conselhos);
   mês novo na prestação de contas (`DADOS.resumo` no index.html); mudança no texto das Regras do prédio.
 - **Ajustes visuais, correções de digitação e mudanças sem novidade para o morador: incluir
   `[sem aviso]` na mensagem do commit.** Sem isso, mudança de texto na aba Regras gera aviso.
@@ -17,3 +18,7 @@
 ## Publicação
 - Incrementar `VERSAO` em `sw.js` (capiba-AAAA-MM-DD-N) e a "Versão do app" no rodapé do index.html a cada mudança.
 - Antes do push: `git fetch origin main && git rebase origin/main`.
+
+## Atos da gestão
+- `dados/atos.json`: resumo bem curto das assembleias e reuniões dos Conselhos (aba Prestação de contas, quadro "Atos da gestão").
+- Só o que está na ata assinada; sem dados pessoais além de nome e unidade de quem ocupa cargo; sem valores individuais, pró-labore em discussão ou detalhes de processos.

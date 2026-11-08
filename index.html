@@ -188,6 +188,34 @@ html{scroll-behavior:smooth}
 .aba-l .k-badge{display:inline-block;min-width:1.4em;margin-left:6px;padding:1px 6px;border-radius:999px;background:#9A7264;color:#FFE8B8;font-size:.72rem;font-weight:600;text-align:center;font-variant-numeric:tabular-nums;letter-spacing:0}
 /* Aba Solicitações (chamados do grupo Reclame Aqui) */
 .h-kf{font:inherit;color:inherit;text-align:left;cursor:pointer;transition:border-color .15s,background .15s}
+.c-go{font:inherit;color:inherit;text-align:left;cursor:pointer;position:relative;transition:border-color .15s,background .15s}
+.c-go::after{content:"›";position:absolute;top:12px;right:16px;font-size:1.25rem;line-height:1;color:var(--suave);transition:transform .15s,color .15s}
+.c-go:hover{border-color:var(--verde-vivo)}
+.c-go:hover::after{color:var(--verde-vivo);transform:translateX(2px)}
+.c-go:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
+.c-go .c-tl{padding-right:18px}
+.c-go[aria-current="true"]{border-color:var(--verde-vivo);box-shadow:inset 0 0 0 1px var(--verde-vivo);background:color-mix(in srgb,var(--surface) 82%,var(--verde-vivo))}
+.c-go[aria-current="true"] .c-tl{color:var(--titulo);font-weight:600}
+.c-tv-txt{font-size:1.05rem;white-space:normal}
+@keyframes c-pulso{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--verde-vivo) 70%,transparent)}100%{box-shadow:0 0 0 12px transparent}}
+.c-card.c-alvo{border-color:var(--verde-vivo);animation:c-pulso 1.1s ease-out 2}
+@media (prefers-reduced-motion:reduce){.c-card.c-alvo{animation:none}.c-go::after{transition:none}}
+.a-lista{display:flex;flex-direction:column;gap:10px}
+.a-item{border:1px solid var(--linha);border-radius:14px;background:var(--bg);overflow:hidden}
+.a-item>summary{list-style:none;cursor:pointer;padding:14px 44px 14px 16px;position:relative;display:flex;flex-direction:column;gap:4px}
+.a-item>summary::-webkit-details-marker{display:none}
+.a-item>summary::after{content:"+";position:absolute;right:16px;top:14px;font-size:1.2rem;color:var(--suave)}
+.a-item[open]>summary::after{content:"−"}
+.a-item>summary:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:-2px}
+.a-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--suave)}
+.a-tag{border:1px solid var(--linha);border-radius:999px;padding:2px 9px;color:var(--titulo)}
+.a-tit{margin:0;font-size:1rem;font-weight:600;color:var(--texto)}
+.a-res{margin:0;font-size:.86rem;color:var(--suave)}
+.a-pautas{list-style:none;margin:0;padding:0 16px 14px;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--linha);padding-top:12px}
+.a-pautas li{font-size:.88rem;line-height:1.5}
+.a-pautas b{display:block;font-weight:600;color:var(--titulo);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+.a-fonte{margin:0;padding:0 16px 14px;font-size:.76rem;color:var(--suave);font-style:italic}
+
 .h-kf:hover{border-color:var(--verde-vivo)}
 .h-kf:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
 .h-kf[aria-pressed="true"]{border-color:var(--verde-vivo);box-shadow:inset 0 0 0 1px var(--verde-vivo);background:color-mix(in srgb,var(--surface) 82%,var(--verde-vivo))}
@@ -583,21 +611,22 @@ html.id-pendente .ident{display:block}
     <p class="c-lead">No mês, entraram <b id="c-l-rec">—</b> e saíram <b id="c-l-desp">—</b>. O saldo total do condomínio, somando contas, aplicações e fundo de reserva, fechou o mês em <b id="c-l-saldo">—</b>.</p>
   </section>
 
-  <section class="c-tiles" aria-label="Resumo do mês">
-    <div class="c-tile"><p class="c-tl">Saldo total no fim do mês</p><p class="c-tv" id="c-t-saldo">—</p><p class="c-tn">No início do mês: <span id="c-t-ini">—</span></p></div>
-    <div class="c-tile"><p class="c-tl">Receitas do mês</p><p class="c-tv" id="c-t-rec">—</p><p class="c-tn">Taxas, rateios, reservas e rendimentos</p></div>
-    <div class="c-tile"><p class="c-tl">Despesas do mês</p><p class="c-tv" id="c-t-desp">—</p><p class="c-tn">Inclui investimentos em equipamentos</p></div>
-    <div class="c-tile"><p class="c-tl">Resultado do mês</p><p class="c-tv" id="c-t-res">—</p><p class="c-tn">Receitas menos despesas</p></div>
-    <div class="c-tile"><p class="c-tl">Inadimplência</p><p class="c-tv" id="c-t-inad">—</p><p class="c-tn">Valor em aberto. Unidades em atraso: <span id="c-t-inadu">—</span> de 93. Posição de <span id="c-t-inadd">—</span>, informada no relatório do mês.</p></div>
+  <section class="c-tiles" aria-label="Resumo do mês. Toque em um quadro para ver o detalhe.">
+    <button type="button" class="c-tile c-go" data-alvo="cc-onde" aria-label="Ver onde está o dinheiro"><p class="c-tl">Saldo final</p><p class="c-tv" id="c-t-saldo">—</p><p class="c-tn">No início do mês: <span id="c-t-ini">—</span></p></button>
+    <button type="button" class="c-tile c-go" data-alvo="cc-rec" aria-label="Ver de onde veio o dinheiro"><p class="c-tl">Receitas</p><p class="c-tv" id="c-t-rec">—</p><p class="c-tn">Taxas, rateios, reservas e rendimentos</p></button>
+    <button type="button" class="c-tile c-go" data-alvo="cc-desp" aria-label="Ver para onde foi o dinheiro"><p class="c-tl">Despesas</p><p class="c-tv" id="c-t-desp">—</p><p class="c-tn">Inclui investimentos em equipamentos</p></button>
+    <button type="button" class="c-tile c-go" data-alvo="cc-meses" aria-label="Ver receitas e despesas mês a mês"><p class="c-tl">Resultado</p><p class="c-tv" id="c-t-res">—</p><p class="c-tn">Receitas menos despesas</p></button>
+    <button type="button" class="c-tile c-go" data-alvo="cc-inad" aria-label="Ver a inadimplência mês a mês"><p class="c-tl">Inadimplência</p><p class="c-tv" id="c-t-inad">—</p><p class="c-tn">Valor em aberto. Unidades em atraso: <span id="c-t-inadu">—</span> de 93. Posição de <span id="c-t-inadd">—</span>, informada no relatório do mês.</p></button>
+    <button type="button" class="c-tile c-go c-tile-atos" data-alvo="cc-atos" aria-label="Ver os atos da gestão"><p class="c-tl">Atos</p><p class="c-tv" id="c-t-atos">—</p><p class="c-tn" id="c-t-atos-n">Assembleias e reuniões dos Conselhos</p></button>
   </section>
 
   <section class="c-grid">
-    <article class="c-card"><h3>Para onde foi o dinheiro</h3><p class="c-note">Despesas do mês por grupo.</p><div class="c-chart" id="c-desp"></div></article>
-    <article class="c-card"><h3>De onde veio o dinheiro</h3><p class="c-note">Receitas do mês por origem. Os rateios de água e gás repassam o consumo medido de cada unidade.</p><div class="c-chart" id="c-rec"></div></article>
+    <article class="c-card" id="cc-desp"><h3>Para onde foi o dinheiro</h3><p class="c-note">Despesas do mês por grupo.</p><div class="c-chart" id="c-desp"></div></article>
+    <article class="c-card" id="cc-rec"><h3>De onde veio o dinheiro</h3><p class="c-note">Receitas do mês por origem. Os rateios de água e gás repassam o consumo medido de cada unidade.</p><div class="c-chart" id="c-rec"></div></article>
   </section>
 
   <section class="c-grid">
-    <article class="c-card"><h3>Onde está o dinheiro</h3><p class="c-note">Saldo no fim do mês, por destinação e por conta.</p>
+    <article class="c-card" id="cc-onde"><h3>Onde está o dinheiro</h3><p class="c-note">Saldo no fim do mês, por destinação e por conta.</p>
       <div id="c-stack-box"><div class="c-chart c-short" id="c-stack"></div>
         <ul class="c-legend"><li><span class="c-sw f"></span>Fundo de reserva</li><li><span class="c-sw o"></span>Saldo ordinário (dia a dia)</li></ul></div>
       <p class="c-vazio" id="c-stack-vazio" hidden>O relatório deste mês não separa o fundo de reserva do saldo ordinário. A separação aparece a partir de março/2026.</p>
@@ -606,11 +635,17 @@ html.id-pendente .ident{display:block}
     <article class="c-card"><h3>Despesas em 12 meses</h3><p class="c-note">Soma dos 12 meses até o mês escolhido (ou desde maio/2025, quando houver menos), por grupo, com a participação no total.</p><div class="c-chart" id="c-12m"></div></article>
   </section>
 
-  <article class="c-card"><h3>Receitas e despesas mês a mês</h3><p class="c-note">Maio/2025 a setembro/2026. Toque ou clique em um mês para abri-lo; o mês escolhido aparece em destaque.</p>
+  <article class="c-card" id="cc-meses"><h3>Receitas e despesas mês a mês</h3><p class="c-note">Maio/2025 a setembro/2026. Toque ou clique em um mês para abri-lo; o mês escolhido aparece em destaque.</p>
     <ul class="c-legend"><li><span class="c-sw r"></span>Receitas</li><li><span class="c-sw d"></span>Despesas</li></ul>
     <div class="c-chart c-tall" id="c-meses"></div></article>
 
   <article class="c-card"><h3>Saldo no fim de cada mês</h3><p class="c-note">Saldo total, incluindo o fundo de reserva.</p><div class="c-chart" id="c-saldo"></div></article>
+
+  <article class="c-card" id="cc-inad"><h3>Inadimplência mês a mês</h3><p class="c-note">Valor em aberto informado em cada relatório mensal, sem identificar unidades. Toque ou clique em um mês para abri-lo.</p><div class="c-chart" id="c-inad"></div>
+    <p class="c-note" id="c-inad-obs"></p></article>
+
+  <article class="c-card" id="cc-atos"><h3>Atos da gestão</h3><p class="c-note">Resumo das assembleias e das reuniões dos Conselhos. Em caso de dúvida, vale a ata original.</p>
+    <div class="a-lista" id="a-lista"><p class="c-note">Carregando…</p></div></article>
 
   <p class="c-fonte"><strong>Fonte:</strong> prestações de contas mensais da administradora Marvan, de maio/2025 a setembro/2026. Receitas, despesas e saldos seguem a versão mais recente da administradora (comparativos de 12 meses e meses reapresentados nos relatórios de maio a setembro/2026). Os valores seguem a data de pagamento ou recebimento; os nomes dos grupos foram simplificados. Este resumo não traz dados de unidades ou moradores, e as carteiras Pix do caixa pequeno aparecem somadas. Os demonstrativos completos, com comprovantes, podem ser consultados com a administração (RI, art. 6º, g; Convenção, art. 4º, d).</p>
 </div>
@@ -690,7 +725,7 @@ html.id-pendente .ident{display:block}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 08/11/2026 · 1</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 08/11/2026 · 2</p>
 </div>
 </footer>
 
@@ -1007,7 +1042,96 @@ document.getElementById('cp').addEventListener('click',async e=>{
       svg.append('text').attr('x', xp).attr('y', y(s.saldo_final) - 12).attr('text-anchor', a).attr('font-size', 12).attr('font-weight', 600).attr('fill', C.fg).style('font-variant-numeric', 'tabular-nums').text(brl.format(s.saldo_final));
       svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (d) => x(d.mes) - x.step() / 2).attr('width', x.step()).attr('y', m.t).attr('height', H - m.t - m.b).attr('fill', 'transparent').on('click', (e, d) => ir(d.mes));
     }
+    // Inadimplência
+    {
+      const el = $('c-inad'); el.replaceChildren(); el.classList.add('click');
+      const rows = DADOS.resumo.filter((d) => d.inad_valor != null).sort((a, b) => a.mes < b.mes ? -1 : 1);
+      const W = Math.max(300, el.clientWidth), H = 220, m = {t: 28, r: 18, b: 28, l: 64};
+      const x = d3.scaleBand(rows.map((d) => d.mes), [m.l, W - m.r]).padding(0.25);
+      const y = d3.scaleLinear([0, d3.max(rows, (d) => d.inad_valor) * 1.15], [H - m.b, m.t]).nice();
+      const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Inadimplência por mês');
+      svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (v) => y(v)).attr('y2', (v) => y(v)).attr('stroke', C.grid).attr('stroke-width', 0.6);
+      svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', (v) => y(v) + 4).attr('text-anchor', 'end').attr('font-size', 11).attr('fill', C.muted).text((v) => v === 0 ? '0' : 'R$ ' + new Intl.NumberFormat('pt-BR', {maximumFractionDigits: 1}).format(v / 1000) + ' mil');
+      const ev = W < 560 ? 3 : (W < 900 ? 2 : 1);
+      svg.append('g').selectAll('text').data(rows.filter((d, k) => k % ev === (rows.length - 1) % ev || d.mes === mes)).join('text')
+        .attr('x', (d) => x(d.mes) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').attr('font-size', 11)
+        .attr('fill', (d) => d.mes === mes ? C.fg : C.muted).attr('font-weight', (d) => d.mes === mes ? 600 : 400).text((d) => mesC(d.mes));
+      svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (d) => x(d.mes)).attr('width', x.bandwidth())
+        .attr('y', (d) => y(d.inad_valor)).attr('height', (d) => y(0) - y(d.inad_valor)).attr('rx', 2).attr('fill', C.desp).attr('opacity', (d) => d.mes === mes ? 1 : 0.45);
+      const s = rows.find((d) => d.mes === mes);
+      if (s) {
+        const xp = x(s.mes) + x.bandwidth() / 2, a = xp > W - 70 ? 'end' : (xp < m.l + 50 ? 'start' : 'middle');
+        svg.append('text').attr('x', xp).attr('y', y(s.inad_valor) - 8).attr('text-anchor', a).attr('font-size', 12).attr('font-weight', 600).attr('fill', C.fg).style('font-variant-numeric', 'tabular-nums').text(brl.format(s.inad_valor));
+      }
+      const tip = document.createElement('div'); tip.className = 'c-tip'; tip.hidden = true; el.append(tip);
+      svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (d) => x(d.mes) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', m.t).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+        .on('pointerenter pointermove', (e, d) => {
+          tip.replaceChildren();
+          [['', mesL(d.mes)], ['Em aberto', brl.format(d.inad_valor)], ['Unidades', d.inad_unidades != null ? d.inad_unidades + ' de 93' : 'não informado'], ['Posição', d.inad_posicao ? dataBR(d.inad_posicao) : '—']].forEach(([k, v]) => {
+            const p = document.createElement('div'); if (k) { const sp = document.createElement('span'); sp.className = 'k'; sp.textContent = k + ' '; p.append(sp); } p.append(document.createTextNode(v)); tip.append(p);
+          });
+          tip.hidden = false; const box = el.getBoundingClientRect(), px = e.clientX - box.left, tw = tip.offsetWidth;
+          tip.style.left = Math.min(Math.max(0, px - tw / 2), box.width - tw) + 'px'; tip.style.top = '4px';
+        })
+        .on('pointerleave', () => { tip.hidden = true; })
+        .on('click', (e, d) => ir(d.mes));
+      const fim = (r) => { const [a, mm] = r.mes.split('-').map(Number); return new Date(Date.UTC(a, mm, 0)).toISOString().slice(0, 10); };
+      const obs = $('c-inad-obs');
+      obs.textContent = (r.inad_posicao && r.inad_posicao < fim(r)) ? 'O relatório deste mês trouxe a inadimplência com posição de ' + dataBR(r.inad_posicao) + ', anterior ao fim do mês.' : '';
+      obs.hidden = !obs.textContent;
+    }
   };
+
+  // Quadros clicáveis: levam ao gráfico ou quadro correspondente
+  const topoAltura = () => { const h = document.querySelector('.topo-fixo'); return (h ? h.getBoundingClientRect().height : 0) + 12; };
+  document.querySelectorAll('.c-go').forEach((b) => b.addEventListener('click', () => {
+    const alvo = $(b.dataset.alvo); if (!alvo) return;
+    document.querySelectorAll('.c-go').forEach((x) => x.removeAttribute('aria-current')); b.setAttribute('aria-current', 'true');
+    const reduz = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top: alvo.getBoundingClientRect().top + window.scrollY - topoAltura(), behavior: reduz ? 'auto' : 'smooth'});
+    alvo.classList.remove('c-alvo'); void alvo.offsetWidth; alvo.classList.add('c-alvo');
+    setTimeout(() => alvo.classList.remove('c-alvo'), 2400);
+    const det = alvo.querySelector('details'); if (det && !alvo.querySelector('details[open]')) det.open = true;
+  }));
+
+  // Atos da gestão (assembleias e reuniões dos Conselhos)
+  {
+    const lista = $('a-lista');
+    const pinta = (atos) => {
+      lista.replaceChildren();
+      const ord = atos.slice().sort((a, b) => a.data < b.data ? 1 : -1);
+      $('c-t-atos').textContent = ord.length + (ord.length === 1 ? ' registro' : ' registros');
+      $('c-t-atos').classList.add('c-tv-txt');
+      $('c-t-atos-n').textContent = ord.length ? 'Última: ' + ord[0].tipo.split(' ')[0].toLowerCase() + ' de ' + dataBR(ord[0].data) : 'Assembleias e reuniões dos Conselhos';
+      if (!ord.length) { const p = document.createElement('p'); p.className = 'c-note'; p.textContent = 'Nenhum registro publicado ainda.'; lista.append(p); return; }
+      ord.forEach((a, k) => {
+        const d = document.createElement('details'); d.className = 'a-item'; d.id = 'ato-' + a.id; if (k === 0) d.open = true;
+        const s = document.createElement('summary');
+        const meta = document.createElement('div'); meta.className = 'a-meta';
+        const tag = document.createElement('span'); tag.className = 'a-tag'; tag.textContent = a.tipo;
+        const dt = document.createElement('span'); dt.textContent = dataBR(a.data); meta.append(tag, dt);
+        const h = document.createElement('p'); h.className = 'a-tit'; h.textContent = a.titulo;
+        const r = document.createElement('p'); r.className = 'a-res'; r.textContent = a.resumo;
+        s.append(meta, h, r); d.append(s);
+        const ul = document.createElement('ul'); ul.className = 'a-pautas';
+        (a.pautas || []).forEach((p) => { const li = document.createElement('li'), b = document.createElement('b'); b.textContent = p.tema; li.append(b, document.createTextNode(p.texto)); ul.append(li); });
+        d.append(ul);
+        if (a.fonte) { const f = document.createElement('p'); f.className = 'a-fonte'; f.textContent = 'Fonte: ' + a.fonte + '.'; d.append(f); }
+        lista.append(d);
+      });
+    };
+    let buscaAtos = 0, okAtos = false;
+    const carregaAtos = () => {
+      buscaAtos = Date.now();
+      return fetch('dados/atos.json?t=' + buscaAtos, {cache: 'no-store'})
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((j) => { okAtos = true; pinta(Array.isArray(j.atos) ? j.atos : []); })
+        .catch(() => { if (!okAtos) { lista.replaceChildren(); const p = document.createElement('p'); p.className = 'c-note'; p.textContent = 'Não foi possível carregar os atos agora. Verifique a conexão e abra o app novamente.'; lista.append(p); $('c-t-atos').textContent = '—'; } });
+    };
+    carregaAtos();
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - buscaAtos > 30000) carregaAtos(); });
+    window.addEventListener('online', carregaAtos);
+  }
 
   // Abas
   const abas = document.querySelectorAll('.aba-l');

@@ -1,6 +1,6 @@
 /* Service worker do app Capiba: funciona sem internet e busca sempre a versão mais recente quando há conexão. */
-const VERSAO = 'capiba-2026-11-08-1';
-const BASE = ['./', 'index.html', 'manifest.webmanifest', 'vendor/d3.min.js', 'dados/chamados.json', 'dados/comunicados.json',
+const VERSAO = 'capiba-2026-11-08-2';
+const BASE = ['./', 'index.html', 'manifest.webmanifest', 'vendor/d3.min.js', 'dados/chamados.json', 'dados/comunicados.json', 'dados/atos.json',
   'icones/icone-192.png', 'icones/icone-512.png', 'icones/apple-touch-icon.png', 'icones/favicon.png'];
 
 self.addEventListener('install', (e) => {

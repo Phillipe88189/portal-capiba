@@ -12,6 +12,7 @@ Novidades avisadas:
     primeiro parágrafo novo do texto; senão, o resumo.
   - solicitação nova ou com qualquer alteração (dados/chamados.json): situação, resposta
     no histórico ou outro dado
+  - assembleia ou reunião dos Conselhos nova ou alterada (dados/atos.json)
   - nova prestação de contas mensal (mês novo em DADOS.resumo do index.html)
   - mudança no texto das Regras do prédio (seção #regras do index.html)
 Se a mensagem do commit tiver "[sem aviso]", nada é enviado (correções e ajustes visuais).
@@ -103,6 +104,18 @@ def novidades(antes, depois):
         else:
             corpo = f'{onde}. Os dados da solicitação foram atualizados.' if onde else 'Os dados da solicitação foram atualizados.'
         av.append((f"Solicitação nº {n} · {c.get('status', '')}".rstrip(' ·'), corta(corpo), 'index.html#chamados'))
+    # 2b) Atos da gestão: assembleia ou reunião dos Conselhos nova ou alterada
+    aa = {x['id']: x for x in (js(ler(antes, 'dados/atos.json'), {}) or {}).get('atos', [])}
+    for x in sorted((js(ler(depois, 'dados/atos.json'), {}) or {}).get('atos', []), key=lambda x: x.get('data', '')):
+        d = x.get('data', '')
+        dbr = f'{d[8:10]}/{d[5:7]}/{d[:4]}' if len(d) == 10 else d
+        velho = aa.get(x['id'])
+        if velho is None:
+            av.append((f"Atos da gestão · {x.get('tipo', 'Registro')} de {dbr}",
+                       corta(x.get('resumo') or 'Novo resumo publicado no app.'), 'index.html#contas'))
+        elif x != velho:
+            av.append((f"Atos da gestão · {x.get('tipo', 'Registro')} de {dbr}",
+                       'O resumo foi atualizado. Confira no app.', 'index.html#contas'))
     # 3) Prestação de contas
     ia, idep = ler(antes, 'index.html'), ler(depois, 'index.html')
     for mes in sorted(meses_contas(idep) - meses_contas(ia)):
