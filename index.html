@@ -214,6 +214,10 @@ html{scroll-behavior:smooth}
 .a-pautas{list-style:none;margin:0;padding:0 16px 14px;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--linha);padding-top:12px}
 .a-pautas li{font-size:.88rem;line-height:1.5}
 .a-pautas b{display:block;font-weight:600;color:var(--titulo);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+.a-pautas li.a-top{position:relative;padding-left:16px}
+.a-pautas li.a-top::before{content:"";position:absolute;left:2px;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--verde-vivo)}
+.a-pautas:has(li.a-top){gap:6px}
+.a-nota{margin:0 16px 12px;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,var(--surface) 85%,var(--verde-vivo));font-size:.84rem;line-height:1.45}
 .a-fonte{margin:0;padding:0 16px 14px;font-size:.76rem;color:var(--suave);font-style:italic}
 
 .h-kf:hover{border-color:var(--verde-vivo)}
@@ -644,7 +648,7 @@ html.id-pendente .ident{display:block}
   <article class="c-card" id="cc-inad"><h3>Inadimplência mês a mês</h3><p class="c-note">Valor em aberto informado em cada relatório mensal, sem identificar unidades. Toque ou clique em um mês para abri-lo.</p><div class="c-chart" id="c-inad"></div>
     <p class="c-note" id="c-inad-obs"></p></article>
 
-  <article class="c-card" id="cc-atos"><h3>Atos da gestão</h3><p class="c-note">Resumo das assembleias e das reuniões dos Conselhos. Em caso de dúvida, vale a ata original.</p>
+  <article class="c-card" id="cc-atos"><h3>Atos da gestão</h3><p class="c-note">Resumo das assembleias e das reuniões dos Conselhos. Em caso de dúvida, fale com a gestão; vale sempre a ata original.</p>
     <div class="a-lista" id="a-lista"><p class="c-note">Carregando…</p></div></article>
 
   <p class="c-fonte"><strong>Fonte:</strong> prestações de contas mensais da administradora Marvan, de maio/2025 a setembro/2026. Receitas, despesas e saldos seguem a versão mais recente da administradora (comparativos de 12 meses e meses reapresentados nos relatórios de maio a setembro/2026). Os valores seguem a data de pagamento ou recebimento; os nomes dos grupos foram simplificados. Este resumo não traz dados de unidades ou moradores, e as carteiras Pix do caixa pequeno aparecem somadas. Os demonstrativos completos, com comprovantes, podem ser consultados com a administração (RI, art. 6º, g; Convenção, art. 4º, d).</p>
@@ -725,7 +729,7 @@ html.id-pendente .ident{display:block}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 08/11/2026 · 2</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 08/11/2026 · 3</p>
 </div>
 </footer>
 
@@ -1114,8 +1118,9 @@ document.getElementById('cp').addEventListener('click',async e=>{
         const r = document.createElement('p'); r.className = 'a-res'; r.textContent = a.resumo;
         s.append(meta, h, r); d.append(s);
         const ul = document.createElement('ul'); ul.className = 'a-pautas';
-        (a.pautas || []).forEach((p) => { const li = document.createElement('li'), b = document.createElement('b'); b.textContent = p.tema; li.append(b, document.createTextNode(p.texto)); ul.append(li); });
-        d.append(ul);
+        (a.pautas || []).forEach((p) => { const li = document.createElement('li'); if (p.texto) { const b = document.createElement('b'); b.textContent = p.tema; li.append(b, document.createTextNode(p.texto)); } else { li.className = 'a-top'; li.textContent = p.tema; } ul.append(li); });
+        if (a.nota) { const n = document.createElement('p'); n.className = 'a-nota'; n.textContent = a.nota; d.append(ul, n); ul.dataset.ok = '1'; }
+        if (!ul.dataset.ok) d.append(ul);
         if (a.fonte) { const f = document.createElement('p'); f.className = 'a-fonte'; f.textContent = 'Fonte: ' + a.fonte + '.'; d.append(f); }
         lista.append(d);
       });

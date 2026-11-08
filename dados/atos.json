@@ -6,20 +6,47 @@
       "tipo": "Reunião dos Conselhos",
       "data": "2026-11-05",
       "titulo": "Primeira reunião da gestão com os Conselhos",
-      "resumo": "Síndico, subsíndico e Conselhos Fiscal e Consultivo alinharam as prioridades: contas, segurança e cumprimento do Regimento Interno.",
+      "resumo": "Síndico, subsíndico e Conselhos Fiscal e Consultivo trataram dos temas abaixo.",
       "pautas": [
-        {"tema": "Próxima assembleia", "texto": "Será convocada uma Assembleia Geral Extraordinária para apresentar a situação financeira e de segurança do prédio e o relatório da auditoria contratada pela gestão anterior."},
-        {"tema": "Contratos", "texto": "A gestão vai tentar renegociar os contratos atuais antes de qualquer discussão sobre aumento da taxa condominial. O contrato da assessoria jurídica está em análise."},
-        {"tema": "Processos judiciais", "texto": "Foram apresentados aos Conselhos. A assessoria jurídica do condomínio acompanha os casos."},
-        {"tema": "Segurança", "texto": "Será feito um estudo das vulnerabilidades do prédio. Também será avaliada a instalação de cancela e porteiro eletrônico na entrada de veículos."},
-        {"tema": "Veículos de prestadores", "texto": "Os Conselhos aprovaram cumprir de imediato o Regimento Interno no acesso de veículos de prestadores de serviço (art. 8º, alíneas i e w)."},
-        {"tema": "Chaves do prédio", "texto": "A gerência vai levantar as chaves sem cópia. As cópias que faltarem serão feitas e guardadas na sala da gerência."},
-        {"tema": "Escala dos funcionários", "texto": "A escala dos fins de semana será revista. A definição aguarda a posição da empresa consultada."},
-        {"tema": "Lixo nas portas", "texto": "O recolhimento nas portas será reduzido aos poucos, após conversa com as unidades. Pelo Regimento Interno, o lixo vai aos coletores das garagens (art. 30, alínea a)."},
-        {"tema": "Natal Capiba", "texto": "Os moradores serão convidados a ajudar na montagem da decoração de Natal."},
-        {"tema": "App do morador", "texto": "Os Conselhos conheceram e aprovaram a divulgação do app, que chegou aos moradores em 06/11/2026."}
+        {
+          "tema": "Próxima assembleia geral extraordinária"
+        },
+        {
+          "tema": "Relatório da auditoria contratada pela gestão anterior"
+        },
+        {
+          "tema": "Contrato da assessoria jurídica"
+        },
+        {
+          "tema": "Processos judiciais do condomínio"
+        },
+        {
+          "tema": "Estudo de vulnerabilidades de segurança"
+        },
+        {
+          "tema": "Entrada de veículos de prestadores de serviço"
+        },
+        {
+          "tema": "Decoração de Natal"
+        },
+        {
+          "tema": "Cópia das chaves do prédio"
+        },
+        {
+          "tema": "Escala de trabalho dos funcionários"
+        },
+        {
+          "tema": "Recolhimento de lixo nas portas"
+        },
+        {
+          "tema": "Renegociação de contratos"
+        },
+        {
+          "tema": "App do morador"
+        }
       ],
-      "fonte": "Ata da reunião de 05/11/2026"
+      "fonte": "Ata da reunião de 05/11/2026",
+      "nota": "Dúvidas sobre algum tema? Fale com a gestão. Se for o caso, você pode pedir uma cópia da ata."
     },
     {
       "id": "2026-10-29-age",
@@ -28,10 +55,22 @@
       "titulo": "Assembleia Geral Extraordinária",
       "resumo": "Assembleia on-line que elegeu a nova gestão e recompôs os Conselhos Fiscal e Consultivo.",
       "pautas": [
-        {"tema": "Contas da gestão anterior", "texto": "O síndico anterior apresentou informações sobre as contas do seu período."},
-        {"tema": "Nova gestão", "texto": "Com a saída da gestão anterior, foram eleitos o síndico Lucas Younes Natacci (2901) e o subsíndico Phillipe de Aquino (2802)."},
-        {"tema": "Conselho Fiscal", "texto": "Wilson Barros (1603), Marcio Cunha (2203) e Cleyton Monteiro (1201). Suplente: Lucas Barros (2701)."},
-        {"tema": "Conselho Consultivo", "texto": "Marisa Cavani (2303), Daiany Lima (0702) e Anniele (0503). Suplente: Lucas Salviano (2801)."}
+        {
+          "tema": "Contas da gestão anterior",
+          "texto": "O síndico anterior apresentou informações sobre as contas do seu período."
+        },
+        {
+          "tema": "Nova gestão",
+          "texto": "Com a saída da gestão anterior, foram eleitos o síndico Lucas Younes Natacci (2901) e o subsíndico Phillipe de Aquino (2802)."
+        },
+        {
+          "tema": "Conselho Fiscal",
+          "texto": "Wilson Barros (1603), Marcio Cunha (2203) e Cleyton Monteiro (1201). Suplente: Lucas Barros (2701)."
+        },
+        {
+          "tema": "Conselho Consultivo",
+          "texto": "Marisa Cavani (2303), Daiany Lima (0702) e Anniele (0503). Suplente: Lucas Salviano (2801)."
+        }
       ],
       "fonte": "Ata da AGE de 29/10/2026"
     }

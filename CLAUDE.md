@@ -21,4 +21,5 @@
 
 ## Atos da gestão
 - `dados/atos.json`: resumo bem curto das assembleias e reuniões dos Conselhos (aba Prestação de contas, quadro "Atos da gestão").
+- Reuniões dos Conselhos: só a lista de tópicos (sem o que foi decidido), com a nota para o morador falar com a gestão e pedir cópia da ata, se for o caso.
 - Só o que está na ata assinada; sem dados pessoais além de nome e unidade de quem ocupa cargo; sem valores individuais, pró-labore em discussão ou detalhes de processos.
