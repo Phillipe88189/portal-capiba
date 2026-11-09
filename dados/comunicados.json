@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-08T11:20",
+  "atualizado_em": "2026-11-09T13:55",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -88,6 +88,25 @@
         "Os pets ficam no Pet place, as bicicletas no Bicicletário e os elevadores, coitados, seguem trabalhando no domingo.",
         "Faz gosto morar aqui. Um excelente domingo a todos"
       ]
+    },
+    {
+      "numero": "2026-006",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Garagem",
+      "titulo": "Garagem: cada carro na sua vaga",
+      "publicado_em": "2026-11-09T13:55",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Vagas respeitadas e circulação livre deixam a garagem mais segura para todos. Veja as principais regras do Regimento Interno sobre o uso das vagas.",
+      "texto": [
+        "Caros moradores, toda semana o Comunica Capiba traz um comunicado educativo sobre o nosso Regimento Interno. Hoje voltamos à garagem, agora para falar do uso das vagas e da circulação.",
+        "Cada um na sua vaga. Use apenas o número de vagas que é seu e respeite as faixas demarcadas no piso. Estacionar na vaga de outro morador, só com a concordância dele (art. 8º, a).",
+        "Circulação sempre livre. As áreas de circulação precisam ficar desobstruídas, com espaço para manobras e trânsito seguro dos veículos (art. 8º, d). Entulho, sucata, móveis ou outros objetos não podem ficar na garagem por mais de 48 horas (art. 8º, v).",
+        "Garagem não é área de lazer. Brincadeiras e atividades esportivas são proibidas nas vagas e nas áreas de circulação (art. 8º, l). Crianças devem passar pela garagem sempre acompanhadas dos pais ou responsáveis (art. 8º, m).",
+        "Faz gosto estacionar sem aperto."
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 8º, a, d, l, m e v."
     }
   ]
 }
