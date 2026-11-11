@@ -1,8 +1,119 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-11T07:41",
-  "atualizado_em": "2026-11-11T14:30",
+  "atualizado_em": "2026-11-11T15:35",
   "chamados": [
+    {
+      "numero": "2026-002",
+      "assunto": "Controle de pragas",
+      "local": "Hall dos andares",
+      "solicitacao": "Presença de percevejos nos halls. Verificar com a empresa de dedetização uma solução.",
+      "status": "Concluído",
+      "aberto_em": "2026-10-31T15:16",
+      "data_ocorrencia": "2026-10-31",
+      "responsavel": "Gerência predial e Igarassu Dedetização",
+      "historico": [
+        {
+          "data": "2026-10-31T15:16",
+          "texto": "Chamado aberto, com foto do inseto enviada ao grupo."
+        },
+        {
+          "data": "2026-10-31T15:22",
+          "texto": "Novo relato no grupo: o inseto também foi visto dentro de uma unidade."
+        },
+        {
+          "data": "2026-11-03T12:11",
+          "texto": "Reforço da dedetização agendado com a Igarassu Dedetização para quinta-feira, 05/11/2026, às 9h, nos halls."
+        },
+        {
+          "data": "2026-11-11T14:25",
+          "texto": "Situação alterada para “Concluído”."
+        }
+      ],
+      "previsao": "2026-11-05",
+      "concluido_em": "2026-11-11"
+    },
+    {
+      "numero": "2026-008",
+      "assunto": "Descumprimento do RI",
+      "local": "Pet place",
+      "solicitacao": "Fezes de animal não recolhidas no Pet place, com fotos enviadas ao grupo. Outro morador relatou o mesmo mais cedo, no mesmo dia. O RI determina que o tutor recolha as fezes imediatamente e as descarte nos locais indicados (RI, art. 21, alínea e).",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-02T17:08",
+      "data_ocorrencia": "2026-11-02",
+      "responsavel": "Síndico e gerência predial",
+      "historico": [
+        {
+          "data": "2026-11-02T17:08",
+          "texto": "Chamado aberto a partir do grupo, com fotos."
+        },
+        {
+          "data": "2026-11-02T17:51",
+          "texto": "A gestão pediu o horário aproximado para verificar as câmeras."
+        },
+        {
+          "data": "2026-11-03T12:11",
+          "texto": "A gestão informou que a limpeza do Pet place já foi iniciada."
+        }
+      ]
+    },
+    {
+      "numero": "2026-009",
+      "assunto": "Manutenção",
+      "local": "Hall do 7º andar (próximo ao shaft)",
+      "solicitacao": "Cheiro forte de esgoto no hall, mais frequente nos últimos dias. É sentido no hall, e não dentro da unidade. O ponto mais forte fica perto do shaft.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-04T07:26",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gerência predial",
+      "historico": [
+        {
+          "data": "2026-11-04T07:26",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-04T07:41",
+          "texto": "A gestão perguntou se outros andares têm o mesmo problema."
+        },
+        {
+          "data": "2026-11-04T08:00",
+          "texto": "A gerência predial informou que vai verificar."
+        },
+        {
+          "data": "2026-11-04T12:45",
+          "texto": "O ponto mais forte foi identificado perto do shaft. Dica de outro morador: tubulações de esgoto abertas nas unidades (por exemplo, a saída da lava-louças não instalada) podem causar o odor; vale cada unidade do andar verificar."
+        }
+      ]
+    },
+    {
+      "numero": "2026-011",
+      "assunto": "Manutenção",
+      "local": "Unidades – tomadas de emergência (ligadas ao gerador)",
+      "solicitacao": "Tomadas de emergência de algumas unidades não funcionam. A lista das unidades afetadas foi passada à gerência predial. Pedido para cobrar da construtora o andamento do reparo, na assistência técnica.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-04T11:40",
+      "data_ocorrencia": "2026-11-04",
+      "responsavel": "Gestão do condomínio e construtora (assistência técnica)",
+      "historico": [
+        {
+          "data": "2026-11-04T11:40",
+          "texto": "Chamado aberto a partir do grupo."
+        },
+        {
+          "data": "2026-11-04T11:48",
+          "texto": "A gestão vai tratar o tema com a construtora e atualizar todos."
+        },
+        {
+          "data": "2026-11-04T12:13",
+          "texto": "A gerência predial liga o gerador para manutenção na quinta-feira, 05/11/2026, às 9h. Nesse horário, os moradores podem testar as tomadas de emergência das unidades."
+        },
+        {
+          "data": "2026-11-07T11:20",
+          "texto": "Novos relatos de 07/11/2026 e o andamento com a Vale passam a ser acompanhados no chamado 2026-025."
+        }
+      ],
+      "previsao": "2026-11-05"
+    },
     {
       "numero": "2026-016",
       "assunto": "Manutenção",
