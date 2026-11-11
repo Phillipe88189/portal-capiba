@@ -1,256 +1,330 @@
 {
-  "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-07T14:43",
-  "atualizado_em": "2026-11-07T15:35",
-  "chamados": [
+ "grupo": "Reclame aqui – Solicitações",
+ "ultima_mensagem": "2026-11-11T07:41",
+ "atualizado_em": "2026-11-11T14:13",
+ "chamados": [
+  {
+   "numero": "2026-016",
+   "assunto": "Manutenção",
+   "local": "Escada de emergência – 30º andar",
+   "solicitacao": "Placa da porta corta-fogo descolada.",
+   "status": "Concluído",
+   "aberto_em": "2026-11-06T06:43",
+   "data_ocorrencia": "2026-11-06",
+   "responsavel": "Gerência do condomínio",
+   "historico": [
     {
-      "numero": "2026-016",
-      "assunto": "Manutenção",
-      "local": "Escada de emergência – 30º andar",
-      "solicitacao": "Placa da porta corta-fogo descolada.",
-      "status": "Concluído",
-      "aberto_em": "2026-11-06T06:43",
-      "data_ocorrencia": "2026-11-06",
-      "responsavel": "Gerência do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-06T06:43",
-          "texto": "Solicitação registrada no grupo, com foto."
-        },
-        {
-          "data": "2026-11-06T07:35",
-          "texto": "A gerência do condomínio informou que vai verificar."
-        },
-        {
-          "data": "2026-11-06T09:12",
-          "texto": "A gerência do condomínio informou que o problema foi resolvido."
-        }
-      ],
-      "concluido_em": "2026-11-06T09:12"
+     "data": "2026-11-06T06:43",
+     "texto": "Solicitação registrada no grupo, com foto."
     },
     {
-      "numero": "2026-017",
-      "assunto": "Manutenção",
-      "local": "Mezanino – porta corta-fogo",
-      "solicitacao": "Maçaneta da porta corta-fogo se soltando.",
-      "status": "Em andamento",
-      "aberto_em": "2026-11-06T07:52",
-      "data_ocorrencia": "2026-11-06",
-      "responsavel": "Gerência do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-06T07:52",
-          "texto": "Solicitação registrada no grupo."
-        },
-        {
-          "data": "2026-11-06T14:11",
-          "texto": "A gerência informou que um técnico virá ao condomínio na segunda-feira, 09/11/2026, para fazer o conserto."
-        }
-      ],
-      "previsao": "2026-11-09"
+     "data": "2026-11-06T07:35",
+     "texto": "A gerência do condomínio informou que vai verificar."
     },
     {
-      "numero": "2026-018",
-      "assunto": "Manutenção",
-      "local": "Abastecimento de água – apartamentos",
-      "solicitacao": "Falta de água em apartamentos.",
-      "status": "Concluído",
-      "aberto_em": "2026-11-06T10:25",
-      "data_ocorrencia": "2026-11-06",
-      "responsavel": "Gestão do condomínio",
-      "concluido_em": "2026-11-06T10:41",
-      "historico": [
-        {
-          "data": "2026-11-06T10:25",
-          "texto": "Falta de água informada por moradores no grupo."
-        },
-        {
-          "data": "2026-11-06T10:32",
-          "texto": "A gestão informou que a água foi fechada durante um serviço da Vale nas bombas, sem aviso prévio ao condomínio. A gestão vai ajustar com a empresa o aviso antecipado nesses casos."
-        },
-        {
-          "data": "2026-11-06T10:41",
-          "texto": "Abastecimento normalizado, confirmado por moradores."
-        }
-      ]
-    },
-    {
-      "numero": "2026-019",
-      "assunto": "Manutenção",
-      "local": "Hall de entrada – iluminação",
-      "solicitacao": "Lâmpadas de LED queimadas na iluminação do hall de entrada. Verificar e substituir as lâmpadas com defeito.",
-      "status": "Aberto",
-      "aberto_em": "2026-11-07T09:05",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Gerência do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-07T09:05",
-          "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação e troca das lâmpadas."
-        }
-      ]
-    },
-    {
-      "numero": "2026-020",
-      "assunto": "Manutenção",
-      "local": "Portas de vidro – eclusa e hall dos elevadores",
-      "solicitacao": "Puxadores das portas de vidro da eclusa e do hall dos elevadores com o acabamento descascando. Verificar e recuperar ou substituir os puxadores.",
-      "status": "Aberto",
-      "aberto_em": "2026-11-07T09:25",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Gerência do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-07T09:25",
-          "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação dos puxadores."
-        }
-      ]
-    },
-    {
-      "numero": "2026-021",
-      "assunto": "Manutenção",
-      "local": "Eclusa – pintura",
-      "solicitacao": "Pintura da eclusa danificada.",
-      "status": "Aguardando terceiros",
-      "aberto_em": "2026-11-07T09:30",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Construtora (Vale)",
-      "historico": [
-        {
-          "data": "2026-11-07T09:30",
-          "texto": "Solicitação registrada por moradora."
-        },
-        {
-          "data": "2026-11-07T09:30",
-          "texto": "A gestão informou que a Vale está instalando a gaveta de encomendas na eclusa. Concluída a instalação, a própria construtora fará a pintura do local."
-        }
-      ]
-    },
-    {
-      "numero": "2026-022",
-      "assunto": "Melhoria",
-      "local": "Lixeiras de madeira – áreas comuns",
-      "solicitacao": "Sugestão de instalar tampas nas lixeiras de madeira das áreas comuns, para evitar acúmulo de água da chuva e a proliferação de mosquitos.",
-      "status": "Aberto",
-      "aberto_em": "2026-11-07T09:32",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Gestão do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-07T09:32",
-          "texto": "Sugestão registrada por moradora."
-        },
-        {
-          "data": "2026-11-07T09:32",
-          "texto": "A gestão vai pedir orçamento à Brinquedolândia, fornecedora das lixeiras de madeira do condomínio, para a fabricação das tampas."
-        }
-      ]
-    },
-    {
-      "numero": "2026-023",
-      "assunto": "Manutenção",
-      "local": "Sistema de irrigação – todo o prédio",
-      "solicitacao": "Sistema de irrigação desregulado em alguns pontos do prédio.",
-      "status": "Em andamento",
-      "aberto_em": "2026-11-07T09:35",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Gestão do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-07T09:35",
-          "texto": "Solicitação registrada."
-        },
-        {
-          "data": "2026-11-07T09:35",
-          "texto": "A gestão vai se reunir com a equipe de jardinagem para avaliar o sistema e acionar a empresa responsável para regular a irrigação. Até a regulagem, os locais com o sistema desregulado serão irrigados manualmente."
-        }
-      ]
-    },
-    {
-      "numero": "2026-024",
-      "assunto": "Convivência",
-      "local": "Unidades – barulho entre andares",
-      "solicitacao": "Pedido de colaboração aos vizinhos do andar de cima para evitar arrastar móveis, principalmente no horário de descanso da tarde e cedo pela manhã, pois o barulho chega com força à unidade de baixo. O Regimento Interno pede que se evite barulho que comprometa o sossego dos vizinhos, em qualquer horário (RI, art. 7º, alínea h).",
-      "status": "Concluído",
-      "aberto_em": "2026-11-06T14:06",
-      "data_ocorrencia": "2026-11-06",
-      "responsavel": "Gestão do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-06T14:06",
-          "texto": "Solicitação registrada no grupo, com pedido de colaboração aos vizinhos do andar de cima."
-        },
-        {
-          "data": "2026-11-07T15:35",
-          "texto": "Tema tratado no Comunica Capiba nº 2026-003 (Barulho: um pedido de colaboração). A gerência fará o contato reservado com a unidade."
-        }
-      ],
-      "concluido_em": "2026-11-07T15:35"
-    },
-    {
-      "numero": "2026-025",
-      "assunto": "Manutenção",
-      "local": "Unidades – tomadas de emergência (ligadas ao gerador)",
-      "solicitacao": "Moradores de vários andares relatam que as tomadas de emergência das unidades não funcionaram no teste com o gerador nem em falta de energia, mesmo com o disjuntor da tomada ligado. Há relatos de que funcionavam antes de alterações feitas pela construtora (Vale) nas instalações do prédio.",
-      "status": "Em andamento",
-      "aberto_em": "2026-11-07T11:20",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Gestão do condomínio e construtora (Vale)",
-      "previsao": "2026-11-09",
-      "historico": [
-        {
-          "data": "2026-11-07T11:20",
-          "texto": "Solicitação registrada no grupo: tomada de emergência não funcionou no horário do teste com o gerador."
-        },
-        {
-          "data": "2026-11-07T11:23",
-          "texto": "A gestão vai verificar o disjuntor externo da unidade. Na segunda-feira, 09/11/2026, a gerência confirma o horário do teste e, se for o caso, o tema segue para a Vale."
-        },
-        {
-          "data": "2026-11-07T11:29",
-          "texto": "Orientação da gestão: cada tomada de emergência tem um disjuntor próprio, no quadro ao lado da porta do apartamento final 01 de cada andar. Em unidades que estavam desocupadas, muitos desses disjuntores estavam desligados."
-        },
-        {
-          "data": "2026-11-07T12:29",
-          "texto": "Outros moradores informaram que, mesmo com o disjuntor ligado, a tomada não funcionou em falta de energia e que funcionava antes das alterações feitas pela Vale."
-        },
-        {
-          "data": "2026-11-07T12:38",
-          "texto": "A gestão vai cobrar a Vale na reunião de segunda-feira, 09/11/2026, e atualizará os moradores."
-        },
-        {
-          "data": "2026-11-07T13:24",
-          "texto": "A gestão explicou que ligar todas as unidades ao gerador ao mesmo tempo (bypass geral) não é viável, pois o gerador não suportaria a carga de todos os apartamentos. Moradores sugeriram que a tomada de emergência fique na energia normal e passe sozinha para o gerador quando faltar energia."
-        },
-        {
-          "data": "2026-11-07T13:50",
-          "texto": "A gestão vai confirmar a viabilidade técnica dessa solução com apoio de profissional da área e levar o tema à Vale com dados técnicos."
-        }
-      ]
-    },
-    {
-      "numero": "2026-026",
-      "assunto": "Manutenção",
-      "local": "Unidade residencial – vazamento vindo do andar de cima",
-      "solicitacao": "Vazamento vindo da unidade de cima, com dano no teto da sala.",
-      "status": "Aguardando terceiros",
-      "aberto_em": "2026-11-07T12:41",
-      "data_ocorrencia": "2026-11-07",
-      "responsavel": "Construtora (Vale) e gestão do condomínio",
-      "historico": [
-        {
-          "data": "2026-11-07T12:41",
-          "texto": "Solicitação registrada no grupo, com vídeo."
-        },
-        {
-          "data": "2026-11-07T12:47",
-          "texto": "A gestão fechou o registro de água da unidade de cima para conter o vazamento e acionou a Vale."
-        },
-        {
-          "data": "2026-11-07T13:24",
-          "texto": "Orientação da gestão: abrir também o chamado na assistência técnica da Vale (sistema Facilitat) ou, sem acesso, formalizar a ocorrência por e-mail à manutenção da Vale."
-        }
-      ]
+     "data": "2026-11-06T09:12",
+     "texto": "A gerência do condomínio informou que o problema foi resolvido."
     }
-  ]
+   ],
+   "concluido_em": "2026-11-06T09:12"
+  },
+  {
+   "numero": "2026-017",
+   "assunto": "Manutenção",
+   "local": "Mezanino – porta corta-fogo",
+   "solicitacao": "Maçaneta da porta corta-fogo se soltando.",
+   "status": "Em andamento",
+   "aberto_em": "2026-11-06T07:52",
+   "data_ocorrencia": "2026-11-06",
+   "responsavel": "Gerência do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-06T07:52",
+     "texto": "Solicitação registrada no grupo."
+    },
+    {
+     "data": "2026-11-06T14:11",
+     "texto": "A gerência informou que um técnico virá ao condomínio na segunda-feira, 09/11/2026, para fazer o conserto."
+    }
+   ],
+   "previsao": "2026-11-09"
+  },
+  {
+   "numero": "2026-018",
+   "assunto": "Manutenção",
+   "local": "Abastecimento de água – apartamentos",
+   "solicitacao": "Falta de água em apartamentos.",
+   "status": "Concluído",
+   "aberto_em": "2026-11-06T10:25",
+   "data_ocorrencia": "2026-11-06",
+   "responsavel": "Gestão do condomínio",
+   "concluido_em": "2026-11-06T10:41",
+   "historico": [
+    {
+     "data": "2026-11-06T10:25",
+     "texto": "Falta de água informada por moradores no grupo."
+    },
+    {
+     "data": "2026-11-06T10:32",
+     "texto": "A gestão informou que a água foi fechada durante um serviço da Vale nas bombas, sem aviso prévio ao condomínio. A gestão vai ajustar com a empresa o aviso antecipado nesses casos."
+    },
+    {
+     "data": "2026-11-06T10:41",
+     "texto": "Abastecimento normalizado, confirmado por moradores."
+    }
+   ]
+  },
+  {
+   "numero": "2026-019",
+   "assunto": "Manutenção",
+   "local": "Hall de entrada – iluminação",
+   "solicitacao": "Lâmpadas de LED queimadas na iluminação do hall de entrada. Verificar e substituir as lâmpadas com defeito.",
+   "status": "Aberto",
+   "aberto_em": "2026-11-07T09:05",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Gerência do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-07T09:05",
+     "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação e troca das lâmpadas."
+    }
+   ]
+  },
+  {
+   "numero": "2026-020",
+   "assunto": "Manutenção",
+   "local": "Portas de vidro – eclusa e hall dos elevadores",
+   "solicitacao": "Puxadores das portas de vidro da eclusa e do hall dos elevadores com o acabamento descascando. Verificar e recuperar ou substituir os puxadores.",
+   "status": "Aberto",
+   "aberto_em": "2026-11-07T09:25",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Gerência do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-07T09:25",
+     "texto": "Solicitação aberta pela gestão do condomínio e encaminhada à gerência para verificação dos puxadores."
+    }
+   ]
+  },
+  {
+   "numero": "2026-021",
+   "assunto": "Manutenção",
+   "local": "Eclusa – pintura",
+   "solicitacao": "Pintura da eclusa danificada.",
+   "status": "Aguardando terceiros",
+   "aberto_em": "2026-11-07T09:30",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Construtora (Vale)",
+   "historico": [
+    {
+     "data": "2026-11-07T09:30",
+     "texto": "Solicitação registrada por moradora."
+    },
+    {
+     "data": "2026-11-07T09:30",
+     "texto": "A gestão informou que a Vale está instalando a gaveta de encomendas na eclusa. Concluída a instalação, a própria construtora fará a pintura do local."
+    }
+   ]
+  },
+  {
+   "numero": "2026-022",
+   "assunto": "Melhoria",
+   "local": "Lixeiras de madeira – áreas comuns",
+   "solicitacao": "Sugestão de instalar tampas nas lixeiras de madeira das áreas comuns, para evitar acúmulo de água da chuva e a proliferação de mosquitos.",
+   "status": "Aberto",
+   "aberto_em": "2026-11-07T09:32",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Gestão do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-07T09:32",
+     "texto": "Sugestão registrada por moradora."
+    },
+    {
+     "data": "2026-11-07T09:32",
+     "texto": "A gestão vai pedir orçamento à Brinquedolândia, fornecedora das lixeiras de madeira do condomínio, para a fabricação das tampas."
+    }
+   ]
+  },
+  {
+   "numero": "2026-023",
+   "assunto": "Manutenção",
+   "local": "Sistema de irrigação – todo o prédio",
+   "solicitacao": "Sistema de irrigação desregulado em alguns pontos do prédio.",
+   "status": "Em andamento",
+   "aberto_em": "2026-11-07T09:35",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Gestão do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-07T09:35",
+     "texto": "Solicitação registrada."
+    },
+    {
+     "data": "2026-11-07T09:35",
+     "texto": "A gestão vai se reunir com a equipe de jardinagem para avaliar o sistema e acionar a empresa responsável para regular a irrigação. Até a regulagem, os locais com o sistema desregulado serão irrigados manualmente."
+    }
+   ]
+  },
+  {
+   "numero": "2026-024",
+   "assunto": "Convivência",
+   "local": "Unidades – barulho entre andares",
+   "solicitacao": "Pedido de colaboração aos vizinhos do andar de cima para evitar arrastar móveis, principalmente no horário de descanso da tarde e cedo pela manhã, pois o barulho chega com força à unidade de baixo. O Regimento Interno pede que se evite barulho que comprometa o sossego dos vizinhos, em qualquer horário (RI, art. 7º, alínea h).",
+   "status": "Concluído",
+   "aberto_em": "2026-11-06T14:06",
+   "data_ocorrencia": "2026-11-06",
+   "responsavel": "Gestão do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-06T14:06",
+     "texto": "Solicitação registrada no grupo, com pedido de colaboração aos vizinhos do andar de cima."
+    },
+    {
+     "data": "2026-11-07T15:35",
+     "texto": "Tema tratado no Comunica Capiba nº 2026-003 (Barulho: um pedido de colaboração). A gerência fará o contato reservado com a unidade."
+    }
+   ],
+   "concluido_em": "2026-11-07T15:35"
+  },
+  {
+   "numero": "2026-025",
+   "assunto": "Manutenção",
+   "local": "Unidades – tomadas de emergência (ligadas ao gerador)",
+   "solicitacao": "Moradores de vários andares relatam que as tomadas de emergência das unidades não funcionaram no teste com o gerador nem em falta de energia, mesmo com o disjuntor da tomada ligado. Há relatos de que funcionavam antes de alterações feitas pela construtora (Vale) nas instalações do prédio.",
+   "status": "Em andamento",
+   "aberto_em": "2026-11-07T11:20",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Gestão do condomínio e construtora (Vale)",
+   "previsao": "2026-11-09",
+   "historico": [
+    {
+     "data": "2026-11-07T11:20",
+     "texto": "Solicitação registrada no grupo: tomada de emergência não funcionou no horário do teste com o gerador."
+    },
+    {
+     "data": "2026-11-07T11:23",
+     "texto": "A gestão vai verificar o disjuntor externo da unidade. Na segunda-feira, 09/11/2026, a gerência confirma o horário do teste e, se for o caso, o tema segue para a Vale."
+    },
+    {
+     "data": "2026-11-07T11:29",
+     "texto": "Orientação da gestão: cada tomada de emergência tem um disjuntor próprio, no quadro ao lado da porta do apartamento final 01 de cada andar. Em unidades que estavam desocupadas, muitos desses disjuntores estavam desligados."
+    },
+    {
+     "data": "2026-11-07T12:29",
+     "texto": "Outros moradores informaram que, mesmo com o disjuntor ligado, a tomada não funcionou em falta de energia e que funcionava antes das alterações feitas pela Vale."
+    },
+    {
+     "data": "2026-11-07T12:38",
+     "texto": "A gestão vai cobrar a Vale na reunião de segunda-feira, 09/11/2026, e atualizará os moradores."
+    },
+    {
+     "data": "2026-11-07T13:24",
+     "texto": "A gestão explicou que ligar todas as unidades ao gerador ao mesmo tempo (bypass geral) não é viável, pois o gerador não suportaria a carga de todos os apartamentos. Moradores sugeriram que a tomada de emergência fique na energia normal e passe sozinha para o gerador quando faltar energia."
+    },
+    {
+     "data": "2026-11-07T13:50",
+     "texto": "A gestão vai confirmar a viabilidade técnica dessa solução com apoio de profissional da área e levar o tema à Vale com dados técnicos."
+    }
+   ]
+  },
+  {
+   "numero": "2026-026",
+   "assunto": "Manutenção",
+   "local": "Unidade residencial – vazamento vindo do andar de cima",
+   "solicitacao": "Vazamento vindo da unidade de cima, com dano no teto da sala.",
+   "status": "Aguardando terceiros",
+   "aberto_em": "2026-11-07T12:41",
+   "data_ocorrencia": "2026-11-07",
+   "responsavel": "Construtora (Vale) e gestão do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-07T12:41",
+     "texto": "Solicitação registrada no grupo, com vídeo."
+    },
+    {
+     "data": "2026-11-07T12:47",
+     "texto": "A gestão fechou o registro de água da unidade de cima para conter o vazamento e acionou a Vale."
+    },
+    {
+     "data": "2026-11-07T13:24",
+     "texto": "Orientação da gestão: abrir também o chamado na assistência técnica da Vale (sistema Facilitat) ou, sem acesso, formalizar a ocorrência por e-mail à manutenção da Vale."
+    }
+   ]
+  },
+  {
+   "numero": "2026-027",
+   "assunto": "Manutenção",
+   "local": "Garagem – irrigador do campinho",
+   "solicitacao": "Irrigador do campinho molha veículos estacionados na garagem, causando manchas e sujeira. Pedido de ajuste do irrigador.",
+   "status": "Em andamento",
+   "aberto_em": "2026-11-10T09:37",
+   "data_ocorrencia": "2026-11-10",
+   "responsavel": "Gestão do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-10T09:37",
+     "texto": "Solicitação registrada no grupo."
+    },
+    {
+     "data": "2026-11-10T09:45",
+     "texto": "A gestão informou que o sistema estava desligado e que foi feito um teste em 10/11/2026; será preciso refazer o ajuste posteriormente. Enquanto isso, a gestão vai combinar com o morador uma solução provisória."
+    },
+    {
+     "data": "2026-11-11T14:13",
+     "texto": "O tema da regulagem geral da irrigação segue acompanhado também no chamado 2026-023."
+    }
+   ]
+  },
+  {
+   "numero": "2026-028",
+   "assunto": "Manutenção",
+   "local": "Área externa – próximo ao Gazebo",
+   "solicitacao": "Risco de queda em área externa próxima ao Gazebo, com relato de tropeço. Pedido para acionar a empresa de irrigação e a jardinagem.",
+   "status": "Concluído",
+   "aberto_em": "2026-11-10T13:52",
+   "concluido_em": "2026-11-11T14:13",
+   "data_ocorrencia": "2026-11-10",
+   "responsavel": "Gerência do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-10T13:52",
+     "texto": "Solicitação registrada no grupo, com vídeo. A gestão encaminhou ao gerente para verificar o local."
+    },
+    {
+     "data": "2026-11-10T14:28",
+     "texto": "A gerência tomou ciência."
+    },
+    {
+     "data": "2026-11-11T14:13",
+     "texto": "A gerência providenciou o ajuste no local. Chamado concluído."
+    }
+   ]
+  },
+  {
+   "numero": "2026-029",
+   "assunto": "Limpeza",
+   "local": "Elevador de serviço – 4º andar (possivelmente outros andares)",
+   "solicitacao": "Excesso de produto de limpeza aplicado no piso, com risco de queda e possível dano ao granito, que ficou manchado. Pedido para orientar a equipe de limpeza quanto à quantidade e ao produto utilizados.",
+   "status": "Concluído",
+   "aberto_em": "2026-11-10T18:22",
+   "concluido_em": "2026-11-11T14:13",
+   "data_ocorrencia": "2026-11-09",
+   "responsavel": "Gerência do condomínio",
+   "historico": [
+    {
+     "data": "2026-11-10T18:22",
+     "texto": "Solicitação registrada no grupo, com foto."
+    },
+    {
+     "data": "2026-11-11T07:40",
+     "texto": "A gerência informou que vai verificar."
+    },
+    {
+     "data": "2026-11-11T14:13",
+     "texto": "A gerência providenciou o ajuste. Chamado concluído."
+    }
+   ]
+  }
+ ]
 }
