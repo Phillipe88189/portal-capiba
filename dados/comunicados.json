@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-09T13:55",
+  "atualizado_em": "2026-11-13T13:53",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -107,6 +107,27 @@
         "Faz gosto estacionar sem aperto."
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 8º, a, d, l, m e v."
+    },
+    {
+      "numero": "2026-007",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Convivência",
+      "titulo": "Elevadores: social, serviço e bom uso",
+      "publicado_em": "2026-11-13T13:53",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Saiba quando usar o elevador de serviço e como cuidar dos elevadores do nosso prédio. São regras simples do Regimento Interno.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto é o uso dos elevadores.",
+        "Em trajes de banho, mesmo secos, ou sem camisa, use o elevador de serviço. A regra vale para moradores, familiares e visitantes e ajuda a manter o elevador social limpo e conservado (art. 11, g).",
+        "O elevador de serviço também é o caminho para feiras, bagagens, grandes volumes, bicicletas, veículos infantis e animais de estimação (art. 11, h).",
+        "Não segure o elevador além do tempo necessário para embarcar e desembarcar pessoas e cargas. Assim, ninguém fica esperando à toa (art. 11, j).",
+        "Vai fazer mudança ou levar material volumoso e precisar do elevador de serviço por mais de 10 minutos? Informe o dia e o horário ao encarregado do condomínio, com antecedência (art. 11, e).",
+        "Danos causados aos elevadores, inclusive por familiares, visitantes, funcionários ou prestadores de serviço, devem ser ressarcidos integralmente pelo condômino responsável (art. 11, d).",
+        "Faz gosto cuidar do que é nosso"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 11, alíneas d, e, g, h e j"
     }
   ]
 }
