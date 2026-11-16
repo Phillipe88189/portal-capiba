@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-11T07:41",
-  "atualizado_em": "2026-11-11T15:35",
+  "ultima_mensagem": "2026-11-16T12:28",
+  "atualizado_em": "2026-11-16T20:50",
   "chamados": [
     {
       "numero": "2026-002",
@@ -441,7 +441,7 @@
       "solicitacao": "Risco de queda em área externa próxima ao Gazebo, com relato de tropeço. Pedido para acionar a empresa de irrigação e a jardinagem.",
       "status": "Concluído",
       "aberto_em": "2026-11-10T13:52",
-      "concluido_em": "2026-11-11T14:13",
+      "concluido_em": "2026-11-13T13:50",
       "data_ocorrencia": "2026-11-10",
       "responsavel": "Gerência do condomínio",
       "historico": [
@@ -455,9 +455,14 @@
         },
         {
           "data": "2026-11-11T14:13",
-          "texto": "A gerência providenciou o ajuste no local. Chamado concluído."
+          "texto": "A gerência providenciou o ajuste inicial no local."
+        },
+        {
+          "data": "2026-11-13T13:50",
+          "texto": "Feito o serviço de rebaixamento do aspersor, para evitar tropeços. Chamado concluído."
         }
-      ]
+      ],
+      "atualizado_em": "2026-11-13T13:50"
     },
     {
       "numero": "2026-029",
@@ -481,6 +486,191 @@
         {
           "data": "2026-11-11T14:13",
           "texto": "A gerência providenciou o ajuste. Chamado concluído."
+        },
+        {
+          "data": "2026-11-16T10:39",
+          "texto": "Relatos de piso escorregadio na academia, possivelmente pelo mesmo produto, seguem no chamado 2026-034."
+        }
+      ],
+      "atualizado_em": "2026-11-16T10:39"
+    },
+    {
+      "numero": "2026-030",
+      "assunto": "Manutenção",
+      "local": "Elevador de serviço",
+      "solicitacao": "Porta do elevador de serviço não está fechando corretamente (dois relatos, com vídeo e foto).",
+      "status": "Aguardando terceiros",
+      "aberto_em": "2026-11-11T21:42",
+      "data_ocorrencia": "2026-11-11",
+      "responsavel": "TKE (manutenção dos elevadores) e gerência do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "",
+      "atualizado_em": "2026-11-12T10:16",
+      "historico": [
+        {
+          "data": "2026-11-11T21:42",
+          "texto": "Solicitação registrada no grupo, com vídeo."
+        },
+        {
+          "data": "2026-11-12T08:27",
+          "texto": "Novo relato no grupo, com foto: a porta não fecha."
+        },
+        {
+          "data": "2026-11-12T08:31",
+          "texto": "A gestão abriu chamado na TKE (protocolo 9369626) e pediu à gerência que acompanhe o técnico e os testes."
+        },
+        {
+          "data": "2026-11-12T10:16",
+          "texto": "Elevador de serviço interditado até a TKE trocar a peça que quebrou. Capa de proteção instalada no elevador social. Lembrete: nunca forçar a abertura da porta; em emergência, acionar o interfone."
+        }
+      ]
+    },
+    {
+      "numero": "2026-031",
+      "assunto": "Manutenção",
+      "local": "Elevador social",
+      "solicitacao": "Elevador social parado no 3º andar; pergunta se havia problema ou alguém preso.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-13T16:11",
+      "data_ocorrencia": "2026-11-13",
+      "responsavel": "Gerência do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "",
+      "atualizado_em": "2026-11-13T16:19",
+      "historico": [
+        {
+          "data": "2026-11-13T16:11",
+          "texto": "Solicitação registrada no grupo, com vídeo."
+        },
+        {
+          "data": "2026-11-13T16:19",
+          "texto": "A gerência tomou ciência. Aguardando retorno sobre a causa."
+        }
+      ]
+    },
+    {
+      "numero": "2026-032",
+      "assunto": "Melhoria",
+      "local": "Campinho e gramado próximo ao Gazebo",
+      "solicitacao": "Grama desgastada no campinho e no gramado próximo ao Gazebo. Pedido de previsão de replantio.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-13T13:55",
+      "data_ocorrencia": "2026-11-13",
+      "responsavel": "Gestão do condomínio e jardinagem",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "",
+      "atualizado_em": "2026-11-13T16:39",
+      "historico": [
+        {
+          "data": "2026-11-13T13:55",
+          "texto": "Desgaste da grama relatado no grupo; pedido de previsão de replantio."
+        },
+        {
+          "data": "2026-11-13T16:28",
+          "texto": "A gestão informou que o campinho precisa de um tipo de grama mais resistente aos esportes. O jardineiro está levantando o orçamento. Outras opções, como grama sintética ou areia, serão discutidas em assembleia."
+        },
+        {
+          "data": "2026-11-13T16:39",
+          "texto": "Qualquer mudança no tipo de piso depende de avaliação da área verde e de aprovação do investimento em assembleia."
+        }
+      ]
+    },
+    {
+      "numero": "2026-033",
+      "assunto": "Convivência",
+      "local": "Garagem – carregadores de veículos elétricos",
+      "solicitacao": "Protetores dos carregadores de veículos elétricos encontrados sem a tampa e com água acumulada. Pedido de colaboração no uso correto.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-13T20:26",
+      "data_ocorrencia": "2026-11-13",
+      "responsavel": "Gestão do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "",
+      "atualizado_em": "2026-11-14T06:51",
+      "historico": [
+        {
+          "data": "2026-11-13T20:26",
+          "texto": "Solicitação registrada no grupo, com fotos."
+        },
+        {
+          "data": "2026-11-14T06:51",
+          "texto": "A gestão vai enviar orientação a todos que usam os carregadores, reforçando que a tampa deve ser recolocada após o uso."
+        }
+      ]
+    },
+    {
+      "numero": "2026-034",
+      "assunto": "Limpeza",
+      "local": "Academia – tablado",
+      "solicitacao": "Piso da academia muito escorregadio, dificultando alguns exercícios (relatos de vários moradores). Possivelmente o mesmo produto citado no chamado 2026-029.",
+      "status": "Concluído",
+      "aberto_em": "2026-11-14T11:21",
+      "data_ocorrencia": "2026-11-14",
+      "responsavel": "Gerência do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "2026-11-16T10:39",
+      "atualizado_em": "2026-11-16T10:39",
+      "historico": [
+        {
+          "data": "2026-11-14T11:21",
+          "texto": "Solicitação registrada no grupo, com outros moradores relatando o mesmo."
+        },
+        {
+          "data": "2026-11-16T10:39",
+          "texto": "Uso do produto atual suspenso. O tablado passa a ser limpo apenas com pano úmido. Chamado concluído."
+        }
+      ]
+    },
+    {
+      "numero": "2026-035",
+      "assunto": "Manutenção",
+      "local": "Garagem – hidrante (sistema de incêndio)",
+      "solicitacao": "Vazamento de água no hidrante da garagem, com água acumulada no piso.",
+      "status": "Concluído",
+      "aberto_em": "2026-11-15T19:02",
+      "data_ocorrencia": "2026-11-15",
+      "responsavel": "Gerência do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "2026-11-16T09:21",
+      "atualizado_em": "2026-11-16T09:21",
+      "historico": [
+        {
+          "data": "2026-11-15T19:02",
+          "texto": "Solicitação registrada no grupo, com vídeo e foto."
+        },
+        {
+          "data": "2026-11-15T19:32",
+          "texto": "A gestão informou que a gerência verificaria o local na manhã seguinte."
+        },
+        {
+          "data": "2026-11-16T09:21",
+          "texto": "Vazamento resolvido. A gestão reforça que não é permitido usar o sistema de incêndio (hidrantes e registros) para outros fins. Chamado concluído."
+        }
+      ]
+    },
+    {
+      "numero": "2026-036",
+      "assunto": "Melhoria",
+      "local": "Garagem do subsolo – Wi-Fi",
+      "solicitacao": "Sugestão de instalar repetidor de Wi-Fi na garagem do subsolo, onde o sinal de celular não funciona, principalmente nas vagas próximas ao Pet place. Importante para apps de mapa e ligações urgentes.",
+      "status": "Aberto",
+      "aberto_em": "2026-11-16T12:28",
+      "data_ocorrencia": "2026-11-16",
+      "responsavel": "Gestão do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "",
+      "atualizado_em": "2026-11-16T12:28",
+      "historico": [
+        {
+          "data": "2026-11-16T12:28",
+          "texto": "Sugestão registrada no grupo."
         }
       ]
     }
