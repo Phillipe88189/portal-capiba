@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-14T08:15",
+  "atualizado_em": "2026-11-16T13:52",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -132,6 +132,27 @@
         "Faz gosto cuidar do que é nosso"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 11, alíneas d, e, g, h e j"
+    },
+    {
+      "numero": "2026-008",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Convivência",
+      "titulo": "Animais de estimação e Pet place",
+      "publicado_em": "2026-11-16T13:52",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Veja como circular com seu animal pelo prédio e como usar o Pet place. São regras simples do Regimento Interno.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto são os animais de estimação e o Pet place.",
+        "Cães circulam sempre de coleira. Em situações específicas, a administração pode determinar também o uso de focinheira (art. 29, c).",
+        "Para transportar seu animal, use o elevador de serviço. O elevador social só pode ser usado no horário do lixo ou quando o de serviço estiver fora de operação (art. 29, d).",
+        "Nas áreas comuns, o animal só circula no caminho para o Pet place, na saída de serviço e no acesso à garagem, exceto cães-guia. Os animais não podem fazer as necessidades nas áreas comuns. Se acontecer, o responsável deve limpar o local na hora (art. 29, e).",
+        "O Pet place é exclusivo para cães de moradores, e o acesso só é liberado depois do cadastro do cão na Administração do Condomínio (art. 21, a e b).",
+        "Durante o uso, fique no Pet place com seu cão o tempo todo e recolha as fezes imediatamente, descartando nos locais indicados (art. 21, e e i).",
+        "Faz gosto conviver"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 21, alíneas a, b, e e i; art. 29, alíneas c, d e e"
     }
   ]
 }
