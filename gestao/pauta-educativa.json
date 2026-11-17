@@ -72,10 +72,12 @@
       "artigos": [
         "30"
       ],
-      "status": "pendente",
+      "status": "publicado",
       "trechos": {
         "art. 30": "Art. 30. Aplicam-se as seguintes normas para o manejo do lixo:\na) O lixo doméstico das unidades autônomas deverá ser acondicionado em sacos plásticos apropriados e devidamente fechados, sendo, em seguida, depositado nos coletores destinados a tal fim, localizado nas garagens. Os coletores pretos são para o lixo orgânico, já os amarelos para os recicláveis, devendo ser segregado de forma a assegurar a integridade dos materiais recicláveis;\nb) Cada condômino será responsável pela correta coleta seletiva do lixo gerado em sua unidade autônoma, devendo também orientar seus empregados acerca das normas de segurança, limpeza, higiene e correta classificação dos resíduos, distinguindo entre material orgânico e reciclável;\nc) entulhos, restos de obras, madeiras, materiais de construção ou quaisquer outros detritos que não se enquadrem como lixo doméstico, o condômino é responsável por providenciar o descarte adequado desses materiais, de acordo com as normas estabelecidas pela administração do condomínio.\nd) Ao descer com o seu lixo o morador deverá utilizar exclusivamente o elevador de serviço.\ne) É proibido deixar lixo em qualquer outro lugar que não as lixeiras devidamente identificadas."
-      }
+      },
+      "comunicado": "2026-009",
+      "publicado_em": "2026-11-17"
     },
     {
       "ordem": 7,

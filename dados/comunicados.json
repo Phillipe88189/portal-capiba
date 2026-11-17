@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-16T13:52",
+  "atualizado_em": "2026-11-17T13:52",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -153,6 +153,27 @@
         "Faz gosto conviver"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 21, alíneas a, b, e e i; art. 29, alíneas c, d e e"
+    },
+    {
+      "numero": "2026-009",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Limpeza",
+      "titulo": "Lixo: como descartar corretamente",
+      "publicado_em": "2026-11-17T13:52",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Veja onde e como descartar o lixo da sua unidade. São regras simples do Regimento Interno que mantêm nosso prédio limpo.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto é o descarte correto do lixo.",
+        "Coloque o lixo em sacos plásticos apropriados e bem fechados. Depois, deposite nos coletores das garagens: os pretos são para o lixo orgânico e os amarelos, para os recicláveis (art. 30, a).",
+        "Cada morador é responsável pela coleta seletiva do lixo da sua unidade. Oriente também quem trabalha na sua casa a separar o material orgânico do reciclável (art. 30, b).",
+        "Ao descer com o lixo, use sempre o elevador de serviço (art. 30, d).",
+        "Entulho, restos de obra, madeira e materiais de construção não são lixo doméstico. O descarte desses materiais fica por conta do morador, seguindo as normas da administração do condomínio (art. 30, c).",
+        "Não deixe lixo em nenhum lugar além das lixeiras identificadas (art. 30, e).",
+        "Faz gosto cuidar do nosso prédio"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 30, alíneas a, b, c, d e e"
     }
   ]
 }
