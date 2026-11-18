@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-17T13:52",
+  "atualizado_em": "2026-11-18T13:50",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -174,6 +174,26 @@
         "Faz gosto cuidar do nosso prédio"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 30, alíneas a, b, c, d e e"
+    },
+    {
+      "numero": "2026-010",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Lazer",
+      "titulo": "Piscina: horários e cuidados no uso",
+      "publicado_em": "2026-11-18T13:50",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Confira o horário da piscina e os principais cuidados no uso. São regras do Regimento Interno que deixam esse espaço seguro e agradável para todos.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto é a piscina.",
+        "A piscina funciona todos os dias, das 6h às 22h. Às segundas-feiras, ela fica fechada das 14h às 16h para limpeza (art. 17, b).",
+        "Cada unidade pode levar até 6 convidados por vez (art. 17, a). Antes de entrar na piscina, use a ducha (art. 17, c).",
+        "O condomínio não disponibiliza salva-vidas (art. 17, e). Por isso, crianças menores de 14 anos só podem usar a piscina acompanhadas dos pais ou responsáveis (art. 18, h).",
+        "Você pode comer e beber nas mesas de apoio da área da piscina, desde que não use nenhum utensílio de vidro, como copos, garrafas e pratos (art. 18, q).",
+        "Faz gosto aproveitar a piscina"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 17, alíneas a, b, c e e; art. 18, alíneas h e q"
     }
   ]
 }
