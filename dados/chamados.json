@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
   "ultima_mensagem": "2026-11-17T21:04",
-  "atualizado_em": "2026-11-17T21:45",
+  "atualizado_em": "2026-11-18T16:16",
   "chamados": [
     {
       "numero": "2026-002",
@@ -38,7 +38,7 @@
       "assunto": "Descumprimento do RI",
       "local": "Pet place",
       "solicitacao": "Fezes de animal não recolhidas no Pet place, com fotos enviadas ao grupo. Outro morador relatou o mesmo mais cedo, no mesmo dia. O RI determina que o tutor recolha as fezes imediatamente e as descarte nos locais indicados (RI, art. 21, alínea e).",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-02T17:08",
       "data_ocorrencia": "2026-11-02",
       "responsavel": "Síndico e gerência predial",
@@ -54,15 +54,21 @@
         {
           "data": "2026-11-03T12:11",
           "texto": "A gestão informou que a limpeza do Pet place já foi iniciada."
+        },
+        {
+          "data": "2026-11-18T16:16",
+          "texto": "Estamos acompanhando de perto para evitar novas situações do tipo."
         }
-      ]
+      ],
+      "atualizado_em": "2026-11-18T16:16",
+      "concluido_em": "2026-11-18"
     },
     {
       "numero": "2026-009",
       "assunto": "Manutenção",
       "local": "Hall do 7º andar (próximo ao shaft)",
       "solicitacao": "Cheiro forte de esgoto no hall, mais frequente nos últimos dias. É sentido no hall, e não dentro da unidade. O ponto mais forte fica perto do shaft.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-04T07:26",
       "data_ocorrencia": "2026-11-04",
       "responsavel": "Gerência predial",
@@ -82,8 +88,14 @@
         {
           "data": "2026-11-04T12:45",
           "texto": "O ponto mais forte foi identificado perto do shaft. Dica de outro morador: tubulações de esgoto abertas nas unidades (por exemplo, a saída da lava-louças não instalada) podem causar o odor; vale cada unidade do andar verificar."
+        },
+        {
+          "data": "2026-11-18T16:16",
+          "texto": "Confirmado com a moradora que não houve mais ocorrências."
         }
-      ]
+      ],
+      "atualizado_em": "2026-11-18T16:16",
+      "concluido_em": "2026-11-18"
     },
     {
       "numero": "2026-011",
@@ -195,8 +207,8 @@
     {
       "aberto_em": "2026-11-07T09:05",
       "assunto": "Manutenção",
-      "atualizado_em": "2026-11-11T14:25",
-      "concluido_em": "",
+      "atualizado_em": "2026-11-18T16:15",
+      "concluido_em": "2026-11-18",
       "data_ocorrencia": "2026-11-07",
       "historico": [
         {
@@ -206,6 +218,14 @@
         {
           "data": "2026-11-11T14:25",
           "texto": "Já foi acionado o prestador de serviço, e o reparo será efetuado."
+        },
+        {
+          "data": "2026-11-18T16:15",
+          "texto": "Troca dos LEDs queimados realizada."
+        },
+        {
+          "data": "2026-11-18T16:15",
+          "texto": "Situação alterada para “Concluído”."
         }
       ],
       "local": "Hall de entrada – iluminação",
@@ -214,7 +234,7 @@
       "previsao": "2026-11-11",
       "responsavel": "Gerência do condomínio",
       "solicitacao": "Lâmpadas de LED queimadas na iluminação do hall de entrada. Verificar e substituir as lâmpadas com defeito.",
-      "status": "Em andamento"
+      "status": "Concluído"
     },
     {
       "aberto_em": "2026-11-07T09:25",
@@ -243,8 +263,8 @@
     {
       "aberto_em": "2026-11-07T09:30",
       "assunto": "Manutenção",
-      "atualizado_em": "2026-11-11T14:22",
-      "concluido_em": "",
+      "atualizado_em": "2026-11-18T16:15",
+      "concluido_em": "2026-11-18",
       "data_ocorrencia": "2026-11-07",
       "historico": [
         {
@@ -258,6 +278,10 @@
         {
           "data": "2026-11-11T14:22",
           "texto": "Aguardando posição da Vale sobre a finalização da instalação do Passa Volumes."
+        },
+        {
+          "data": "2026-11-18T16:15",
+          "texto": "Pintura e instalação concluídas."
         }
       ],
       "local": "Eclusa – pintura",
@@ -266,7 +290,7 @@
       "previsao": "2026-11-11",
       "responsavel": "Construtora (Vale)",
       "solicitacao": "Pintura da eclusa danificada.",
-      "status": "Aguardando terceiros"
+      "status": "Concluído"
     },
     {
       "aberto_em": "2026-11-07T09:32",
@@ -301,7 +325,7 @@
       "assunto": "Manutenção",
       "local": "Sistema de irrigação – todo o prédio",
       "solicitacao": "Sistema de irrigação desregulado em alguns pontos do prédio.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-07T09:35",
       "data_ocorrencia": "2026-11-07",
       "responsavel": "Gestão do condomínio",
@@ -313,8 +337,14 @@
         {
           "data": "2026-11-07T09:35",
           "texto": "A gestão vai se reunir com a equipe de jardinagem para avaliar o sistema e acionar a empresa responsável para regular a irrigação. Até a regulagem, os locais com o sistema desregulado serão irrigados manualmente."
+        },
+        {
+          "data": "2026-11-18T16:14",
+          "texto": "Todo o sistema de irrigação foi configurado corretamente. Qualquer novo problema, sinalize à gestão."
         }
-      ]
+      ],
+      "atualizado_em": "2026-11-18T16:14",
+      "concluido_em": "2026-11-12"
     },
     {
       "numero": "2026-024",
@@ -415,7 +445,7 @@
       "assunto": "Manutenção",
       "local": "Garagem – irrigador do campinho",
       "solicitacao": "Irrigador do campinho molha veículos estacionados na garagem, causando manchas e sujeira. Pedido de ajuste do irrigador.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-10T09:37",
       "data_ocorrencia": "2026-11-10",
       "responsavel": "Gestão do condomínio",
@@ -431,8 +461,14 @@
         {
           "data": "2026-11-11T14:13",
           "texto": "O tema da regulagem geral da irrigação segue acompanhado também no chamado 2026-023."
+        },
+        {
+          "data": "2026-11-18T16:13",
+          "texto": "Situação alterada para “Concluído”."
         }
-      ]
+      ],
+      "atualizado_em": "2026-11-18T16:13",
+      "concluido_em": "2026-11-18"
     },
     {
       "numero": "2026-028",
@@ -490,23 +526,27 @@
         {
           "data": "2026-11-16T10:39",
           "texto": "Relatos de piso escorregadio na academia, possivelmente pelo mesmo produto, seguem no chamado 2026-034."
+        },
+        {
+          "data": "2026-11-18T16:13",
+          "texto": "A limpeza será realizada apenas com pano e papel úmido."
         }
       ],
-      "atualizado_em": "2026-11-16T10:39"
+      "atualizado_em": "2026-11-18T16:13"
     },
     {
       "numero": "2026-030",
       "assunto": "Manutenção",
       "local": "Elevador de serviço",
       "solicitacao": "Porta do elevador de serviço não está fechando corretamente (dois relatos, com vídeo e foto).",
-      "status": "Aguardando terceiros",
+      "status": "Concluído",
       "aberto_em": "2026-11-11T21:42",
       "data_ocorrencia": "2026-11-11",
       "responsavel": "TKE (manutenção dos elevadores) e gerência do condomínio",
       "origem": "WhatsApp – Reclame aqui",
       "previsao": "",
-      "concluido_em": "",
-      "atualizado_em": "2026-11-12T10:16",
+      "concluido_em": "2026-11-18",
+      "atualizado_em": "2026-11-18T16:12",
       "historico": [
         {
           "data": "2026-11-11T21:42",
@@ -523,6 +563,10 @@
         {
           "data": "2026-11-12T10:16",
           "texto": "Elevador de serviço interditado até a TKE trocar a peça que quebrou. Capa de proteção instalada no elevador social. Lembrete: nunca forçar a abertura da porta; em emergência, acionar o interfone."
+        },
+        {
+          "data": "2026-11-18T16:12",
+          "texto": "Manutenção realizada. Qualquer problema, por favor, reportem novamente."
         }
       ]
     },
@@ -531,14 +575,14 @@
       "assunto": "Manutenção",
       "local": "Elevador social",
       "solicitacao": "Elevador social parado no 3º andar; pergunta se havia problema ou alguém preso.",
-      "status": "Aberto",
+      "status": "Não procede",
       "aberto_em": "2026-11-13T16:11",
       "data_ocorrencia": "2026-11-13",
       "responsavel": "Gerência do condomínio",
       "origem": "WhatsApp – Reclame aqui",
       "previsao": "",
       "concluido_em": "",
-      "atualizado_em": "2026-11-13T16:19",
+      "atualizado_em": "2026-11-18T16:12",
       "historico": [
         {
           "data": "2026-11-13T16:11",
@@ -547,6 +591,10 @@
         {
           "data": "2026-11-13T16:19",
           "texto": "A gerência tomou ciência. Aguardando retorno sobre a causa."
+        },
+        {
+          "data": "2026-11-18T16:12",
+          "texto": "Apenas um morador carregando/descarregando."
         }
       ]
     },
@@ -583,14 +631,14 @@
       "assunto": "Convivência",
       "local": "Garagem – carregadores de veículos elétricos",
       "solicitacao": "Protetores dos carregadores de veículos elétricos encontrados sem a tampa e com água acumulada. Pedido de colaboração no uso correto.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-13T20:26",
       "data_ocorrencia": "2026-11-13",
       "responsavel": "Gestão do condomínio",
       "origem": "WhatsApp – Reclame aqui",
       "previsao": "",
-      "concluido_em": "",
-      "atualizado_em": "2026-11-14T06:51",
+      "concluido_em": "2026-11-18",
+      "atualizado_em": "2026-11-18T16:11",
       "historico": [
         {
           "data": "2026-11-13T20:26",
@@ -599,6 +647,10 @@
         {
           "data": "2026-11-14T06:51",
           "texto": "A gestão vai enviar orientação a todos que usam os carregadores, reforçando que a tampa deve ser recolocada após o uso."
+        },
+        {
+          "data": "2026-11-18T16:11",
+          "texto": "Orientação passada a todos os moradores."
         }
       ]
     },
@@ -711,14 +763,14 @@
       "assunto": "Melhoria",
       "local": "Áreas comuns – internet do coworking",
       "solicitacao": "Internet do coworking lenta e instável, com quedas frequentes (relatos de vários moradores). Pedido de melhoria do serviço e sugestão de contratar uma internet de backup para as áreas comuns.",
-      "status": "Em andamento",
+      "status": "Concluído",
       "aberto_em": "2026-11-17T20:27",
       "data_ocorrencia": "2026-11-17",
       "responsavel": "Gestão do condomínio e provedor de internet (BBG)",
       "origem": "WhatsApp – Reclame aqui",
       "previsao": "",
-      "concluido_em": "",
-      "atualizado_em": "2026-11-17T21:04",
+      "concluido_em": "2026-11-18",
+      "atualizado_em": "2026-11-18T15:54",
       "historico": [
         {
           "data": "2026-11-17T20:27",
@@ -735,6 +787,10 @@
         {
           "data": "2026-11-17T21:04",
           "texto": "Moradores reforçaram que consideram a internet de backup um investimento prioritário, pelo uso do coworking para trabalho e reuniões."
+        },
+        {
+          "data": "2026-11-18T15:54",
+          "texto": "Conseguimos uma cortesia com a Vivo, que vai instalar um ponto de internet adicional na próxima semana. A BBG também virá ao condomínio para verificar possíveis instabilidades no serviço."
         }
       ]
     }
