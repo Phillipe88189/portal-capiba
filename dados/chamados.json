@@ -1,7 +1,7 @@
 {
   "grupo": "Reclame aqui – Solicitações",
-  "ultima_mensagem": "2026-11-16T12:28",
-  "atualizado_em": "2026-11-16T20:50",
+  "ultima_mensagem": "2026-11-17T21:04",
+  "atualizado_em": "2026-11-17T21:45",
   "chamados": [
     {
       "numero": "2026-002",
@@ -659,18 +659,82 @@
       "assunto": "Melhoria",
       "local": "Garagem do subsolo – Wi-Fi",
       "solicitacao": "Sugestão de instalar repetidor de Wi-Fi na garagem do subsolo, onde o sinal de celular não funciona, principalmente nas vagas próximas ao Pet place. Importante para apps de mapa e ligações urgentes.",
-      "status": "Aberto",
+      "status": "Em andamento",
       "aberto_em": "2026-11-16T12:28",
       "data_ocorrencia": "2026-11-16",
       "responsavel": "Gestão do condomínio",
       "origem": "WhatsApp – Reclame aqui",
       "previsao": "",
       "concluido_em": "",
-      "atualizado_em": "2026-11-16T12:28",
+      "atualizado_em": "2026-11-17T20:42",
       "historico": [
         {
           "data": "2026-11-16T12:28",
           "texto": "Sugestão registrada no grupo."
+        },
+        {
+          "data": "2026-11-17T20:38",
+          "texto": "A gestão informou que os pontos de internet das áreas comuns são cortesia das empresas que operam no prédio e que há uma nova empresa em vias de entrar; dando certo, haverá mais um ponto de acesso."
+        },
+        {
+          "data": "2026-11-17T20:42",
+          "texto": "O tema da internet nas áreas comuns (coworking e demais áreas) segue acompanhado também no chamado 2026-038."
+        }
+      ]
+    },
+    {
+      "numero": "2026-037",
+      "assunto": "Manutenção",
+      "local": "Térreo – banheiro feminino (em frente ao salão de festas)",
+      "solicitacao": "Pia do banheiro entupida e lixeira cheia.",
+      "status": "Concluído",
+      "aberto_em": "2026-11-17T18:45",
+      "data_ocorrencia": "2026-11-17",
+      "responsavel": "Gerência do condomínio",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "2026-11-17T20:37",
+      "atualizado_em": "2026-11-17T20:37",
+      "historico": [
+        {
+          "data": "2026-11-17T18:45",
+          "texto": "Solicitação registrada no grupo."
+        },
+        {
+          "data": "2026-11-17T20:37",
+          "texto": "Resolvido. Chamado concluído."
+        }
+      ]
+    },
+    {
+      "numero": "2026-038",
+      "assunto": "Melhoria",
+      "local": "Áreas comuns – internet do coworking",
+      "solicitacao": "Internet do coworking lenta e instável, com quedas frequentes (relatos de vários moradores). Pedido de melhoria do serviço e sugestão de contratar uma internet de backup para as áreas comuns.",
+      "status": "Em andamento",
+      "aberto_em": "2026-11-17T20:27",
+      "data_ocorrencia": "2026-11-17",
+      "responsavel": "Gestão do condomínio e provedor de internet (BBG)",
+      "origem": "WhatsApp – Reclame aqui",
+      "previsao": "",
+      "concluido_em": "",
+      "atualizado_em": "2026-11-17T21:04",
+      "historico": [
+        {
+          "data": "2026-11-17T20:27",
+          "texto": "Solicitação registrada no grupo; outros moradores relataram o mesmo problema e sugeriram uma internet de backup."
+        },
+        {
+          "data": "2026-11-17T20:39",
+          "texto": "A gestão informou que os pontos de internet das áreas comuns são cortesia das empresas que operam no prédio e que o backup existente atende apenas aos sistemas do prédio, não ao uso dos moradores."
+        },
+        {
+          "data": "2026-11-17T20:42",
+          "texto": "No momento, o condomínio não assumirá novos gastos recorrentes até que a situação financeira esteja bem clara. A gestão vai abrir chamado com a BBG para que verifique a internet atual. Uma nova empresa pode passar a operar no prédio e oferecer mais um ponto de acesso (ver chamado 2026-036)."
+        },
+        {
+          "data": "2026-11-17T21:04",
+          "texto": "Moradores reforçaram que consideram a internet de backup um investimento prioritário, pelo uso do coworking para trabalho e reuniões."
         }
       ]
     }
