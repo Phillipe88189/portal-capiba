@@ -100,10 +100,12 @@
       "artigos": [
         "34"
       ],
-      "status": "pendente",
+      "status": "publicado",
       "trechos": {
         "art. 34": "Art. 34. Para os efeitos deste Regulamento, considera-se mudança qualquer locomoção de móveis, objetos e itens assemelhados, tanto para entrada quanto para saída do condomínio, sendo observadas as seguintes normas:\na) Toda mudança deverá ser previamente comunicada ao Encarregado do Condomínio e agendada com antecedência mínima de 48 (quarenta e oito) horas, devendo ser informado, obrigatoriamente, o dia e a hora pretendida para a realização da mudança;\nb) A confirmação do agendamento da mudança estará condicionada à\ninexistência de outra mudança programada para a mesma data e horário, com o objetivo de evitar a sobrecarga do elevador e assegurar um melhor controle do fluxo de trabalhadores e veículos externos ao edifício;\nc) O transporte de móveis e objetos deverá ocorrer exclusivamente de segunda a sábado, no horário das 8h00 às 12h00 e das 13h00 às 18h00, salvo necessidades especiais e previamente autorizadas pelo Síndico, Subsíndico ou Conselheiros\nd) A realização de mudanças será proibida aos domingos e feriados, salvo necessidades especiais e previamente autorizadas pelo Síndico, Subsíndico ou Conselheiros;\ne) A Administração do Condomínio não se responsabiliza por quaisquer danos, acidentes ou furtos que possam ocorrer durante as mudanças e/ou a entrega de mercadorias ou materiais, ficando a responsabilidade exclusiva do condômino por eventuais danos a áreas comuns, incluindo, mas não se limitando a, manchas, riscos na pintura ou acabamento geral, quebra de soleiras, degraus, luminárias, móveis, utensílios, acessórios, máquinas e equipamentos instalados de uso comum ou privativo;\nf) Os titulares das unidades autônomas ou respectivos moradores que sofrerem quaisquer danos ou prejuízos ocasionados por mudanças realizadas por terceiros deverão apresentar, imediatamente, sua reclamação ao síndico e ao Encarregado do Condomínio, por escrito, para que sejam tomadas as devidas providências, comunicar a empresa responsável pelo dano e abertura de um Boletim de Ocorrência eletrônico (BO), salvo haja acordo firmado entre as partes a abertura do BO torna-se opcional. Eventuais medidas judiciais para a reparação dos danos serão de iniciativa pessoal do prejudicado, cabendo ao condomínio apenas a confirmação da efetiva ocorrência dos fatos;\ng) Os materiais deverão ingressar pelo térreo do edifício, utilizando carrinhos apropriados ou sendo transportados manualmente, e o transporte deverá ser realizado exclusivamente pelo hall do elevador de serviço. O veículo de transporte deverá permanecer estacionado na via pública durante o processo de mudança."
-      }
+      },
+      "comunicado": "2026-011",
+      "publicado_em": "2026-11-19"
     },
     {
       "ordem": 9,
