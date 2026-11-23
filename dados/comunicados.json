@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-19T13:51",
+  "atualizado_em": "2026-11-23T13:51",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -214,6 +214,27 @@
         "Faz gosto conviver"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 34, caput e alíneas a, b, c, d, e e g"
+    },
+    {
+      "numero": "2026-012",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Segurança",
+      "titulo": "Segurança: regras gerais do dia a dia",
+      "publicado_em": "2026-11-23T13:51",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Veja algumas regras de segurança do nosso Regimento Interno: prestadores de serviço, funcionários particulares, crianças, entrega de água mineral e objetos nas áreas comuns.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto são as normas gerais de segurança do nosso prédio (art. 32).",
+        "Prestadores de serviço contratados por você podem permanecer no condomínio até as 18h. Depois desse horário, só se você estiver na sua unidade e desde que não haja barulho (art. 32, b).",
+        "Contratou ou dispensou um funcionário particular, como secretária, babá, diarista ou motorista? Comunique à administração do condomínio e informe nome completo, RG, horário de trabalho e as datas de admissão e demissão (art. 32, d).",
+        "As crianças devem estar acompanhadas dos responsáveis em todas as áreas do condomínio. A permanência desacompanhada não é permitida (art. 32, f).",
+        "Só funcionários de empresas de água mineral cadastradas têm acesso aos apartamentos. Eles devem estar cadastrados na portaria e usar crachá de identificação e uniforme (art. 32, g).",
+        "O condomínio não se responsabiliza pela guarda de objetos deixados nas áreas comuns. Cuidar dos seus pertences é responsabilidade de cada um (art. 32, j).",
+        "Faz gosto cuidar do nosso prédio"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 32, caput e alíneas b, d, f, g e j"
     }
   ]
 }
