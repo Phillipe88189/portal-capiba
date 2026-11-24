@@ -142,11 +142,13 @@
         "10",
         "9"
       ],
-      "status": "pendente",
+      "status": "publicado",
       "trechos": {
         "art. 10": "Art. 10. O uso do bicicletário está sujeito às seguintes regras:\na) As bicicletas deverão ser devidamente acondicionadas com cadeados de segurança;\nb) Quaisquer danos causados a veículos ou a outras propriedades por bicicletas ou similares serão de exclusiva responsabilidade do condômino ou usuário da bicicleta, isentando o condomínio de toda e qualquer responsabilidade por tais ocorrências;\nc) É vedado o armazenamento de bicicletas em halls, escadas ou em quaisquer outras áreas comuns do condomínio. Sendo permitido guardar as bicicletas na própria vaga de garagem;\nd) O condomínio não se responsabiliza por qualquer furto ou dano às bicicletas, isentando-se de qualquer obrigação de guarda ou indenização em razão desses eventos.",
         "art. 9": "Art. 9º O uso dos carrinhos de compras está sujeito às seguintes regras:\na) O uso dos carrinhos de compras será permitido exclusivamente no elevador de serviço, exceto nas seguintes situações: (i) quando o elevador de serviço estiver quebrado, em manutenção ou sendo utilizado para coleta de lixo, ou (ii) quando o elevador de serviço estiver sendo usados para mudança. Nestes casos, poderá ser utilizado o elevador social, desde que coberto com a capa de proteção fornecida pelo condomínio;\nb) Após a utilização do carrinho de compras, o condômino deverá deixá-lo no local apropriado e preso à chave de segurança, de acordo com as instruções fornecidas pela administração condominial;\nc) O carrinho de compras é destinado exclusivamente para o transporte de compras, sendo vedado o seu uso para outros fins, tais como transporte de animais, materiais de construção ou itens de reforma."
-      }
+      },
+      "comunicado": "2026-013",
+      "publicado_em": "2026-11-24"
     },
     {
       "ordem": 12,

@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T13:51",
+  "atualizado_em": "2026-11-24T13:53",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -235,6 +235,27 @@
         "Faz gosto cuidar do nosso prédio"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 32, caput e alíneas b, d, f, g e j"
+    },
+    {
+      "numero": "2026-013",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Regras gerais",
+      "titulo": "Bicicletário e carrinhos de compras",
+      "publicado_em": "2026-11-24T13:53",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Veja as regras do nosso Regimento Interno para guardar bicicletas e usar os carrinhos de compras do condomínio.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto é o bicicletário e os carrinhos de compras (arts. 9º e 10).",
+        "No bicicletário, prenda sua bicicleta com cadeado de segurança (art. 10, a). Bicicletas não podem ficar em halls, escadas ou outras áreas comuns. Você também pode guardá-la na sua própria vaga de garagem (art. 10, c).",
+        "Danos causados por bicicletas a veículos ou a outros bens são de responsabilidade de quem usa a bicicleta. O condomínio também não responde por furto ou dano às bicicletas (art. 10, b e d).",
+        "Os carrinhos de compras devem ser usados só no elevador de serviço. O elevador social pode ser usado, com a capa de proteção fornecida pelo condomínio, apenas quando o de serviço estiver quebrado, em manutenção, na coleta de lixo ou em uso para mudança (art. 9º, a).",
+        "Depois de usar, deixe o carrinho no local apropriado e preso à chave de segurança, conforme as instruções da administração (art. 9º, b).",
+        "O carrinho serve apenas para transportar compras. Não use para levar animais, materiais de construção ou itens de reforma (art. 9º, c).",
+        "Faz gosto conviver"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 9º, alíneas a, b e c; art. 10, alíneas a, b, c e d"
     }
   ]
 }
