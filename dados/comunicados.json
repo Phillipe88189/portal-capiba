@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T13:53",
+  "atualizado_em": "2026-11-25T15:15",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -256,6 +256,25 @@
         "Faz gosto conviver"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 9º, alíneas a, b e c; art. 10, alíneas a, b, c e d"
+    },
+    {
+      "numero": "2026-014",
+      "tipo": "aviso",
+      "categoria": "Regras gerais",
+      "titulo": "Regimento Interno: versão consolidada",
+      "publicado_em": "2026-11-25T15:15",
+      "assinatura": "Síndico e Subsíndico · Administração do Condomínio do Edifício Capiba",
+      "fixado": true,
+      "resumo": "O Regimento Interno ganhou uma versão consolidada, assinada em 19/11/2026. As regras do dia a dia continuam as mesmas. Veja o que foi ajustado.",
+      "texto": [
+        "Caros moradores, o nosso Regimento Interno, aprovado na assembleia de 24/02/2026, ganhou uma versão consolidada, assinada pelo síndico e pelo subsíndico em 19/11/2026. Ela organiza o texto e ajusta pontos que geravam dúvida.",
+        "Obras e reformas. O horário continua o mesmo: de segunda a sexta, das 8h às 12h e das 14h às 18h; aos sábados, das 8h às 13h (art. 7º, cc, e art. 33, b). O artigo das reformas trazia “13h às 17h”, diferente do que a assembleia de 24/02/2026 decidiu ao manter o intervalo de duas horas. Agora os dois artigos dizem a mesma coisa.",
+        "Campinho. O texto deixou de prever reserva pelo aplicativo. O Campinho funciona das 6h às 22h e, havendo fila, cada partida dura até 30 minutos (art. 16, caput e alínea b).",
+        "Numeração. Foram corrigidas referências internas e a numeração de algumas alíneas (arts. 5º, 13, 14, 16, 18, 20 e 36). O conteúdo dessas regras não mudou, e as citações no app já seguem a nova numeração.",
+        "A aba Regras do app já está atualizada. O documento completo pode ser consultado com a administração, com agendamento (art. 6º, g).",
+        "Faz gosto conviver"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba, versão consolidada de 19/11/2026: arts. 6º, g; 7º, cc; 16; 33, b"
     }
   ]
 }
