@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-25T15:15",
+  "atualizado_em": "2026-11-26T13:50",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -275,6 +275,26 @@
         "Faz gosto conviver"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba, versão consolidada de 19/11/2026: arts. 6º, g; 7º, cc; 16; 33, b"
+    },
+    {
+      "numero": "2026-015",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Convivência",
+      "titulo": "Horário de silêncio: sossego para todos",
+      "publicado_em": "2026-11-26T13:50",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Veja o que o nosso Regimento Interno diz sobre barulho e sobre o horário de silêncio, das 22h às 8h.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto é o horário de silêncio (art. 7º, h).",
+        "Evite qualquer barulho sem necessidade, em qualquer horário. A ideia é preservar o sossego e a tranquilidade de todos os moradores (art. 7º, h).",
+        "Das 22h às 8h, a atenção deve ser redobrada. Esse é o período da Lei do Silêncio (art. 7º, h).",
+        "Quem descumprir a regra fica sujeito às implicações previstas em lei. O Regimento cita o art. 1.277 do Código Civil e o art. 42 da Lei de Contravenções Penais (art. 7º, h).",
+        "Com esse cuidado, mantemos um ambiente de paz e serenidade no nosso prédio.",
+        "Faz gosto conviver"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 7º, alínea h"
     }
   ]
 }
