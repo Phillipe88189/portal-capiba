@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T13:50",
+  "atualizado_em": "2026-11-27T14:15",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -336,6 +336,25 @@
         "Faz gosto conviver"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 7º, alínea cc; art. 33, alíneas b, c, d, h, l, m e n"
+    },
+    {
+      "numero": "2026-018",
+      "publicado_em": "2026-11-27T14:15",
+      "tipo": "aviso",
+      "categoria": "Serviços gerais",
+      "fixado": false,
+      "titulo": "Conheça a nossa equipe de serviços gerais",
+      "resumo": "Apresentamos os auxiliares de serviços gerais que cuidam das áreas comuns do Capiba. O serviço é prestado pela Prática Segura, empresa terceirizada contratada pelo condomínio.",
+      "imagem": {
+        "src": "imagens/comunicados/2026-018-servicos-gerais.jpg",
+        "alt": "Fotos e nomes da equipe de serviços gerais do Capiba: Lucas Emmanuel, Willams Aguiar, Gabriel da Silva, Jonas da Silva e José Lucas."
+      },
+      "texto": [
+        "Caros moradores, apresentamos a equipe de auxiliares de serviços gerais do Capiba: Lucas Emmanuel, Willams Aguiar, Gabriel da Silva, Jonas da Silva e José Lucas.",
+        "O serviço é prestado pela Prática Segura, empresa terceirizada contratada pelo condomínio.",
+        "Faz gosto conviver"
+      ],
+      "assinatura": "Administração do Condomínio do Edifício Capiba"
     }
   ]
 }
