@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T08:30",
+  "atualizado_em": "2026-11-27T13:50",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -315,6 +315,27 @@
         "Faz gosto conviver"
       ],
       "assinatura": "Administração do Condomínio do Edifício Capiba"
+    },
+    {
+      "numero": "2026-017",
+      "tipo": "educativo",
+      "serie": "Conhecendo o Regimento Interno",
+      "categoria": "Mudanças e reformas",
+      "titulo": "Reformas nas unidades: dias e horários",
+      "publicado_em": "2026-11-27T13:50",
+      "assinatura": "Administração do Condomínio do Edifício Capiba",
+      "fixado": false,
+      "resumo": "Veja em que dias e horários as reformas podem acontecer e os cuidados que o Regimento Interno pede durante a obra.",
+      "texto": [
+        "Os comunicados educativos explicam, um tema por vez, as regras do nosso Regimento Interno. Hoje o assunto são as reformas nas unidades (art. 33).",
+        "Reformas só podem acontecer de segunda a sexta-feira, das 8h às 12h e das 14h às 18h, e aos sábados, das 8h às 13h. Fora desse horário, não use furadeira, martelo ou ferramentas parecidas (art. 33, b; art. 7º, cc).",
+        "Aos domingos e feriados, reformas não são permitidas. Situações excepcionais dependem de autorização prévia (art. 33, c).",
+        "O entulho da obra deve ser retirado somente pelo elevador de serviço. A limpeza do hall e da escada do andar da reforma fica por conta do condômino (art. 33, d e h).",
+        "Os operários precisam usar crachá cadastrado na portaria, com documento de identificação, e devolvê-lo ao fim de cada dia. Informe antes à portaria os nomes de quem vai trabalhar na obra, para que o acesso não seja negado (art. 33, l, m e n).",
+        "Com esses cuidados, a reforma de um morador não atrapalha o dia a dia dos vizinhos no nosso prédio.",
+        "Faz gosto conviver"
+      ],
+      "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 7º, alínea cc; art. 33, alíneas b, c, d, h, l, m e n"
     }
   ]
 }
