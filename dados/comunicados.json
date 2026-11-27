@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-26T13:50",
+  "atualizado_em": "2026-11-27T08:30",
   "comunicados": [
     {
       "numero": "2026-001",
@@ -295,6 +295,26 @@
         "Faz gosto conviver"
       ],
       "base": "Regimento Interno do Condomínio do Edifício Capiba (AGO de 24/02/2026): art. 7º, alínea h"
+    },
+    {
+      "numero": "2026-016",
+      "publicado_em": "2026-11-27T08:30",
+      "tipo": "aviso",
+      "categoria": "Portaria",
+      "fixado": false,
+      "titulo": "Conheça a nossa portaria",
+      "resumo": "Apresentamos os porteiros e vigias que cuidam da portaria do Capiba. O serviço é prestado pela Prática Segura, empresa terceirizada contratada pelo condomínio.",
+      "imagem": {
+        "src": "imagens/comunicados/2026-016-portaria.jpg",
+        "alt": "Fotos e nomes da equipe de porteiros e vigias do Capiba: Flauberto, Leidson, Silvio, João Victor, Sandro, Alkiris José, Tony Ricardo e Carlos Eduardo."
+      },
+      "texto": [
+        "Caros moradores, apresentamos a equipe de porteiros e vigias do Capiba: Flauberto, Leidson, Silvio, João Victor, Sandro, Alkiris José, Tony Ricardo e Carlos Eduardo.",
+        "O serviço de portaria é prestado pela Prática Segura, empresa terceirizada contratada pelo condomínio.",
+        "Em caso de dúvida sobre acesso, visitas ou encomendas, procure a portaria.",
+        "Faz gosto conviver"
+      ],
+      "assinatura": "Administração do Condomínio do Edifício Capiba"
     }
   ]
 }

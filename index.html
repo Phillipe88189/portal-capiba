@@ -177,6 +177,8 @@ html{scroll-behavior:smooth}
 .k-card h3{margin:0;font-weight:300;text-transform:uppercase;letter-spacing:.14em;line-height:1.35;color:var(--titulo);font-size:1.05rem;text-wrap:balance}
 .k-meta{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0;font-size:.8rem;color:var(--suave);font-variant-numeric:tabular-nums}
 .k-resumo{margin:0}
+.k-img{display:block;border-radius:18px;overflow:hidden;border:1px solid var(--linha)}
+.k-img img{display:block;width:100%;height:auto}
 .k-card details{border-top:1px solid var(--linha);padding-top:8px}
 .k-card summary{cursor:pointer;color:var(--titulo);font-weight:400;font-size:.9rem}
 .k-card summary:focus-visible{outline:2px solid var(--verde-vivo);outline-offset:2px}
@@ -729,7 +731,7 @@ html.id-pendente .ident{display:block}
   <p>Este aplicativo resume as regras com linguagem simples. Ele não substitui os documentos originais, que podem ser consultados com a Administração.</p>
   <div class="contato">Sugestões e reclamações por escrito: <code id="mail">sindicocapiba@gmail.com</code><button class="copy" id="cp" type="button">Copiar e-mail</button> ou no livro da portaria (RI, art. 6º, d e e).</div>
   <p style="margin-top:18px">Condomínio do Edifício Capiba – Administração · Rua Mamanguape, 470 – Boa Viagem – Recife/PE</p>
-  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 26/11/2026 · 1</p>
+  <p style="font-size:.72rem;opacity:.7;margin-top:10px">Versão do app: 27/11/2026 · 1</p>
 </div>
 </footer>
 
@@ -1377,6 +1379,11 @@ if ('serviceWorker' in navigator) window.addEventListener('load', () => {
     if (c.valido_ate) meta.append(el('span', null, `${encerrado(c) ? 'Valeu' : 'Vale'} até ${dataBR(c.valido_ate)}`));
     a.append(meta);
     if (c.resumo) a.append(el('p', 'k-resumo', c.resumo));
+    if (c.imagem && c.imagem.src && /^(imagens\/|https:\/\/)/.test(c.imagem.src)) {
+      const f = el('a', 'k-img'); f.href = c.imagem.src; f.target = '_blank'; f.rel = 'noopener';
+      const im = el('img'); im.src = c.imagem.src; im.alt = c.imagem.alt || ''; im.loading = 'lazy';
+      f.append(im); a.append(f);
+    }
     const ps = paragrafos(c.texto);
     if (ps.length || c.base) {
       const d = el('details'); d.append(el('summary', null, 'Ler o comunicado completo'));
